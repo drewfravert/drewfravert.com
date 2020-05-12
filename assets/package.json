@@ -1,0 +1,53 @@
+{
+  "name": "portfolio",
+  "author": "Drew Fravert",
+  "homepage": "https://fravert.dev/",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:drewfravert/fravert.dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drewfravert/fravert.dev/issues",
+    "email": "bugs@fravert.dev"
+  },
+  "scripts": {
+    "deploy": "webpack --config webpack.production.js",
+    "watch": "webpack --config webpack.development.js --watch --color"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "nprogress": "0.2.0",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view",
+    "vue": "2.6.11"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "autoprefixer": "9.7.6",
+    "babel-loader": "8.1.0",
+    "copy-webpack-plugin": "5.1.1",
+    "css-loader": "3.5.3",
+    "cssnano": "4.1.10",
+    "eslint": "6.8.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-loader": "3.0.0",
+    "postcss-nested": "4.2.1",
+    "prettier": "2.0.5",
+    "stylelint": "13.3.3",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-order": "4.0.0",
+    "terser-webpack-plugin": "3.0.0",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-merge": "4.2.2"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "private": true
+}

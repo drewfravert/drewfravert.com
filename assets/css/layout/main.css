@@ -1,0 +1,20 @@
+/*
+==========================================================================================
+  Main
+==========================================================================================
+*/
+
+main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing);
+  align-content: start;
+  padding: var(--spacing) 0 calc(var(--spacing) * 2);
+
+  article {
+    display: grid;
+    grid-column: span 4;
+    gap: calc(var(--spacing) * 1.5);
+  }
+}

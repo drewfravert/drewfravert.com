@@ -1,0 +1,6 @@
+<div class="toolbar">
+  <button type="button" class="button text-large js-toggle-scheme" data-tooltip="Toggle dark/light"><i class="fas fa-sun"></i></button>
+  <input type="range" class="vertical js-toggle-accent" min="0" max="360" step="1" orient="vertical">
+  <button type="button" class="button text-large js-random-scheme" data-tooltip="Random accent color"><i class="fas fa-random"></i></button>
+  <button type="button" class="button text-large js-reset-scheme" data-tooltip="Reset color scheme"><i class="fas fa-undo-alt"></i></button>
+</div>

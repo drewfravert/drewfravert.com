@@ -1,0 +1,31 @@
+/*
+==========================================================================================
+  Lists
+==========================================================================================
+*/
+
+ul,
+ol {
+  list-style: none;
+}
+
+.list {
+  &.list-inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    li {
+      color: var(--color-link);
+      white-space: nowrap;
+
+      &:not(:last-child) {
+        &::after {
+          content: "/";
+          margin: 0 0.5em;
+          font-weight: var(--font-weight-light);
+          color: var(--color-lightgray);
+        }
+      }
+    }
+  }
+}

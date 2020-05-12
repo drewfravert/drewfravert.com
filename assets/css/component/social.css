@@ -1,0 +1,19 @@
+/*
+========================================================================
+  Social
+========================================================================
+*/
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.66667em;
+
+  .platform {
+    &:hover {
+      a { color: var(--color-primary); }
+    }
+
+    a { color: var(--color-link); }
+  }
+}

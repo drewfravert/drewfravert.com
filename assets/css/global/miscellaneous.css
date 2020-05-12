@@ -1,0 +1,5 @@
+.legal {
+  font-size: var(--font-size-smaller);
+  color: var(--color-lightgray);
+  line-height: var(--line-height-smaller);
+}

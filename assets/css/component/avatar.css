@@ -1,0 +1,15 @@
+/*
+==========================================================================================
+  Avatars
+==========================================================================================
+*/
+
+.avatar {
+  padding: calc(var(--border-width-base) * 3);
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-round);
+  width: calc(var(--spacing) * 3);
+  height: auto;
+  overflow: hidden;
+  user-select: none;
+}

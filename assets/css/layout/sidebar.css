@@ -1,0 +1,11 @@
+aside {
+  display: grid;
+  grid-area: sidebar;
+  gap: var(--spacing);
+  align-content: start;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  position: sticky;
+  max-width: 20em;
+  top: calc(var(--spacing) * 2);
+}

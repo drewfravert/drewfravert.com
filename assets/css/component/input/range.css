@@ -1,0 +1,35 @@
+/*
+==========================================================================================
+  Range Input
+==========================================================================================
+*/
+
+input[type="range"] {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &.vertical {
+    -webkit-appearance: slider-vertical;
+    writing-mode: bt-lr;
+    height: 9rem;
+  }
+
+  &::-moz-range-thumb {
+    background-color: var(--color-primary);
+    border: var(--border-base);
+    border-radius: var(--border-radius-round);
+    width: var(--font-size-base);
+    height: var(--font-size-base);
+  }
+
+  &::-moz-range-track {
+    background-color: var(--border-color-base);
+    border-radius: var(--border-radius-round);
+    box-shadow: inset 0 0 0 var(--border-width-base) var(--border-color-light);
+    width: 0.5em;
+    height: 100%;
+  }
+
+  &::-moz-focus-outer { border: none; }
+}

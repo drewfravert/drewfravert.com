@@ -1,0 +1,39 @@
+/*
+==========================================================================================
+  Tables
+==========================================================================================
+*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  thead {
+    text-align: left;
+
+    tr {}
+
+    th {}
+  }
+
+  tbody {
+    tr {
+      &:first-child {
+        td { border-top: var(--border-light); }
+      }
+
+      td { border-bottom: var(--border-light); }
+    }
+
+    td {
+      padding: calc(var(--spacing) * 0.5) 0;
+
+      &:first-child {
+        padding-right: var(--spacing);
+        white-space: nowrap;
+      }
+
+      &:last-child { width: 75%; }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.toolbar {
+  display: grid;
+  grid-area: toolbar;
+  gap: var(--spacing);
+  align-content: start;
+  justify-items: center;
+  position: sticky;
+  min-width: var(--spacing);
+  top: calc(var(--spacing) * 2);
+}
