@@ -22,7 +22,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "[name].[contentHash].js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "../priv/static/js")
   },
   optimization: {
@@ -37,7 +37,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "../css/[name].[contentHash].css"
+      filename: "../css/[name].css"
     }),
     new CopyWebpackPlugin([
       {
