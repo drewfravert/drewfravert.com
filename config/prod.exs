@@ -13,19 +13,19 @@ use Mix.Config
 
 # endpoint configuration
 config :portfolio, PortfolioWeb.Endpoint,
-  url: [host: "drewfravert.com", port: 443],
-  https: [
-    port: 443,
-    cipher_suite: :strong,
-    keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
-    certfile: System.get_env("SOME_APP_SSL_CERT_PATH"),
-    transport_options: [socket_opts: [:inet6]]
-  ],
-  force_ssl: [hsts: true],
+  url: [host: System.get_env("RENDER_EXTERNAL_HOSTNAME") || "drewfravert.local", port: 80],
+  # https: [
+  #   port: 443,
+  #   cipher_suite: :strong,
+  #   keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
+  #   certfile: System.get_env("SOME_APP_SSL_CERT_PATH"),
+  #   transport_options: [socket_opts: [:inet6]]
+  # ],
+  # force_ssl: [hsts: true],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # do not print debug messages in production
 config :logger, level: :info
 
 # import secrets and configuration from environment variables
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"

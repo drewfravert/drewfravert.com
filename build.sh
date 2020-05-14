@@ -4,23 +4,18 @@
 # Product Build Script
 # ========================================================================================
 
-# get production dependencies
+# production setup
 mix deps.get --only prod
-
-# compile production files
 MIX_ENV=prod mix compile
 
-# install production packages
-yarn ./assets
-
-# build production packages
-yarn run --production ./assets
-
-# digest & compress static files
+# compile assets
+yarn --cwd ./assets install
+yarn --cwd ./assets run deploy
 mix phx.digest
 
-# remove generated build directory
+# remove existing release directory
 rm -rf "_build"
 
-# perform production release
+# perform release & migrate the database
 MIX_ENV=prod mix release
+MIX_ENV=prod mix ecto.migrate
