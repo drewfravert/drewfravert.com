@@ -5,6 +5,6 @@ defmodule Portfolio.Repo do
     pool_size: 10
 
   def init(_type, config) do
-    {:ok, Keyword.put(config, :url, System.get_env("DATABSE_URL"))}
+    {:ok, Keyword.put(config, :url, System.get_env("DATABASE_URL"))}
   end
 end
