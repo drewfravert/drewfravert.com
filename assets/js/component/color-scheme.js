@@ -4,9 +4,9 @@
 ==========================================================================================
 */
 
-import { events } from "../global/Browser.js";
-import { circle } from "../global/Constants.js";
-import Selectors from "../global/Selectors.js";
+import { events } from "../global/browser.js";
+import { circle } from "../global/constants.js";
+import Selectors from "../global/selectors.js";
 import { random } from "lodash";
 
 /*

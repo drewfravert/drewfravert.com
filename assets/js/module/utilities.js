@@ -4,8 +4,8 @@
 ==========================================================================================
 */
 
-import { events } from "../global/Browser.js";
-import Selectors from "../global/Selectors.js"
+import { events } from "../global/browser.js";
+import Selectors from "../global/selectors.js"
 
 /*
 ==========================================================================================

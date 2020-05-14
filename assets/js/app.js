@@ -11,14 +11,14 @@ import "phoenix_html";
 import "../css/app.css";
 
 // js sockets
-import LiveView from "./socket/LiveView.js";
+import LiveView from "./socket/live-view.js";
 
 // js modules
-import Utilities from "./module/Utilities.js";
+import Utilities from "./module/utilities.js";
 
 // js components
-import ColorScheme from "./component/ColorScheme.js";
-import Tabs from "./component/Tabs.js";
+import ColorScheme from "./component/color-scheme.js";
+import Tabs from "./component/tabs.js";
 
 /*
 ==========================================================================================
