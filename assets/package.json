@@ -1,16 +1,16 @@
 {
   "name": "portfolio",
   "author": "Drew Fravert",
-  "homepage": "https://fravert.dev/",
+  "homepage": "https://drewfravert.com/",
   "license": "MIT",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:drewfravert/fravert.dev.git"
+    "url": "git@github.com:drewfravert/drewfravert.com.git"
   },
   "bugs": {
-    "url": "https://github.com/drewfravert/fravert.dev/issues",
-    "email": "bugs@fravert.dev"
+    "url": "https://github.com/drewfravert/drewfravert.com/issues",
+    "email": "bugs@drewfravert.com"
   },
   "scripts": {
     "deploy": "webpack --config webpack.production.js",

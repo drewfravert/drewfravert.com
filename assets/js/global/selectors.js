@@ -5,19 +5,18 @@
 */
 
 // initialize selectors object
-const selectors = {
+const Selectors = {
   global: {}
 };
 
 // alias global selector key
-const g = selectors.global;
+const global = Selectors.global;
 
 // set global selectors
-g.html   = document.querySelector("html"),
-g.body   = g.html.querySelector("body"),
-g.header = g.body.querySelector(".header"),
-g.main   = g.body.querySelector(".main"),
-g.footer = g.body.querySelector(".footer");
+global.document = document.documentElement;
+global.html = document.querySelector("html");
+global.head = global.html.querySelector("head");
+global.body = global.html.querySelector("body");
 
 /*
 ==========================================================================================
@@ -25,4 +24,4 @@ g.footer = g.body.querySelector(".footer");
 ==========================================================================================
 */
 
-export default selectors;
+export default Selectors;

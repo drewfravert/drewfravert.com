@@ -1,0 +1,3 @@
+<section data-area="headline">
+  <p class="text-contain">Passionate generalist, creative problem solver, engaged team member and conscientious leader. Currently consulting at <%= link "Arity One", to: "https://arity.one/", target: "_blank", rel: "noopener" %>.</p>
+</section>

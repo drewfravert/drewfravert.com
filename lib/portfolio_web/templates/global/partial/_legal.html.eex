@@ -1,0 +1,3 @@
+<section data-area="legal">
+  <p class="text-smaller color-lightgray">Drew Fravert &copy; <%= DateTime.utc_now.year %></p>
+</section>

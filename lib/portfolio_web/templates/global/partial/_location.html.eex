@@ -1,0 +1,5 @@
+<section data-area="location">
+  <%= link to: "https://www.google.com/maps/place/Birmingham,+AL/", target: "_blank", rel: "noopener noreferrer" do %>
+    <i class="fas fa-map-marker-alt mr-2"></i>Birmingham,&nbsp;AL
+  <% end %>
+</section>

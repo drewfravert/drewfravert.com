@@ -42,6 +42,7 @@
 @import "component/avatar.css";
 @import "component/social.css";
 @import "component/toolbar.css";
+@import "component/tabs.css";
 
 /* inputs */
 @import "component/input/range.css";

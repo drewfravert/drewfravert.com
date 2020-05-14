@@ -22,23 +22,29 @@
 
 .inline-flex { display: inline-flex !important; }
 
-.justify-start { justify-content: start; }
+.justify-start { justify-content: start !important; }
 
-.justify-center { justify-content: center; }
+.justify-center { justify-content: center !important; }
 
-.justify-end { justify-content: end; }
+.justify-end { justify-content: end !important; }
 
-.justify-around { justify-content: space-around; }
+.justify-around { justify-content: space-around !important; }
 
-.justify-between { justify-content: space-between; }
+.justify-between { justify-content: space-between !important; }
 
-.justify-evenly { justify-content: space-evenly; }
+.justify-evenly { justify-content: space-evenly !important; }
 
-.align-start { align-items: start; }
+.align-start { align-items: start !important; }
 
-.align-center { align-items: center; }
+.align-center { align-items: center !important; }
 
-.align-end { align-items: end; }
+.align-end { align-items: end !important; }
+
+.self-start { align-self: start !important; }
+
+.self-center { align-self: center !important; }
+
+.self-end { align-self: end !important; }
 
 /*
 ==========================================================================================
@@ -46,13 +52,13 @@
 ==========================================================================================
 */
 
-.valign-top { vertical-align: top; }
+.valign-top { vertical-align: top !important; }
 
-.valign-middle { vertical-align: middle; }
+.valign-middle { vertical-align: middle !important; }
 
-.valign-bottom { vertical-align: bottom; }
+.valign-bottom { vertical-align: bottom !important; }
 
-.valign-baseline { vertical-align: baseline; }
+.valign-baseline { vertical-align: baseline !important; }
 
 /*
 ==========================================================================================
@@ -596,7 +602,7 @@
 
 .text-lowercase { text-transform: lowercase !important; }
 
-.text-contain { max-width: 50.0em !important; }
+.text-contain { max-width: 50em !important; }
 
 .text-left { text-align: left !important; }
 

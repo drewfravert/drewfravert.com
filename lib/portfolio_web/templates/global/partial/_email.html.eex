@@ -1,0 +1,3 @@
+<section data-area="email">
+  <%= link "drew@fravert.dev", to: "mailto:drew@fravert.dev?subject=Hey, Drew!" %>
+</section>

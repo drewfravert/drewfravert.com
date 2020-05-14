@@ -4,6 +4,12 @@
 ==========================================================================================
 */
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing) * 0.5);
+}
+
 button,
 .button {
   appearance: none;
@@ -17,50 +23,60 @@ button,
   line-height: var(--line-height-base);
   letter-spacing: var(--letter-spacing-base);
   color: inherit;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.125em;
   white-space: nowrap;
   position: relative;
   cursor: pointer;
-  user-select: none;
+  user-select: auto;
 
   &:disabled {
-    background-color: var(--color-gray);
-    color: var(--color-darkergray);
-    cursor: default;
+    text-decoration: none;
+    cursor: text;
   }
 
   &:not(:disabled) {
     &:hover { color: var(--color-primary); }
-
-    &:active {}
   }
 
   &.button-base {
     padding: 0.5em 1em;
     background-color: var(--color-white);
-    border-radius: var(--border-radius-relative);
+    border: var(--border-base);
+    border-radius: var(--border-radius-base);
     color: var(--color-base);
+    text-decoration: none;
+    user-select: none;
+
+    &:disabled { cursor: default; }
+
+    &:not(:disabled) {}
   }
 
-  &[data-tooltip] {
-    &:hover {
-      &::before { content: attr(data-tooltip); }
-    }
+  @media (min-width: 1024px) {
+    &[data-tooltip] {
+      &:hover {
+        &::before { content: attr(data-tooltip); }
+      }
 
-    &::before {
-      padding: 0.5em 1em;
-      background-color: var(--color-background);
-      box-shadow: inset 0 0 0 var(--border-width-base) var(--border-color-light),
-                  0 0.1em 0.2rem -0.1rem var(--border-color-light);
-      border-radius: var(--border-radius-base);
-      font-size: var(--font-size-small);
-      font-weight: var(--font-weight-medium);
-      color: var(--color-base);
-      line-height: var(--line-height-small);
-      white-space: nowrap;
-      position: absolute;
-      top: calc(50% - 1.5rem);
-      right: calc(100% + 1em);
+      &::before {
+        padding: 0.5em 1em;
+        background-color: var(--color-background);
+        box-shadow: inset 0 0 0 var(--border-width-base) var(--border-color-light),
+                    0 0.1em 0.2rem -0.1rem var(--border-color-light);
+        border-radius: var(--border-radius-base);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-base);
+        line-height: var(--line-height-small);
+        white-space: nowrap;
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        right: calc(100% + 1em);
+      }
     }
   }
 }

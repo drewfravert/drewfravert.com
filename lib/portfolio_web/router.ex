@@ -37,6 +37,7 @@ defmodule PortfolioWeb.Router do
   scope "/", PortfolioWeb.Public, as: :public do
     pipe_through [:browser, :public]
 
+    # public page routes
     get "/", PageController, :index
     get "/work", PageController, :work
     get "/info", PageController, :info
@@ -44,6 +45,18 @@ defmodule PortfolioWeb.Router do
     get "/resume", PageController, :resume
     get "/uses", PageController, :uses
     get "/writing", PageController, :writing
+  end
+
+  # ========================================================================================
+  # Targeted Routes
+  # ========================================================================================
+
+  scope "/hello", PortfolioWeb.Public, as: :target do
+    pipe_through [:browser, :public]
+
+    get "/blox", TargetController, :blox
+    get "/remote", TargetController, :remote
+    get "/shipt", TargetController, :shipt
   end
 
   # ========================================================================================

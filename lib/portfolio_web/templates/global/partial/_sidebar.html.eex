@@ -1,23 +1,9 @@
-<aside>
-  <section>
-    <a class="inline-flex justify-center align-center valign-top" href="<%= Routes.public_page_path(@conn, :index) %>"><img class="avatar" src="<%= Routes.static_path(@conn, "/images/drew-fravert.png") %>" alt="Drew Fravert"></a>
-  </section>
-  <section>
-    <p>Currently consulting at <a href="https://arity.one/">Arity One</a>. A passionate generalist, creative problem solver, engaged team member and leader.</p>
-  </section>
-  <section>
-    <%= render PortfolioWeb.Global.PartialView, "_navigation.html", conn: @conn %>
-  </section>
-  <section>
-    <a href="mailto:drew@fravert.dev?subject=Hey, Drew!">drew@fravert.dev</a>
-  </section>
-  <section>
-    <%= render PortfolioWeb.Global.PartialView, "_social.html", conn: @conn, modifier: "text-xl" %>
-  </section>
-  <section>
-    <a href="https://www.google.com/maps/place/Birmingham,+AL/"><i class="fas fa-map-marker-alt mr-2"></i></a>Birmingham, AL
-  </section>
-  <section>
-    <span class="legal">Drew Fravert &copy; <%= DateTime.utc_now.year %></span>
-  </section>
+<aside class="sidebar">
+  <%= render PortfolioWeb.Global.PartialView, "_profile.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_headline.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_navigation.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_email.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_social.html", conn: @conn, modifier: "text-xl" %>
+  <%= render PortfolioWeb.Global.PartialView, "_location.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_legal.html", conn: @conn %>
 </aside>

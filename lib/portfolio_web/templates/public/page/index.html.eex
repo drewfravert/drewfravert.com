@@ -1,12 +1,14 @@
 <article class="about">
   <header role="banner">
-    <h1 class="heading text-xxxxl">Hello, I’m Drew Fravert, a consultant at <%= link "Arity One", to: "https://arity.one/" %>. I write about business, software and culture.</h1>
+    <h1 class="heading text-xxxl">Hello, I’m Drew Fravert, a consultant at <%= link "Arity One", to: "https://arity.one/" %>. I write about business, software and culture.</h1>
   </header>
-  <section>
-    <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
-    <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-    <p>Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+  <section class="tabs js-tabs">
+    <div class="tabs-menu js-tabs-menu">
+      <%= content_tag :button, "Full", type: "button", data_tab: "biography", disabled: true %> or <%= content_tag :button, "Summary", type: "button", data_tab: "summary" %>
+    </div>
+    <div class="tabs-content js-tabs-content">
+      <%= render PortfolioWeb.Global.PartialView, "_biography.html", conn: @conn %>
+      <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
+    </div>
   </section>
 </article>

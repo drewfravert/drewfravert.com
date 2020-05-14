@@ -15,10 +15,10 @@ To run this project locally:
   * Create and migrate your database with `mix ecto.setup`
   * Install [node.js](https://nodejs.dev/) dependencies with `yarn install`
   * Generate a self-signed certificate with `mix phx.gen.cert`
-  * Add `fravert.local` as an alias to `localhost` in your `/etc/hosts` file
+  * Add `drewfravert.local` as an alias to `localhost` in your `/etc/hosts` file
   * Start [phoenix](https://hexdocs.pm/phoenix/overview.html) endpoint with `mix phx.server`
 
-You can now visit [`https://fravert.local:4001`](https://fravert.local:4001) from your browser.
+You can now visit [`https://drewfravert.local:4001`](https://drewfravert.local:4001) from your browser.
 
 
 ## Technologies
@@ -36,7 +36,6 @@ You can now visit [`https://fravert.local:4001`](https://fravert.local:4001) fro
 | [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | ES2020  | A lightweight, interpreted programming language with first-class functions                  |
 | [Webpack](https://webpack.js.org/)                                    | 5.0.0   | A module bundler for JavaScript                                                             |
 | [Vue](https://vuejs.org/)                                             | 3.0.0   | A progressive, incrementally-adoptable JavaScript framework for building UI on the web      |
-| [Vue Apollo](https://vue-apollo.netlify.com/)                         | 3.0.3   | An Apollo/GraphQL integration for VueJS                                                     |
 | [lodash](https://lodash.com/)                                         | 4.17.15 | A modern JavaScript utility library delivering modularity, performance & extras             |
 |                                                                       |         |                                                                                             |
 | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)               | –       | A stylesheet language used to describe the presentation of a document written in HTML       |

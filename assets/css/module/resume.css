@@ -5,31 +5,10 @@
 */
 
 .resume {
-  max-width: 50em;
-
-  .resume-list {
-    .resume-list-item {
-      display: grid;
-      gap: calc(var(--spacing) * 0.25);
-
-      &:not(:last-child) { margin-bottom: var(--spacing); }
-
-      .resume-list-heading {}
-
-      .resume-list-time {
-        font-size: var(--font-size-smaller);
-        font-weight: var(--font-weight-medium);
-        color: var(--color-gray);
-        line-height: var(--line-height-smaller);
-        text-transform: uppercase;
-      }
-
-      .resume-list-blockquote {
-        font-style: italic;
-
-        &::before { content: "\201C"; }
-
-        &::after { content: "\201D"; }
+  section {
+    ul {
+      li {
+        &:not(:last-child) { margin-bottom: calc(var(--spacing) * 0.66667); }
       }
     }
   }

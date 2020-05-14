@@ -6,7 +6,7 @@ config :portfolio,
 
 # base endpoint configuration
 config :portfolio, PortfolioWeb.Endpoint,
-  url: [host: "fravert.local"],
+  url: [host: "drewfravert.local"],
   secret_key_base: "1I1+biC2Nf5icvOZEm+vhYaB86/j6pnrArzwJB0/Ca9ky+k6lGOi4EBBO1KpBuPX",
   render_errors: [view: PortfolioWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Portfolio.PubSub,

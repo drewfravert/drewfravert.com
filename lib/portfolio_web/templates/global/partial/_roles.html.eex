@@ -1,5 +1,5 @@
-<ul class="list list-inline">
-  <li class="list-item color-darkgray">Product Manager</li>
-  <li class="list-item color-darkgray">Software Developer</li>
-  <li class="list-item color-darkgray">UI + IX Designer</li>
+<ul class="list list-inline color-darkgray">
+  <li>Product Manager</li>
+  <li>Software Developer</li>
+  <li>UI + IX Designer</li>
 </ul>

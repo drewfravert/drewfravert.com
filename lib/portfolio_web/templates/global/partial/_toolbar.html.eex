@@ -1,6 +1,15 @@
 <div class="toolbar">
-  <button type="button" class="button text-large js-toggle-scheme" data-tooltip="Toggle dark/light"><i class="fas fa-sun"></i></button>
-  <input type="range" class="vertical js-toggle-accent" min="0" max="360" step="1" orient="vertical">
-  <button type="button" class="button text-large js-random-scheme" data-tooltip="Random accent color"><i class="fas fa-random"></i></button>
-  <button type="button" class="button text-large js-reset-scheme" data-tooltip="Reset color scheme"><i class="fas fa-undo-alt"></i></button>
+  <%= content_tag :button, type: "button", class: "text-xl js-toggle-scheme", data_tooltip: "Toggle dark/light", data_area: "toggle" do %>
+    <i class="fas fa-sun"></i>
+  <% end %>
+  <%= tag :input, type: "range", class: "vertical js-toggle-accent", min: 0, max: 360, step: 1, data_area: "accent" %>
+  <%= content_tag :button, type: "button", class: "text-large js-random-scheme", data_tooltip: "Random accent color", data_area: "random" do %>
+    <i class="fas fa-random"></i>
+  <% end %>
+  <%= content_tag :button, type: "button", class: "text-large js-reset-scheme", data_tooltip: "Reset color scheme", data_area: "reset" do %>
+    <i class="fas fa-undo-alt"></i>
+  <% end %>
+  <%= content_tag :button, type: "button", class: "text-xl js-scroll-top", data_tooltip: "Back to top", data_area: "top" do %>
+    <i class="fas fa-arrow-up"></i>
+  <% end %>
 </div>

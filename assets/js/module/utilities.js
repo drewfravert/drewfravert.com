@@ -4,13 +4,24 @@
 ==========================================================================================
 */
 
+import { events } from "../global/Browser.js";
+import Selectors from "../global/Selectors.js"
+
 /*
 ==========================================================================================
   Public Functions
 ==========================================================================================
 */
 
-const Utilities = {};
+const Utilities = {
+
+  initialize() {
+
+    initializeScrollTop();
+
+  }
+
+};
 
 /*
 ==========================================================================================
@@ -18,7 +29,28 @@ const Utilities = {};
 ==========================================================================================
 */
 
-const _private = {};
+const initializeScrollTop = () => {
+
+  const elements = Selectors.global.body.querySelectorAll(".js-scroll-top");
+
+  bindScrollTop(elements);
+
+};
+
+const bindScrollTop = (elements) => {
+
+  elements.forEach((element) => {
+
+    element.addEventListener(events.click, (event) => {
+
+      event.preventDefault();
+      window.scroll({ top: 0, left: 0, behavior: "smooth" });
+
+    });
+
+  });
+
+};
 
 /*
 ==========================================================================================

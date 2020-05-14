@@ -4,7 +4,10 @@
 ==========================================================================================
 */
 
-import _ from "lodash";
+import { events } from "../global/Browser.js";
+import { circle } from "../global/Constants.js";
+import Selectors from "../global/Selectors.js";
+import { random } from "lodash";
 
 /*
 ==========================================================================================
@@ -12,16 +15,10 @@ import _ from "lodash";
 ==========================================================================================
 */
 
-const selectors = {
-
-  root: document.documentElement,
-  html: document.querySelector("html"),
-  schemeListener: document.querySelector(".js-toggle-scheme"),
-  accentListener: document.querySelector(".js-toggle-accent"),
-  randomListener: document.querySelector(".js-random-scheme"),
-  resetListener: document.querySelector(".js-reset-scheme")
-
-};
+Selectors.schemeListener = Selectors.global.body.querySelector(".js-toggle-scheme");
+Selectors.accentListener = Selectors.global.body.querySelector(".js-toggle-accent");
+Selectors.randomListener = Selectors.global.body.querySelector(".js-random-scheme");
+Selectors.resetListener = Selectors.global.body.querySelector(".js-reset-scheme");
 
 /*
 ==========================================================================================
@@ -29,10 +26,10 @@ const selectors = {
 ==========================================================================================
 */
 
-const DARK_SCHEME = "dark";
 const LIGHT_SCHEME = "light";
-const HUE_ROOT_VAR = "--hue-root";
-const DEFAULT_ACCENT = getComputedStyle(selectors.root).getPropertyValue(HUE_ROOT_VAR).trim();
+const DARK_SCHEME = "dark";
+const HUE_BASE_PROPERTY = "--hue-base";
+const DEFAULT_ACCENT = getComputedStyle(Selectors.global.document).getPropertyValue(HUE_BASE_PROPERTY).trim();
 
 /*
 ==========================================================================================
@@ -42,14 +39,6 @@ const DEFAULT_ACCENT = getComputedStyle(selectors.root).getPropertyValue(HUE_ROO
 
 const ColorScheme = {
 
-  /*
-  * Initialize color scheme functionality.
-  *
-  * Example:
-  *
-  *   -> Scheme.initialize();
-  *
-  */
   initialize() {
 
     initializeScheme();
@@ -73,7 +62,7 @@ const ColorScheme = {
 // initializers
 const initializeScheme = () => {
 
-  const scheme = currentScheme() || systemScheme();
+  const scheme = getCurrentScheme() || getSystemScheme();
 
   updateScheme(scheme);
   setScheme(scheme);
@@ -82,7 +71,7 @@ const initializeScheme = () => {
 
 const initializeAccent = () => {
 
-  const accent = currentAccent() || DEFAULT_ACCENT;
+  const accent = getCurrentAccent() || DEFAULT_ACCENT;
 
   updateAccent(accent);
   updateAccentInput(accent);
@@ -93,9 +82,9 @@ const initializeAccent = () => {
 // binders
 const bindScheme = () => {
 
-  selectors.schemeListener.addEventListener("click", (event) => {
+  Selectors.schemeListener.addEventListener(events.click, (event) => {
 
-    const scheme = currentScheme() === LIGHT_SCHEME ? DARK_SCHEME : LIGHT_SCHEME;
+    const scheme = getCurrentScheme() === LIGHT_SCHEME ? DARK_SCHEME : LIGHT_SCHEME;
 
     event.preventDefault();
     updateScheme(scheme);
@@ -107,7 +96,7 @@ const bindScheme = () => {
 
 const bindAccent = () => {
 
-  selectors.accentListener.addEventListener("input", (event) => {
+  Selectors.accentListener.addEventListener(events.input, (event) => {
 
     const accent = event.target.value;
 
@@ -121,9 +110,9 @@ const bindAccent = () => {
 
 const bindRandom = () => {
 
-  selectors.randomListener.addEventListener("click", () => {
+  Selectors.randomListener.addEventListener(events.click, () => {
 
-    const accent = randomAccent();
+    const accent = getRandomAccent();
 
     event.preventDefault();
     updateAccent(accent);
@@ -136,7 +125,7 @@ const bindRandom = () => {
 
 const bindReset = () => {
 
-  selectors.resetListener.addEventListener("click", () => {
+  Selectors.resetListener.addEventListener(events.click, () => {
 
     resetScheme();
     resetAccent();
@@ -146,10 +135,10 @@ const bindReset = () => {
 };
 
 // getters
-const systemScheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches ? DARK_SCHEME : LIGHT_SCHEME;
-const randomAccent = () => `${_.random(360)}`;
-const currentScheme = () => localStorage.getItem("scheme");
-const currentAccent = () => localStorage.getItem("accent");
+const getSystemScheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches ? DARK_SCHEME : LIGHT_SCHEME;
+const getRandomAccent = () => `${random(circle.degrees)}`;
+const getCurrentScheme = () => localStorage.getItem("scheme");
+const getCurrentAccent = () => localStorage.getItem("accent");
 
 // setters
 const setScheme = (scheme) => localStorage.setItem("scheme", scheme);
@@ -158,19 +147,19 @@ const setAccent = (accent) => localStorage.setItem("accent", accent);
 // updaters
 const updateScheme = (scheme) => {
 
-  selectors.html.classList.remove(currentScheme());
-  selectors.html.classList.add(scheme);
+  Selectors.global.html.classList.remove(getCurrentScheme());
+  Selectors.global.html.classList.add(scheme);
 
 };
 
-const updateAccent = (accent) => selectors.root.style.setProperty(HUE_ROOT_VAR, accent);
-const updateAccentInput = (accent) => selectors.accentListener.value = accent;
+const updateAccent = (accent) => Selectors.global.document.style.setProperty(HUE_BASE_PROPERTY, accent);
+const updateAccentInput = (accent) => Selectors.accentListener.value = accent;
 
 // resetters
 const resetScheme = () => {
 
-  updateScheme(systemScheme());
-  setScheme(systemScheme());
+  updateScheme(getSystemScheme());
+  setScheme(getSystemScheme());
 
 };
 

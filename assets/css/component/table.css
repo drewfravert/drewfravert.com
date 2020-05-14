@@ -19,17 +19,23 @@ table {
   tbody {
     tr {
       &:first-child {
-        td { border-top: var(--border-light); }
+        td { padding-top: 0; }
       }
 
-      td { border-bottom: var(--border-light); }
+      &:last-child {
+        td { padding-bottom: 0; }
+      }
+
+      &:not(:last-child) {
+        td { border-bottom: var(--border-light); }
+      }
     }
 
     td {
-      padding: calc(var(--spacing) * 0.5) 0;
+      padding: calc(var(--spacing) * 0.25) 0;
 
       &:first-child {
-        padding-right: var(--spacing);
+        padding-right: calc(var(--spacing) * 0.5);
         white-space: nowrap;
       }
 

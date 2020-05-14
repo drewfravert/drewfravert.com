@@ -3,17 +3,14 @@
     <h1 class="heading text-xxxxl mb-1">Drew Fravert</h1>
     <%= render PortfolioWeb.Global.PartialView, "_roles.html", conn: @conn %>
   </header>
-  <section>
-    <h2 class="heading text-xl color-primary">Summary</h2>
-    <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
-  </section>
+  <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
   <section>
     <h2 class="heading text-xl color-primary">Skills</h2>
     <table>
       <tbody>
         <tr>
           <td><strong>Personal</strong></td>
-          <td>Creative vision, self-directed, structured thinker, strategic planner, detail oriented, value focused</td>
+          <td>Creative vision, self-direction, structured thinking, pattern recognition, value focused, detailed</td>
         </tr>
         <tr>
           <td><strong>Interpersonal</strong></td>
@@ -44,92 +41,88 @@
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Experience</h2>
-    <ul class="resume-list">
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/arityone/">Arity One</a></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="resume-list-time">January 2009 - Present</time>
+    <ul>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/arityone/">Arity One</a></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">January 2009 - Present</time>
         <p>Digital consultancy helping guide small business clients through the considerations of modern technologies and workflows. Offering counsel in product development, digital strategy, design, engineering and content.</p>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/fravert/">Fravert</a></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="resume-list-time">October 2015 - September 2019</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/fravert/">Fravert</a></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019</time>
         <p>As technical director, I was responsible for the development of internal project management software to facilitate streamlined inter-departmental operations that featured project tracking, bid estimation, job costing, labor tracking and customer relations. As PM, I focused on jobs for our environmental / experiential design clients. Working with senior staff, I helped identify and pitch new business opportunities, guided clients through project vision, identified and communicated requirements to the industrial design team, reviewed and verified critical production design documents, and oversaw the production and installation of projects to ensure builds meet client specifications. As a shareholder, I was additionally responsible for regular review of monthly financials, setting organizational and departmental direction and hiring.</p>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/fiverr-com/">Fiverr</a></strong> &nbsp;&bull;&nbsp; Full Stack Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="resume-list-time">March 2015 - October 2015</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/fiverr-com/">Fiverr</a></strong> &nbsp;&bull;&nbsp; Full Stack Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2015 - October 2015</time>
         <p>Full stack developer with the US division of the world’s largest digital marketplace for creative and professional services and a top 300 site internationally. Responsible for engineering software under the demand of 30 million active users per month. Coordinated remote development with team members in Tel Aviv, New York, San Francisco and Miami.</p>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/newman-realty/">Newman Realty</a></strong> &nbsp;&bull;&nbsp; Technologist &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="resume-list-time">March 2013 - March 2015</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/newman-realty/">Newman Realty</a></strong> &nbsp;&bull;&nbsp; Technologist &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2013 - March 2015</time>
         <p>Contracted to oversee digital operations and bring consistency to the agency’s external marketing strategy. Built complete front & backend systems and integrated with the MLS API. Designed a complete brand guide, complete with logo marks, typography, color palette, and digital / print marketing materials.</p>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/builtbyclique/">Clique Studios</a></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="resume-list-time">October 2011 - February 2013</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/builtbyclique/">Clique Studios</a></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2011 - February 2013</time>
         <p>Built responsive frontend interfaces integrated with various content management platforms, adapting compositions from the design team. Regularly worked and communicated directly with clients to see their vision through to completion. As an early employee, I was responsible for helping define and implement efficient workflows to facilitate robust development.</p>
       </li>
     </ul>
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Education</h2>
-    <ul class="resume-list">
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/school/depaul-university/">DePaul University</a></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="resume-list-time">September 2006 - June 2010</time>
+    <ul>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/school/depaul-university/">DePaul University</a></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2006 - June 2010</time>
       </li>
     </ul>
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Involvement</h2>
-    <ul class="resume-list">
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/rotaractbhm/">Rotaract Club of Birmingham</a></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="resume-list-time">February 2016 - Present</time>
+    <ul>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/rotaractbhm/">Rotaract Club of Birmingham</a></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present</time>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/public-affairs-research-council-of-alabama/">Public Affairs Research Council of Alabama</a></strong> &nbsp;&bull;&nbsp; Roundtable Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="resume-list-time">February 2018 - Present</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/public-affairs-research-council-of-alabama/">Public Affairs Research Council of Alabama</a></strong> &nbsp;&bull;&nbsp; Roundtable Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2018 - Present</time>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/community-foundation-of-greater-birmingham/">Community Foundation of Greater Birmingham</a></strong> &nbsp;&bull;&nbsp; Board Fellow &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="resume-list-time">February 2019 - January 2020</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/community-foundation-of-greater-birmingham/">Community Foundation of Greater Birmingham</a></strong> &nbsp;&bull;&nbsp; Board Fellow &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2019 - January 2020</time>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/company/libertyhouselofts/">Liberty House Lofts Association</a></strong> &nbsp;&bull;&nbsp; President &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="resume-list-time">December 2017 - November 2019</time>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/company/libertyhouselofts/">Liberty House Lofts Association</a></strong> &nbsp;&bull;&nbsp; President &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">December 2017 - November 2019</time>
       </li>
     </ul>
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Recognition</h2>
-    <ul class="resume-list">
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong>Mahon-Peinhardt Director’s Award</strong> &nbsp;&bull;&nbsp; Rotaract Club of Birmingham</h3>
-        <time class="resume-list-time">June 2019</time>
+    <ul>
+      <li>
+        <h3><strong>Mahon-Peinhardt Director’s Award</strong> &nbsp;&bull;&nbsp; Rotaract Club of Birmingham</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">June 2019</time>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong>Rising Star of Technology & Innovation</strong> &nbsp;&bull;&nbsp; Birmingham Business Journal</h3>
-        <time class="resume-list-time">August 2017</time>
+      <li>
+        <h3><strong>Rising Star of Technology & Innovation</strong> &nbsp;&bull;&nbsp; Birmingham Business Journal</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">August 2017</time>
       </li>
     </ul>
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Recommendations</h2>
-    <ul class="resume-list">
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/in/derekcnelson/">Derek Nelson</a></strong> &nbsp;&bull;&nbsp; Partner, Clique Studios</h3>
-        <blockquote class="resume-list-blockquote">Drew was an integral part in our growth. His passion for the craft, entrepreneurial spirit, and eye for detail helped him create some really exceptional work. He’s got an eye for industry shifts, and is always devising new ways to solve old problems. Above all, he cares deeply about his work and those alongside him.</blockquote>
+    <ul>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/in/derekcnelson/">Derek Nelson</a></strong> &nbsp;&bull;&nbsp; Partner, Clique Studios</h3>
+        <blockquote class="mt-2 text-italic">"Drew was an integral part in our growth. His passion for the craft, entrepreneurial spirit, and eye for detail helped him create some really exceptional work. He’s got an eye for industry shifts, and is always devising new ways to solve old problems. Above all, he cares deeply about his work and those alongside him."</blockquote>
       </li>
-      <li class="resume-list-item">
-        <h3 class="resume-list-heading"><strong><a href="https://www.linkedin.com/in/cathy-heimberger-0b8a746/">Cathy Heimberger</a></strong> &nbsp;&bull;&nbsp; Marketing Director, St. Louis Public Library</h3>
-        <blockquote class="resume-list-blockquote">I worked with Drew on the launch of our new site. Drew has an outstanding work ethic; he’s professional, on time, on budget and the most patient person I’ve ever worked with. Constant questions and changes were always met with a positive, can-do attitude. He has an extraordinary ability to take a client's cryptic vision and turn it into an awesome reality.</blockquote>
+      <li>
+        <h3><strong><a href="https://www.linkedin.com/in/cathy-heimberger-0b8a746/">Cathy Heimberger</a></strong> &nbsp;&bull;&nbsp; Marketing Director, St. Louis Public Library</h3>
+        <blockquote class="mt-2 text-italic">"I worked with Drew on the launch of our new site. Drew has an outstanding work ethic; he’s professional, on time, on budget and the most patient person I’ve ever worked with. Constant questions and changes were always met with a positive, can-do attitude. He has an extraordinary ability to take a client's cryptic vision and turn it into an awesome reality."</blockquote>
       </li>
     </ul>
-  </section>
-  <section>
-    <h2 class="heading text-xl color-primary">References</h2>
-    <p>Available upon request.</p>
   </section>
 </article>
