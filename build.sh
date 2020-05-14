@@ -18,4 +18,4 @@ rm -rf "_build"
 
 # perform release & migrate the database
 MIX_ENV=prod mix release
-MIX_ENV=prod mix ecto.migrate
+# MIX_ENV=prod mix ecto.migrate
