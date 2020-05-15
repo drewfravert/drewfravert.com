@@ -1,1 +1,2 @@
 <link rel="preconnect" href="https://cloud.typography.com" crossorigin>
+<link rel="preconnect" href="<%= Routes.url(@conn) %>/fonts/781328/">
