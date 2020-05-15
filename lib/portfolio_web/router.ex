@@ -66,8 +66,8 @@ defmodule PortfolioWeb.Router do
   # Dashboard Routes
   # ========================================================================================
 
-  scope "/dashboard", PortfolioWeb.Dashboard, as: :dashboard do
-    pipe_through [:browser, :simple_auth]
+  scope "/dashboard", PortfolioWeb.Public, as: :dashboard do
+    pipe_through [:browser, :public, :simple_auth]
 
     live_dashboard "/", metrics: PortfolioWeb.Telemetry
   end
