@@ -18,7 +18,7 @@ import Utilities from "./module/utilities.js";
 
 // js components
 import ColorScheme from "./component/colorscheme.js";
-import Tabs from "./component/tabs.js";
+// import Tabs from "./component/tabs.js";
 
 // js vendors
 import FontAwesome from "./vendor/fontawesome.js";
@@ -39,7 +39,7 @@ Utilities.initialize();
 ColorScheme.initialize();
 
 // initialize tabs functionality
-Tabs.initialize();
+// Tabs.initialize();
 
 // initialize fontawesome icons
 FontAwesome.initialize();
