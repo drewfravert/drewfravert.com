@@ -18,7 +18,7 @@ import Utilities from "./module/utilities.js";
 
 // js components
 import ColorScheme from "./component/color-scheme.js";
-import Tabs from "./component/tabs.js";
+// import Tabs from "./component/tabs.js";
 
 /*
 ==========================================================================================
@@ -36,4 +36,4 @@ Utilities.initialize();
 ColorScheme.initialize();
 
 // initialize tabs functionality
-Tabs.initialize();
+// Tabs.initialize();

@@ -5,11 +5,11 @@
 # ========================================================================================
 
 # exit on error
-# set -o errexit
+set -o errexit
 
 # ensure static directory exists or create it
 STATIC_DIR="priv/static"
-[[ -d "priv/static" ]] || mkdir "$STATIC_DIR"
+[[ -d "priv/static" ]] || mkdir -p "$STATIC_DIR"
 
 # production setup
 mix deps.get --only prod
@@ -20,6 +20,6 @@ yarn --cwd ./assets install
 yarn --cwd ./assets run deploy
 mix phx.digest
 
-# build the release & overwrite existing release
+# build the release & migrate the database
 MIX_ENV=prod mix release --overwrite
-# MIX_ENV=prod mix ecto.migrate
+MIX_ENV=prod mix ecto.migrate
