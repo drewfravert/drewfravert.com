@@ -1,0 +1,6 @@
+Canonical: https://drewfravert.com/.well-known/security.txt
+Preferred-Languages: en
+Policy: https://drewfravert.com/security/info
+Contact: https://drewfravert.com/security/report
+Encryption: https://drewfravert.com/security/pgp-key
+Acknowledgments: https://drewfravert.com/security/thanks

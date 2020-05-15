@@ -113,13 +113,10 @@
   --font-size-smallest: 0.8rem;
 
   /* font weights */
-  --font-weight-thin: 200;
   --font-weight-light: 300;
   --font-weight-book: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-black: 800;
 
   --font-weight-base: var(--font-weight-book);
   --font-weight-heading: var(--font-weight-semibold);
