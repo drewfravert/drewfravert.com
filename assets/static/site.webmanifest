@@ -1,12 +1,12 @@
 {
-  "name": "",
+  "name": "Drew Fravert",
   "short_name": "",
   "lang": "en-US",
   "start_url": "/?utm_source=homescreen",
   "display": "browser",
-  "theme_color": "",
-  "background_color": "",
-  "description": "",
+  "theme_color": "#d15621",
+  "background_color": "#ffffff",
+  "description": "A personal, over-engineered portfolio site.",
   "categories": [],
   "icons": [
     {

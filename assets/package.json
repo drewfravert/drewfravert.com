@@ -17,6 +17,7 @@
     "watch": "webpack --config webpack.development.js --watch --color"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.13.0",
     "lodash": "^4.17.15",
     "nprogress": "0.2.0",
     "phoenix": "file:../deps/phoenix",

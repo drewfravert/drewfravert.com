@@ -1,4 +1,4 @@
-<link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="">
-<link rel="icon" sizes="any" href="/icon.svg">
-<link rel="apple-touch-icon" href="/icon.png">
+<link rel="manifest" href="<%= Routes.static_path(@conn, "/site.webmanifest") %>">
+<meta name="theme-color" content="#d15621">
+<link rel="icon" sizes="any" href="<%= Routes.static_path(@conn, "/icon.svg") %>">
+<link rel="apple-touch-icon" href="<%= Routes.static_path(@conn, "/icon.png") %>">

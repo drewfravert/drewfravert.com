@@ -20,6 +20,9 @@ import Utilities from "./module/utilities.js";
 import ColorScheme from "./component/color-scheme.js";
 // import Tabs from "./component/tabs.js";
 
+// js vendors
+import FontAwesome from "@fortawesome/fontawesome-pro/js/all.js";
+
 /*
 ==========================================================================================
   Initializers
