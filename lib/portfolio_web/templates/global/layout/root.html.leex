@@ -7,12 +7,12 @@
     <%= render "opengraph.html", conn: @conn %>
     <%= render "security.html", conn: @conn %>
     <%= render "styles.html", conn: @conn %>
-    <%= render "scripts.html", conn: @conn %>
     <%= render "fonts.html", conn: @conn %>
   </head>
   <body>
     <%= render PortfolioWeb.Global.PartialView, "_sidebar.html", conn: @conn %>
     <%= @inner_content %>
     <%= render PortfolioWeb.Global.PartialView, "_toolbar.html", conn: @conn %>
+    <%= render "scripts.html", conn: @conn %>
   </body>
 </html>

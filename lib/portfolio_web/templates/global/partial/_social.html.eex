@@ -1,12 +1,12 @@
 <ul class="social <%= @modifier %>" data-area="social">
   <li class="platform">
     <%= link to: "https://linkedin.com/in/drewfravert", target: "_blank", rel: "noopener noreferrer" do %>
-      <i class="fab fa-linkedin"></i>
+      <i class="fab icon-linkedin"></i>
     <% end %>
   </li>
   <li class="platform">
     <%= link to: "https://github.com/drewfravert", target: "_blank", rel: "noopener noreferrer" do %>
-      <i class="fab fa-github"></i>
+      <i class="fab icon-github"></i>
     <% end %>
   </li>
 </ul>

@@ -10,7 +10,7 @@ const common = require("./webpack.common.js");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 /*
@@ -27,11 +27,7 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
-      new TerserPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: false
-      }),
+      new TerserWebpackPlugin({}),
       new OptimizeCSSAssetsPlugin({})
     ]
   },
