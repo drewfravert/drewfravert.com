@@ -5,7 +5,7 @@
 # ========================================================================================
 
 # exit on error
-set -o errexit
+# set -o errexit
 
 # production setup
 mix deps.get --only prod
