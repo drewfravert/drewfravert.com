@@ -1,13 +1,16 @@
 defmodule PortfolioWeb.Router do
   use PortfolioWeb, :router
 
+  import Phoenix.LiveDashboard.Router
+  import Plug.BasicAuth
+
   # ========================================================================================
   # Pipelines
   # ========================================================================================
 
-  pipeline :api do
-    plug :accepts, ["json"]
-  end
+  # pipeline :api do
+  #   plug :accepts, ["json"]
+  # end
 
   pipeline :bot do
     plug :accepts, ["xml", "txt"]
@@ -22,12 +25,12 @@ defmodule PortfolioWeb.Router do
     plug :put_secure_browser_headers
   end
 
-  pipeline :dashboard do
-    plug :put_layout, {PortfolioWeb.Dashboard.LayoutView, "app.html"}
-  end
-
   pipeline :public do
     plug :put_layout, {PortfolioWeb.Public.LayoutView, "app.html"}
+  end
+
+  pipeline :simple_auth do
+    plug :basic_auth, username: "admin", password: "admin"
   end
 
   # ========================================================================================
@@ -64,31 +67,18 @@ defmodule PortfolioWeb.Router do
   # ========================================================================================
 
   scope "/dashboard", PortfolioWeb.Dashboard, as: :dashboard do
-    pipe_through [:browser, :dashboard]
+    pipe_through [:browser, :simple_auth]
 
-    get "/", PageController, :index
-  end
-
-  # If you want to use the LiveDashboard in production, you should put it behind
-  # authentication and allow only admins to access it. If your application does not have an
-  # admins-only section yet, you can use Plug.BasicAuth to set up some basic authentication
-  # as long as you are also using SSL (which you should anyway).
-  if Mix.env() in [:dev, :test] do
-    import Phoenix.LiveDashboard.Router
-
-    scope "/dashboard" do
-      pipe_through :browser
-      live_dashboard "/live", metrics: PortfolioWeb.Telemetry
-    end
+    live_dashboard "/", metrics: PortfolioWeb.Telemetry
   end
 
   # ========================================================================================
   # API Routes
   # ========================================================================================
 
-  scope "/api", PortfolioWeb.API, as: :api do
-    pipe_through :api
-  end
+  # scope "/api", PortfolioWeb.API, as: :api do
+  #   pipe_through :api
+  # end
 
   # ========================================================================================
   # Bot Routes

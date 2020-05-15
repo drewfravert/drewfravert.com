@@ -31,7 +31,8 @@ npm-debug.log
 # Since we are building assets from assets/,
 # we ignore priv/static. You may want to comment
 # this depending on your deployment strategy.
+/priv/cert/
 /priv/static/
 
 # ignore Elixir language server VS code extension files
-.elixir_ls/
+/.elixir_ls/

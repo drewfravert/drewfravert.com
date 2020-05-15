@@ -4,6 +4,9 @@
 # Product Build Script
 # ========================================================================================
 
+# exit on error
+set -o errexit
+
 # production setup
 mix deps.get --only prod
 MIX_ENV=prod mix compile
@@ -13,9 +16,6 @@ yarn --cwd ./assets install
 yarn --cwd ./assets run deploy
 mix phx.digest
 
-# remove existing release directory
-rm -rf "_build"
-
-# perform release & migrate the database
-MIX_ENV=prod mix release
+# build the release & overwrite existing release
+MIX_ENV=prod mix release --overwrite
 # MIX_ENV=prod mix ecto.migrate
