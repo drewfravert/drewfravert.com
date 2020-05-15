@@ -4,7 +4,7 @@
 ==========================================================================================
 */
 
-import Selectors from "../global/Selectors.js"
+import Selectors from "../global/selectors.js"
 import { Socket } from "phoenix";
 import { LiveSocket } from "phoenix_live_view";
 import NProgress from "nprogress";
