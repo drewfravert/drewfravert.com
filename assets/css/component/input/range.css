@@ -5,8 +5,11 @@
 */
 
 input[type="range"] {
+  appearance: none;
   background-color: transparent;
-  cursor: pointer;
+  border: none;
+  color: transparent;
+  width: 100%;
   outline: none;
 
   &.vertical {
@@ -26,12 +29,23 @@ input[type="range"] {
     }
   }
 
+  &::-webkit-slider-thumb {}
+  &::-webkit-slider-runnable-track {}
+
+  &::-ms-thumb {}
+  &::-ms-track {}
+  &::-ms-fill-lower {}
+  &::-ms-fill-upper {}
+
+  &::-moz-focus-outer { border: none; }
+
   &::-moz-range-thumb {
     background-color: var(--color-primary);
     border: var(--border-base);
     border-radius: var(--border-radius-round);
     width: var(--font-size-base);
     height: var(--font-size-base);
+    cursor: pointer;
   }
 
   &::-moz-range-track {
@@ -42,5 +56,5 @@ input[type="range"] {
     height: 0.5em;
   }
 
-  &::-moz-focus-outer { border: none; }
+  &::-moz-range-progress {}
 }

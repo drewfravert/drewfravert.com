@@ -17,6 +17,7 @@ const Utilities = {
 
   initialize() {
 
+    initializeJS();
     initializeScrollTop();
 
   }
@@ -28,6 +29,8 @@ const Utilities = {
   Private Functions
 ==========================================================================================
 */
+
+const initializeJS = () => Selectors.global.html.classList.remove("no-js");
 
 const initializeScrollTop = () => {
 
