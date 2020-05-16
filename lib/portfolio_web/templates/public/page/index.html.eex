@@ -1,6 +1,6 @@
 <article class="about">
   <header role="banner">
-    <h1 class="heading text-xxxl">Hello, I’m Drew Fravert, a consultant at <%= link "Arity One", to: "https://arity.one/" %>. I write about business, software and culture.</h1>
+    <h1 class="heading text-xxxl">Hello, I’m Drew Fravert, a software design and development consultant at Arity One.</h1>
   </header>
   <section class="tabs js-tabs">
     <div class="tabs-menu js-tabs-menu">

@@ -5,7 +5,7 @@
     <!-- <li><%= link "Writing", to: Routes.public_page_path(@conn, :writing) %></li> -->
     <li><%= link "Resume", to: Routes.public_page_path(@conn, :resume) %></li>
     <!-- <li><%= link "Resources", to: Routes.public_page_path(@conn, :resources) %></li> -->
-    <li><%= link "Uses", to: Routes.public_page_path(@conn, :uses) %></li>
+    <!-- <li><%= link "Uses", to: Routes.public_page_path(@conn, :uses) %></li> -->
     <!-- <li><%= link "Info", to: Routes.public_page_path(@conn, :info) %></li> -->
   </ul>
 </nav>

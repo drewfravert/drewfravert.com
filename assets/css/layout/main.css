@@ -17,5 +17,6 @@ main {
     display: grid;
     grid-column: span 4;
     gap: var(--spacing);
+    max-width: 50em;
   }
 }

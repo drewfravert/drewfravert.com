@@ -1,3 +1,4 @@
 <section data-area="legal">
+  <p class="text-smaller color-lightgray">This site uses a handful of edge technologies and may not work well everywhere. ¯\_(ツ)_/¯</p>
   <p class="text-smaller color-lightgray">Drew Fravert &copy; <%= DateTime.utc_now.year %></p>
 </section>
