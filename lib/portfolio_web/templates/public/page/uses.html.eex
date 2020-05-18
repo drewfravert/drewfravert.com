@@ -1,153 +1,12 @@
 <article class="uses">
   <header role="banner">
-    <p>Below is a list of the software, hardware and miscellaneous products I use on a daily basis. Not particularly comprehensive, but potentially interesting nonetheless.</p>
+    <h1 class="heading text-xxxxl">Uses</h1>
+    <p>Below is a list of the software, hardware and miscellaneous gear I use on a regular basis. This is by no means comprehensive, but these are my favorites. Each item is linked (non-affiliate, don't stress) to the relevant product page. If you see something you like, gear up!</p>
   </header>
   <section>
-    <h2 class="heading text-xl color-primary">Stack</h2>
+    <h2 class="heading text-xl color-primary">Every Day Carry</h2>
     <table>
       <tbody>
-        <tr>
-          <td><strong>Languages</strong></td>
-          <td>
-            <a href="https://elixir-lang.org/">Elixir</a>, <a href="https://ruby-lang.org/">Ruby</a>, <a href="https://www.php.net/">PHP</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>, <a href="https://www.gnu.org/software/bash/">Bash</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Frameworks</strong></td>
-          <td>
-            <a href="https://phoenixframework.org/">Phoenix</a>, <a href="https://rubyonrails.org/">Rails</a>, <a href="https://wordpress.org/">WordPress</a>, <a href="https://vuejs.org/">Vue</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Databases</strong></td>
-          <td>
-            <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="https://www.mysql.com/">MySQL</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <section>
-    <h2 class="heading text-xl color-primary">Development</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><strong>Editor</strong></td>
-          <td>
-            <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Theme</strong></td>
-          <td>
-            <a href="https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme">One Dark Pro</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Font</strong></td>
-          <td>
-            <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Deployment</strong></td>
-          <td>
-            <a href="https://www.digitalocean.com/">DigitalOcean</a>, <a href="https://render.com/">Render</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <section>
-    <h2 class="heading text-xl color-primary">Software</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><strong>Browser</strong></td>
-          <td>
-            <a href="https://www.mozilla.org/firefox/developer/">Firefox Developer Edition</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Communication</strong></td>
-          <td>
-            <a href="https://slack.com/">Slack</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Design</strong></td>
-          <td>
-            <a href="https://www.adobe.com/creativecloud.html">Adobe Creative Cloud</a>, <a href="https://www.figma.com/">Figma</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Development</strong></td>
-          <td>
-            <a href="https://www.docker.com/">Docker</a>, <a href="https://github.com/">GitHub</a>, <a href="https://iterm2.com/">iTerm</a>, <a href="https://www.postman.com/">Postman</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Organization</strong></td>
-          <td>
-            <a href="https://basecamp.com/">Basecamp</a>, <a href="https://trello.com/">Trello</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Media</strong></td>
-          <td>
-            <a href="https://www.spotify.com/">Spotify</a>, <a href="https://www.videolan.org/vlc/">VLC</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Security</strong></td>
-          <td>
-            <a href="https://1password.com/">1Password</a>, <a href="https://gpgtools.org/">GPG Suite</a>, <a href="https://www.ivpn.net/">IVPN</a>, <a href="https://www.yubico.com/products/yubikey-5-overview/">Yubikey</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <section>
-    <h2 class="heading text-xl color-primary">Desk Setup</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><strong>Desk</strong></td>
-          <td>
-            <a href=""></a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Chair</strong></td>
-          <td>
-            <a href=""></a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Computers</strong></td>
-          <td>
-            <a href="https://www.apple.com/mac-pro/">Apple Mac Pro</a>, <a href="https://www.apple.com/macbook-pro/">Apple MacBook Pro</a>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Monitor</strong></td>
-          <td>
-            <a href="https://www.apple.com/iphone/">Dell 24" 4K P2715Q</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <section>
-    <h2 class="heading text-xl color-primary">Other Gear</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><strong>Backpack</strong></td>
-          <td>
-            <a href="https://www.apple.com/iphone/">Northface</a>
-          </td>
-        </tr>
         <tr>
           <td><strong>Phone</strong></td>
           <td>
@@ -161,9 +20,236 @@
           </td>
         </tr>
         <tr>
+          <td><strong>Wallet</strong></td>
+          <td>
+            <a href="https://bellroy.com/products/hide-and-seek-wallet/leather_rfid_lo/java">Bellroy Hide & Seek</a>
+          </td>
+        </tr>
+        <tr>
           <td><strong>Headphones</strong></td>
           <td>
             <a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Backpack</strong></td>
+          <td>
+            <a href="https://www.thenorthface.com/shop/borealis-nf0a3kv3">Northface Borealis</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Portable Charger</strong></td>
+          <td>
+            <a href="https://www.anker.com/products/variant/PowerCore%2B-20100mAh-USB-C/A1371012">Anker PowerCore+ 20100 USB-C</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Water Bottle</strong></td>
+          <td>
+            <a href="https://www.nalgene.com/product/2178-2024/">Nalgene 32oz Wide Mouth</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2 class="heading text-xl color-primary">Office Desk Setup</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Desk</strong></td>
+          <td>
+            <a href="https://www.crateandbarrel.com/strut-bourbon-glass-top-table-70/s531264">Strut Bourbon Glass Top Table 70"</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Chair</strong></td>
+          <td>
+            <a href="https://www.hermanmiller.com/products/seating/office-chairs/embody-chairs/">Herman Miller Embody</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Computer</strong></td>
+          <td>
+            <a href="https://www.apple.com/macbook-pro/">15" Apple Macbook Pro</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Monitor</strong></td>
+          <td>
+            <a href="https://www.apple.com/iphone/">Dell 24" 4K P2715Q</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Tablet</strong></td>
+          <td>
+            <a href="https://www.wacom.com/en-us/products/pen-tablets/wacom-intuos-pro">Wacom Intuos Pro M</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Speakers</strong></td>
+          <td>
+            <a href="https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000IE8Z4Q">Bose Companion 5</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Laptop Stand</strong></td>
+          <td>
+            <a href="https://www.raindesigninc.com/mstand.html">Rain Design mStand</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Power Strip</strong></td>
+          <td>
+            <a href="https://www.anker.com/products/variant/powerport-strip-pd-6/A9162121">Anker PowerPort Strip PD 6</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2 class="heading text-xl color-primary">Development Stack</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Languages</strong></td>
+          <td>
+            <a href="https://elixir-lang.org/">Elixir</a>,
+            <a href="https://ruby-lang.org/">Ruby</a>,
+            <a href="https://www.php.net/">PHP</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>,
+            <a href="https://www.gnu.org/software/bash/">Bash</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Frameworks</strong></td>
+          <td>
+            <a href="https://phoenixframework.org/">Phoenix</a>,
+            <a href="https://rubyonrails.org/">Rails</a>,
+            <a href="https://wordpress.org/">WordPress</a>,
+            <a href="https://vuejs.org/">Vue</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Databases</strong></td>
+          <td>
+            <a href="https://www.postgresql.org/">PostgreSQL</a>,
+            <a href="https://www.mysql.com/">MySQL</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2 class="heading text-xl color-primary">Development Tools</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Browser</strong></td>
+          <td>
+            <a href="https://www.mozilla.org/firefox/developer/">Firefox Developer Edition</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Editor</strong></td>
+          <td>
+            <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Terminal</strong></td>
+          <td>
+            <a href="https://iterm2.com/">iTerm</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Color Scheme</strong></td>
+          <td>
+            <a href="https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme">One Dark Pro</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Font</strong></td>
+          <td>
+            <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Collaboration</strong></td>
+          <td>
+            <a href="https://github.com/">GitHub</a>,
+            <a href="https://gitlab.com/">GitLab</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Deployment</strong></td>
+          <td>
+            <a href="https://www.docker.com/">Docker</a>,
+            <a href="https://render.com/">Render</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Cloud</strong></td>
+          <td>
+            <a href="https://aws.amazon.com/">AWS</a>,
+            <a href="https://www.digitalocean.com/">DigitalOcean</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Miscellaneous</strong></td>
+          <td>
+            <a href="https://eggerapps.at/postico/">Postico</a>,
+            <a href="https://www.postman.com/">Postman</a>,
+            <a href="https://www.mamp.info/">MAMP</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2 class="heading text-xl color-primary">Every Day Software</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Browser</strong></td>
+          <td>
+            <a href="https://www.mozilla.org/firefox/">Firefox</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Communication</strong></td>
+          <td>
+            <a href="https://slack.com/">Slack</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Design</strong></td>
+          <td>
+            <a href="https://www.adobe.com/creativecloud.html">Adobe CC</a>,
+            <a href="https://www.figma.com/">Figma</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Media</strong></td>
+          <td>
+            <a href="https://www.spotify.com/">Spotify</a>,
+            <a href="https://www.videolan.org/vlc/">VLC</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Organization</strong></td>
+          <td>
+            <a href="https://basecamp.com/">Basecamp</a>,
+            <a href="https://trello.com/">Trello</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Security</strong></td>
+          <td>
+            <a href="https://1password.com/">1Password</a>,
+            <a href="https://gpgtools.org/">GPG Suite</a>,
+            <a href="https://www.ivpn.net/">IVPN</a>
           </td>
         </tr>
       </tbody>

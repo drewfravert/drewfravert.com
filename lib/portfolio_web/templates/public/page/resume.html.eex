@@ -10,7 +10,7 @@
       <tbody>
         <tr>
           <td><strong>Personal</strong></td>
-          <td>Creative vision, self-direction, structured thinking, pattern recognition, value focused, detailed</td>
+          <td>Creative vision, self-direction, structured thinking, pattern recognition, focus on details & value creation</td>
         </tr>
         <tr>
           <td><strong>Interpersonal</strong></td>
@@ -22,19 +22,19 @@
         </tr>
         <tr>
           <td><strong>Frameworks</strong></td>
-          <td>Phoenix, Rails, Wordpress, React, Vue</td>
+          <td>Phoenix, Rails, Wordpress, Vue</td>
         </tr>
         <tr>
           <td><strong>Development</strong></td>
           <td>AWS, Docker, Homebrew, asdf, Mix, Bundler, Yarn, Webpack, Git</td>
         </tr>
         <tr>
-          <td><strong>Analysis</strong></td>
+          <td><strong>Data Analysis</strong></td>
           <td>SQL (Ecto, ActiveRecord), Spreadsheet (Sheets, Excel)</td>
         </tr>
         <tr>
           <td><strong>Software</strong></td>
-          <td>Figma, Adobe Creative Cloud, GitHub, GitLab, Postman, Basecamp, Jira, Trello, Slack</td>
+          <td>Figma, Adobe CC, GitHub, GitLab, Postman, Basecamp, Jira, Trello, Slack</td>
         </tr>
       </tbody>
     </table>

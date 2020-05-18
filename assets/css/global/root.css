@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
   padding: var(--spacing);
   background-color: var(--color-background);
-  border-left: calc(var(--border-width-base) * 6) var(--border-style-base) var(--color-primary);
+  border-left: calc(var(--spacing) / 6) var(--border-style-base) var(--color-primary);
   font-family: var(--font-family-base), var(--font-family-fallback);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-base);

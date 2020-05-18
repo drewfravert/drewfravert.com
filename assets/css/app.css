@@ -19,6 +19,7 @@
 
 @import "layout/sidebar.css";
 @import "layout/main.css";
+@import "layout/toolbar.css";
 
 /*
 ==========================================================================================
@@ -42,7 +43,6 @@
 @import "component/table.css";
 @import "component/avatar.css";
 @import "component/social.css";
-@import "component/toolbar.css";
 @import "component/tabs.css";
 
 /* inputs */
@@ -54,5 +54,4 @@
 ==========================================================================================
 */
 
-@import "global/miscellaneous.css";
-@import "../node_modules/nprogress/nprogress.css";
+/* @import "../node_modules/nprogress/nprogress.css"; */

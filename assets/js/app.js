@@ -21,7 +21,7 @@ import ColorScheme from "./component/colorscheme.js";
 import Tabs from "./component/tabs.js";
 
 // js sockets
-import LiveView from "./socket/liveview.js";
+// import LiveView from "./socket/liveview.js";
 
 /*
 ==========================================================================================
@@ -42,4 +42,4 @@ ColorScheme.initialize();
 Tabs.initialize();
 
 // initialize live view
-LiveView.initialize();
+// LiveView.initialize();

@@ -1,7 +1,6 @@
 defmodule PortfolioWeb.Router do
   use PortfolioWeb, :router
 
-  import Phoenix.LiveDashboard.Router
   import Plug.BasicAuth
 
   # ========================================================================================
@@ -19,7 +18,7 @@ defmodule PortfolioWeb.Router do
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
-    plug :fetch_live_flash
+    plug :fetch_flash
     plug :put_root_layout, {PortfolioWeb.Global.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
@@ -30,7 +29,9 @@ defmodule PortfolioWeb.Router do
   end
 
   pipeline :simple_auth do
-    plug :basic_auth, username: "admin", password: "admin"
+    plug :basic_auth,
+      username: System.get_env("BASIC_AUTH_USER"),
+      password: System.get_env("BASIC_AUTH_PASSWORD")
   end
 
   # ========================================================================================
@@ -41,35 +42,39 @@ defmodule PortfolioWeb.Router do
     pipe_through [:browser, :public]
 
     # public page routes
-    get "/", PageController, :index
-    get "/work", PageController, :work
-    get "/info", PageController, :info
-    get "/resources", PageController, :resources
-    get "/resume", PageController, :resume
+    # get "/", PageController, :index
+    get "/", PageController, :resume
+    # get "/work", PageController, :work
+    # get "/info", PageController, :info
+    # get "/resources", PageController, :resources
+    # get "/resume", PageController, :resume
     get "/uses", PageController, :uses
-    get "/writing", PageController, :writing
+    # get "/writing", PageController, :writing
   end
 
   # ========================================================================================
   # Targeted Routes
   # ========================================================================================
 
-  scope "/hello", PortfolioWeb.Public, as: :target do
+  scope "/hello", PortfolioWeb.Public, as: :public do
     pipe_through [:browser, :public]
 
-    get "/blox", TargetController, :blox
-    get "/remote", TargetController, :remote
-    get "/shipt", TargetController, :shipt
+    get "/airship", TargetController, :airship
+    get "/:target", TargetController, :show
   end
 
   # ========================================================================================
   # Dashboard Routes
   # ========================================================================================
 
-  scope "/dashboard", PortfolioWeb.Public, as: :dashboard do
-    pipe_through [:browser, :public, :simple_auth]
+  if Mix.env() in [:prod] do
+    import Phoenix.LiveDashboard.Router
 
-    live_dashboard "/", metrics: PortfolioWeb.Telemetry
+    scope "/dashboard", PortfolioWeb.Public, as: :dashboard do
+      pipe_through [:browser, :public, :simple_auth]
+
+      live_dashboard "/", metrics: PortfolioWeb.Telemetry
+    end
   end
 
   # ========================================================================================

@@ -1,0 +1,6 @@
+<article class="target">
+  <header role="banner">
+    <h1 class="heading text-xxxxl mb-1">Hello, <%= @target %>!</h1>
+    <p></p>
+  </header>
+</article>

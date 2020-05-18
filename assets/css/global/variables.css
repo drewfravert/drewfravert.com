@@ -6,25 +6,25 @@
 
 :root {
   /*
-  ==========================================================================================
+  ========================================================================================
     Grid
-  ==========================================================================================
+  ========================================================================================
   */
 
   --columns-base: 24;
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Spacing
-  ==========================================================================================
+  ========================================================================================
   */
 
   --spacing: 3.0rem;
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Colors
-  ==========================================================================================
+  ========================================================================================
   */
 
   --hue-base: 18;
@@ -70,9 +70,9 @@
   --color-selection: inherit;
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Borders
-  ==========================================================================================
+  ========================================================================================
   */
 
   --border-width-base: 0.1rem;
@@ -91,13 +91,13 @@
   --border-radius-round: 100rem;
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Fonts
-  ==========================================================================================
+  ========================================================================================
   */
 
   --font-family-base: "Decimal A", "Decimal B", "Decimal";
-  --font-family-monospace: monospace;
+  --font-family-monospace: "JetBrains Mono", "Input Mono", "Inconsolata", monospace;
   --font-family-fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
 
   /* font sizes */
@@ -122,9 +122,9 @@
   --font-weight-heading: var(--font-weight-semibold);
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Line Heights
-  ==========================================================================================
+  ========================================================================================
   */
 
   --line-height-xxxxxl: 1.125;
@@ -139,47 +139,52 @@
   --line-height-smallest: 1.5;
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Letter Spacings
-  ==========================================================================================
+  ========================================================================================
   */
 
   --letter-spacing-base: -0.036em;
   --letter-spacing-heading: calc(var(--letter-spacing-base) * 1.5);
 
   /*
-  ==========================================================================================
+  ========================================================================================
     Widths
-  ==========================================================================================
+  ========================================================================================
   */
 
   --width-min: 36rem;
   --width-max: 192rem;
-}
 
-/* dark mode */
-.dark {
-  /* rotate primary hue 180 degrees */
-  --hue-primary: calc(var(--hue-base) + 180);
+  /*
+  ========================================================================================
+    Dark Mode
+  ========================================================================================
+  */
 
-  /* alter lightnesses */
-  --lightness-primary: 52.5%;
-  --lightness-secondary: 97.5%;
-  --lightness-border: 100%;
+  &.dark {
+    /* rotate primary hue 180 degrees */
+    --hue-primary: calc(var(--hue-base) + 180);
 
-  /* invert grays */
-  --color-white: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-black));
-  --color-lightestgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-darkestgray));
-  --color-lightergray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-darkergray));
-  --color-lightgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-darkgray));
-  --color-gray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-gray));
-  --color-darkgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-lightgray));
-  --color-darkergray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-lightergray));
-  --color-darkestgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-lightestgray));
-  --color-black: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-white));
+    /* alter lightnesses */
+    --lightness-primary: 52.5%;
+    --lightness-secondary: 97.5%;
+    --lightness-border: 100%;
 
-  /* prefer dark gray background over pure black */
-  --color-background: var(--color-lightestgray);
+    /* invert grays */
+    --color-white: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-black));
+    --color-lightestgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-darkestgray));
+    --color-lightergray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-darkergray));
+    --color-lightgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-darkgray));
+    --color-gray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-gray));
+    --color-darkgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-lightgray));
+    --color-darkergray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-lightergray));
+    --color-darkestgray: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-lightestgray));
+    --color-black: hsl(var(--hue-secondary), var(--saturation-grayscale), var(--lightness-white));
+
+    /* prefer dark gray background over pure black */
+    --color-background: var(--color-lightestgray);
+  }
 }
 
 @media (min-width: 768px) {

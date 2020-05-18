@@ -1,4 +1,4 @@
 Sitemap: <%= Routes.bot_page_url(@conn, :sitemap) %>
 
 User-agent: *
-Disallow: /
+Disallow: /hello/

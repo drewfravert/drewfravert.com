@@ -4,11 +4,11 @@
   </header>
   <section class="tabs js-tabs">
     <div class="tabs-menu js-tabs-menu">
-      <%= content_tag :button, "Full", type: "button", data_tab: "biography", disabled: true %> or <%= content_tag :button, "Summary", type: "button", data_tab: "summary" %>
+      <%= content_tag :button, "Summary", type: "button", data_tab: "summary", disabled: true %> or <%= content_tag :button, "Full", type: "button", data_tab: "biography" %>
     </div>
     <div class="tabs-content js-tabs-content">
-      <%= render PortfolioWeb.Global.PartialView, "_biography.html", conn: @conn %>
       <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
+      <%= render PortfolioWeb.Global.PartialView, "_biography.html", conn: @conn %>
     </div>
   </section>
 </article>
