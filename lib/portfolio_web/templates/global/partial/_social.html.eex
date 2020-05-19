@@ -9,4 +9,9 @@
       <i class="fab icon-github"></i>
     <% end %>
   </li>
+  <li class="platform">
+    <%= link to: "https://keybase.io/drewfravert", target: "_blank", rel: "noopener noreferrer" do %>
+      <i class="fab icon-keybase"></i>
+    <% end %>
+  </li>
 </ul>

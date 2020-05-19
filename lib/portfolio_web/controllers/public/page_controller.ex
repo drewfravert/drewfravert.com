@@ -1,12 +1,12 @@
 defmodule PortfolioWeb.Public.PageController do
   use PortfolioWeb, :controller
 
-  def index(conn, _params) do
-    render(conn, "index.html")
+  def colophon(conn, _params) do
+    render(conn, "colophon.html")
   end
 
-  def info(conn, _params) do
-    render(conn, "info.html")
+  def index(conn, _params) do
+    render(conn, "index.html")
   end
 
   def resources(conn, _params) do

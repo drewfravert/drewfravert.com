@@ -1,4 +1,5 @@
 Sitemap: <%= Routes.bot_page_url(@conn, :sitemap) %>
 
 User-agent: *
+Disallow: / <%# <- delete when ready for public crawling %>
 Disallow: /hello/

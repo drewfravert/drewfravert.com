@@ -1,4 +1,6 @@
 <section data-area="legal">
-  <p class="text-smaller color-lightgray">I use a handful of edge technologies on this site so it may not work well everywhere. ¯\_(ツ)_/¯</p>
-  <p class="text-smaller color-lightgray">Drew Fravert &copy; <%= DateTime.utc_now.year %></p>
+  <ul class="list list-inline text-smaller color-lightgray">
+    <li>Drew Fravert &copy; <%= DateTime.utc_now.year %></li>
+    <!-- <li><%# link "Info", to: Routes.public_page_path(@conn, :colophon) %></li> -->
+  </ul>
 </section>

@@ -1,7 +1,7 @@
 <article class="uses">
   <header role="banner">
-    <h1 class="heading text-xxxxl">Uses</h1>
-    <p>Below is a list of the software, hardware and miscellaneous gear I use on a regular basis. This is by no means comprehensive, but these are my favorites. Each item is linked (non-affiliate, don't stress) to the relevant product page. If you see something you like, gear up!</p>
+    <h1 class="heading text-xxxxl">Tools of the Trade</h1>
+    <p>If you're curious, below is the software, hardware and miscellaneous gear I use daily. It's by no means a comprehensive list, but these are some of my favorites. Each item is linked (non-affiliate) to the relevant product page. If you see something you like, gear up!</p>
   </header>
   <section>
     <h2 class="heading text-xl color-primary">Every Day Carry</h2>
@@ -32,9 +32,9 @@
           </td>
         </tr>
         <tr>
-          <td><strong>Backpack</strong></td>
+          <td><strong>Travel Bag</strong></td>
           <td>
-            <a href="https://www.thenorthface.com/shop/borealis-nf0a3kv3">Northface Borealis</a>
+            <a href="https://www.peakdesign.com/products/travel-backpack">Peak Design Travel Backpack 45L</a>
           </td>
         </tr>
         <tr>
@@ -53,7 +53,7 @@
     </table>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Office Desk Setup</h2>
+    <h2 class="heading text-xl color-primary">Office Setup</h2>
     <table>
       <tbody>
         <tr>

@@ -6,7 +6,7 @@
 
 import { config, dom, library } from "@fortawesome/fontawesome-svg-core";
 import { faArrowUp, faMapMarkerAlt, faRandom, faSun, faUndoAlt } from "@fortawesome/pro-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faKeybase, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 /*
 ==========================================================================================
@@ -33,7 +33,7 @@ const FontAwesome = {
 
 const addIconsToLibrary = () => {
 
-  library.add(faArrowUp, faMapMarkerAlt, faRandom, faSun, faUndoAlt, faGithub, faLinkedin);
+  library.add(faArrowUp, faMapMarkerAlt, faRandom, faSun, faUndoAlt, faGithub, faKeybase, faLinkedin);
 
 };
 
