@@ -21,17 +21,14 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: path.resolve(__dirname, "./node_modules/"),
+        exclude: /node_modules/,
         use: {
           loader: "babel-loader"
         }
       },
       {
         test: /\.css$/,
-        exclude: [
-          path.resolve(__dirname, "./node_modules/"),
-          path.resolve(__dirname, "./static/")
-        ],
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           {

@@ -1,0 +1,9 @@
+# For information about this file, see the security.txt documentation:
+# https://securitytxt.org/
+
+Contact: mailto:security@drewfravert.com
+Encryption: <%= Routes.url(@conn) %>/pgp-key.txt
+Preferred-Languages: en
+Policy: <%= Routes.url(@conn) %>/security
+Acknowledgments: <%= Routes.url(@conn) %>/security
+Canonical: <%= Routes.url(@conn) %>/.well-known/security.txt

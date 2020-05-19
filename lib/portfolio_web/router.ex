@@ -7,9 +7,9 @@ defmodule PortfolioWeb.Router do
   # Pipelines
   # ======================================================================================
 
-  # pipeline :api do
-  #   plug :accepts, ["json"]
-  # end
+  pipeline :api do
+    plug :accepts, ["json"]
+  end
 
   pipeline :bot do
     plug :accepts, ["xml", "txt"]
@@ -48,6 +48,7 @@ defmodule PortfolioWeb.Router do
     get "/colophon", PageController, :colophon
     # get "/resources", PageController, :resources
     # get "/resume", PageController, :resume
+    get "/security", PageController, :security
     get "/uses", PageController, :uses
     # get "/writing", PageController, :writing
   end
@@ -60,7 +61,16 @@ defmodule PortfolioWeb.Router do
     pipe_through [:browser, :public]
 
     get "/airship", TargetController, :airship
-    get "/remote", TargetController, :remote
+  end
+
+  # ======================================================================================
+  # Status Routes
+  # ======================================================================================
+
+  scope "/status", PortfolioWeb.Public, as: :public do
+    pipe_through :api
+
+    get "/", StatusController, :index
   end
 
   # ======================================================================================
@@ -92,6 +102,9 @@ defmodule PortfolioWeb.Router do
   scope "/", PortfolioWeb.Bot, as: :bot do
     pipe_through :bot
 
+    get "/.well-known/keybase.txt", PageController, :keybase
+    get "/.well-known/security.txt", PageController, :security
+    get "/pgp-key.txt", PageController, :pgp_key
     get "/robots.txt", PageController, :robots
     get "/sitemap.xml", PageController, :sitemap
   end
