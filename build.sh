@@ -9,7 +9,7 @@ set -o errexit
 
 # ensure static directory exists or create it
 STATIC_DIR="priv/static"
-[[ -d "priv/static" ]] || mkdir -p "$STATIC_DIR"
+[[ -d ${STATIC_DIR} ]] || mkdir -p ${STATIC_DIR}
 
 # production setup
 mix deps.get --only prod

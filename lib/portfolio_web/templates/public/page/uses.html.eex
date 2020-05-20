@@ -77,7 +77,7 @@
         <tr>
           <td><strong>Monitor</strong></td>
           <td>
-            <%= link "Dell 24\" 4K P2715Q", to: "https://www.apple.com/iphone/", rel: "nofollow noreferrer" %>
+            <%= link "Dell 24\" 4K P2715Q", to: "https://www.dell.com/en-us/work/shop/dell-24-ultra-hd-4k-monitor-p2415q/apd/210-agnk/monitors-monitor-accessories", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
@@ -115,7 +115,7 @@
           <td><strong>Languages</strong></td>
           <td>
             <%= link "Elixir", to: "https://elixir-lang.org/", rel: "nofollow noreferrer" %>,
-            <%= link "Ruby", to: "https://ruby-lang.org/", rel: "nofollow noreferrer" %>,
+            <%= link "Ruby", to: "https://www.ruby-lang.org/", rel: "nofollow noreferrer" %>,
             <%= link "PHP", to: "https://www.php.net/", rel: "nofollow noreferrer" %>,
             <%= link "JavaScript", to: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", rel: "nofollow noreferrer" %>,
             <%= link "CSS", to: "https://developer.mozilla.org/en-US/docs/Web/CSS", rel: "nofollow noreferrer" %>,
