@@ -1,0 +1,10 @@
+<div class="modal hidden">
+  <div class="modal-window">
+    <header class="modal-header">
+      <h1 class="heading text-xxl">Set Cookie Preferences</h1>
+      <p>Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+    <section class="modal-section"></section>
+    <footer class="modal-footer"></footer>
+  </div>
+</div>

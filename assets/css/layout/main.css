@@ -4,16 +4,16 @@
 ==========================================================================================
 */
 
-main {
+.main {
   display: grid;
   grid-area: main;
   grid-template-columns: repeat(6, 1fr);
   gap: var(--spacing);
   align-content: start;
 
-  @media (min-width: 1024px) { padding: var(--spacing) 0; }
+  @media (min-width: 1024px) { padding: var(--spacing) 0 calc(var(--spacing) * 1.5); }
 
-  article {
+  .article {
     display: grid;
     grid-column: span 6;
     gap: var(--spacing);

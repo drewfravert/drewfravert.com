@@ -5,5 +5,5 @@
   <%= render PortfolioWeb.Global.PartialView, "_email.html", conn: @conn %>
   <%= render PortfolioWeb.Global.PartialView, "_social.html", conn: @conn, modifier: "text-xl" %>
   <%= render PortfolioWeb.Global.PartialView, "_location.html", conn: @conn %>
-  <%= render PortfolioWeb.Global.PartialView, "_legal.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_footer.html", conn: @conn %>
 </aside>

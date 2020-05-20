@@ -1,59 +1,56 @@
 /*
 ==========================================================================================
-  Global
+  Dependencies
 ==========================================================================================
 */
 
-@import "global/variables.css";
-@import "global/reset.css";
-@import "global/root.css";
-@import "global/typography.css";
-@import "global/iconography.css";
-@import "global/utilities.css";
+import { events } from "../global/browser.js";
+import Selectors from "../global/selectors.js";
 
 /*
 ==========================================================================================
-  Layout
+  Selectors
 ==========================================================================================
 */
 
-@import "layout/sidebar.css";
-@import "layout/main.css";
-@import "layout/toolbar.css";
+Selectors.cookiePreferenceListeners = Selectors.global.body.querySelectorAll(".js-cookie-preferences");
 
 /*
 ==========================================================================================
-  Module
+  Public Functions
 ==========================================================================================
 */
 
-@import "module/about.css";
-@import "module/resume.css";
-@import "module/uses.css";
-@import "module/privacy.css";
+const Cookies = {
+
+  initialize() {
+
+    bindListeners();
+
+  }
+
+};
 
 /*
 ==========================================================================================
-  Component
+  Private Functions
 ==========================================================================================
 */
 
-@import "component/button.css";
-@import "component/modal.css";
-@import "component/form.css";
-@import "component/list.css";
-@import "component/table.css";
-@import "component/avatar.css";
-@import "component/social.css";
-@import "component/tabs.css";
+const bindListeners = () => {
 
-/* inputs */
-@import "component/input/range.css";
+  Selectors.cookiePreferenceListeners.forEach((listener) => {
+
+    // listener.addEventListener(events.click, (event) => alert("Hello"));
+
+  });
+
+};
 
 /*
 ==========================================================================================
-  Miscellaneous
+  Exports
 ==========================================================================================
 */
 
-/* @import "../node_modules/nprogress/nprogress.css"; */
+export default Cookies;

@@ -6,10 +6,16 @@
 
 ul,
 ol {
-  list-style: none;
+  list-style-position: inside;
+
+  li { padding: 0.25em 0; }
 }
 
 .list {
+  list-style-type: none;
+
+  li { padding: 0; }
+
   &.list-inline {
     display: inline-flex;
     flex-wrap: wrap;

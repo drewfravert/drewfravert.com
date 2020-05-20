@@ -46,6 +46,7 @@ defmodule PortfolioWeb.Router do
     get "/", PageController, :resume
     # get "/work", PageController, :work
     get "/colophon", PageController, :colophon
+    get "/privacy", PageController, :privacy
     # get "/resources", PageController, :resources
     # get "/resume", PageController, :resume
     get "/security", PageController, :security

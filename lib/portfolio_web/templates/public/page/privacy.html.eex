@@ -1,0 +1,60 @@
+<article class="article privacy">
+  <header role="banner">
+    <h1 class="heading text-xxxxl">Privacy Policy</h1>
+    <p>This page is meant to be a no-nonsense means of informing you of my policies regarding the collection, use, and disclosure of personal information on this site, <%= link Routes.url(@conn), to: Routes.url(@conn) %>.</p>
+    <p>If you choose to use this site, you are agreeing to the collection and use of information in relation with this policy. The information that I collect is used for providing and improving this site. I will not use or share your information with anyone, ever.</p>
+  </header>
+  <section>
+    <h2 class="heading text-xl">Information Collection & Use</h2>
+    <p>For a better experience when using this site, I may request certain personally identifiable information, including but not limited to your name, email and location. The information that I collect will be used to contact or identify you.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Log Data</h2>
+    <p>When you visit this site, I collect log data – information that your browser sends. This data may include information such as your computer's IP address, browser version, the pages that you visit, the date and time of your visit, the amount of time spent on those pages and other statistics.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Cookies</h2>
+    <p>Cookies are files containing a small amount of data, commonly used as a unique identifier. These are sent to your browser from the website and are stored in your computer's memory.</p>
+    <p>These cookies collect information that I use to improve the site experience. The list of cookies I currently store are:</p>
+    <ul>
+      <li><code>_session_key</code> → Stores information about your current session.</li>
+    </ul>
+    <p>You have the option to either <button type="button" class="js-cookie-preferences" disabled>accept or refuse these cookies</button> and know when a cookie is being sent to your computer. If you choose to refuse cookies, aspects of this site may no longer be usable.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Service Providers</h2>
+    <p>I may employ third-party companies and individuals due to the following reasons:</p>
+    <ul>
+      <li>To host my site;</li>
+      <li>To perform site-related services; or</li>
+      <li>To assist me in analyzing how my site is used.</li>
+    </ul>
+    <p>Please know that these third parties may collect your personal information. The purpose is to perform the tasks assigned to them on my behalf. However, they are obligated to not disclose or use the information for any other purpose.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Security</h2>
+    <p>I value your trust in providing me with your personal information. I strive to use ample means of protecting it. However, please know that no method of data transmission or storage is 100% secure and reliable against a sufficiently motivated attacker and therefore I cannot guarantee absolute security over your personal information.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">External Links</h2>
+    <p>This site contains links to other sites. Clicking on a third-party link will direct you to that site. These links are paired with a <code>noreferrer</code> attribute to prevent referral headers from being passed along. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the privacy policies of these websites. I have no control over and assume no responsibility for the content, privacy policies or practices of any third-party sites or services.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Children's Privacy</h3>
+    <p>This site does not address anyone under the age of 13. I do not knowingly collect personal identifiable information from children under 13. Should I discover that a child under 13 has provided me with personal information, I will immediately delete said information from my servers. If you are a parent or guardian and you are aware that your child has provided me with personal information, please <%= link "contact me", to: "mailto:privacy@drewfravert.com" %> so that I may take the necessary actions.</p>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Changes to this Policy</h2>
+    <p>I will update this policy occasionally. Edits are effective immediately. Obviously, I do not expect you to keep up with these changes, thus a changelog will be maintained below for your convenience.</p>
+    <ul>
+      <li>
+        <strong><time datetime="2020-05-20">20 May 2020</time> → </strong>
+        Initial policy published.
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2 class="heading text-xl">Contact Me</h2>
+    <p>For questions or suggestions about this policy, please inquire at <%= link "privacy@drewfravert.com", to: "mailto:privacy@drewfravert.com" %>.</p>
+  </section>
+</article>

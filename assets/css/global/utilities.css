@@ -534,11 +534,6 @@
 ==========================================================================================
 */
 
-.text-xxxxxl {
-  font-size: var(--font-size-xxxxxl) !important;
-  line-height: var(--line-height-xxxxxl) !important;
-}
-
 .text-xxxxl {
   font-size: var(--font-size-xxxxl) !important;
   line-height: var(--line-height-xxxxl) !important;

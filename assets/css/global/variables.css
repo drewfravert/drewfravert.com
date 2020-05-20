@@ -97,11 +97,10 @@
   */
 
   --font-family-base: "Decimal A", "Decimal B", "Decimal";
-  --font-family-monospace: "JetBrains Mono", "Input Mono", "Inconsolata", monospace;
+  --font-family-monospace: "SF Mono", monospace;
   --font-family-fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
 
   /* font sizes */
-  --font-size-xxxxxl: 4.8rem;
   --font-size-xxxxl: 3.6rem;
   --font-size-xxxl: 3.0rem;
   --font-size-xxl: 2.4rem;
@@ -127,7 +126,6 @@
   ========================================================================================
   */
 
-  --line-height-xxxxxl: 1.125;
   --line-height-xxxxl: 1.16667;
   --line-height-xxxl: 1.2;
   --line-height-xxl: 1.25;

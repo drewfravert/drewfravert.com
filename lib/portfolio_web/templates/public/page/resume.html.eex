@@ -1,4 +1,4 @@
-<article class="resume">
+<article class="article resume">
   <header role="banner">
     <h1 class="heading text-xxxxl mb-1">Drew Fravert</h1>
     <%= render PortfolioWeb.Global.PartialView, "_roles.html", conn: @conn %>
@@ -41,7 +41,7 @@
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Experience</h2>
-    <ul>
+    <ul class="list">
       <li>
         <h3><strong><a href="https://www.linkedin.com/company/arityone/">Arity One</a></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">January 2009 - Present</time>
@@ -71,7 +71,7 @@
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Education</h2>
-    <ul>
+    <ul class="list">
       <li>
         <h3><strong><a href="https://www.linkedin.com/school/depaul-university/">DePaul University</a></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2006 - June 2010</time>
@@ -80,7 +80,7 @@
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Involvement</h2>
-    <ul>
+    <ul class="list">
       <li>
         <h3><strong><a href="https://www.linkedin.com/company/rotaractbhm/">Rotaract Club of Birmingham</a></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present</time>
@@ -101,7 +101,7 @@
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Recognition</h2>
-    <ul>
+    <ul class="list">
       <li>
         <h3><strong>Mahon-Peinhardt Director’s Award</strong> &nbsp;&bull;&nbsp; Rotaract Club of Birmingham</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">June 2019</time>
@@ -114,7 +114,7 @@
   </section>
   <section>
     <h2 class="heading text-xl color-primary">Recommendations</h2>
-    <ul>
+    <ul class="list">
       <li>
         <h3><strong><a href="https://www.linkedin.com/in/derekcnelson/">Derek Nelson</a></strong> &nbsp;&bull;&nbsp; Partner, Clique Studios</h3>
         <blockquote class="mt-2 text-italic">"Drew was an integral part in our growth. His passion for the craft, entrepreneurial spirit, and eye for detail helped him create some really exceptional work. He’s got an eye for industry shifts, and is always devising new ways to solve old problems. Above all, he cares deeply about his work and those alongside him."</blockquote>

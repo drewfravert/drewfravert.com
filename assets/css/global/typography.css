@@ -35,6 +35,14 @@ i {
   font-style: italic;
 }
 
+u {
+  text-decoration-line: underline;
+  text-decoration-color: currentColor;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.125em;
+}
+
 small {
   font-size: var(--font-size-small);
   line-height: var(--line-height-small);
@@ -68,4 +76,16 @@ samp {
 
 pre { white-space: pre-wrap; }
 
-p { margin-bottom: 1em; }
+code {
+  display: inline-block;
+  padding: 0 0.375em;
+  background-color: var(--color-lightestgray);
+  border-radius: var(--border-radius-base);
+  vertical-align: top;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,56 @@
+/*
+==========================================================================================
+  Modals
+==========================================================================================
+*/
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overscroll-behavior: none;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: var(--border-color-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .modal-window {
+    margin: var(--spacing);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-base);
+    width: 100%;
+    max-width: calc(76.8rem - (var(--spacing) * 2));
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    .modal-header {
+      padding: var(--spacing) var(--spacing) 0;
+    }
+
+    .modal-section {
+      padding: 0 var(--spacing) var(--spacing);
+    }
+
+    .modal-footer {
+      padding: var(--spacing);
+      background-color: var(--color-lightestgray);
+      border-top: var(--border-base);
+    }
+  }
+}
