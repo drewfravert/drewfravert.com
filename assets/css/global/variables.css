@@ -65,6 +65,7 @@
 
   --color-base: var(--color-secondary);
   --color-background: var(--color-white);
+  --color-highlight: var(--color-lightestgray);
 
   --color-placeholder: var(--color-gray);
   --color-selection: inherit;
@@ -89,6 +90,16 @@
   --border-radius-base: 0.4rem;
   --border-radius-relative: 0.25em;
   --border-radius-round: 100rem;
+
+  /*
+  ========================================================================================
+    Box Shadows
+  ========================================================================================
+  */
+
+  --box-shadow-border-light: inset 0 0 0 var(--border-width-base) var(--border-color-light);
+  --box-shadow-border-base: inset 0 0 0 var(--border-width-base) var(--border-color-base);
+  --box-shadow-border-dark: inset 0 0 0 var(--border-width-base) var(--border-color-dark);
 
   /*
   ========================================================================================
@@ -182,6 +193,9 @@
 
     /* prefer dark gray background over pure black */
     --color-background: var(--color-lightestgray);
+
+    /* modify highlight to correct for shifted background color */
+    --color-highlight: var(--color-lightergray);
   }
 }
 

@@ -79,7 +79,7 @@ pre { white-space: pre-wrap; }
 code {
   display: inline-block;
   padding: 0 0.375em;
-  background-color: var(--color-lightestgray);
+  background-color: var(--color-highlight);
   border-radius: var(--border-radius-base);
   vertical-align: top;
 }
