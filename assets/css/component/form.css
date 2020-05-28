@@ -44,7 +44,7 @@
 .input {
   appearance: none;
   grid-area: input;
-  background-color: var(--color-white);
+  background-color: var(--color-highlight);
   border: var(--border-base);
   border-radius: var(--border-radius-relative);
   font-size: var(--font-size-base);
@@ -97,4 +97,10 @@
 
     &:out-of-range {}
   }
+}
+
+.autoselect {
+  cursor: pointer;
+
+  &:focus { cursor: auto; }
 }

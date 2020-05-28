@@ -1,0 +1,70 @@
+/*
+==========================================================================================
+  Header
+==========================================================================================
+*/
+
+.header {
+  display: grid;
+  grid-area: header;
+  grid-template-areas:
+    "profile  navigation";
+  grid-template-columns: max-content 1fr;
+  gap: calc(var(--spacing) * 0.25) var(--spacing);
+  align-items: center;
+
+  @media (min-width: 768px) {
+    grid-template-areas:
+      "profile headline   headline headline headline"
+      "profile navigation email    .        social  "
+      "profile .          .        .        .       ";
+    grid-template-columns: max-content auto auto 1fr auto;
+    align-items: start;
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-areas:
+      "profile   "
+      "headline  "
+      "navigation"
+      "email     "
+      "social    "
+      "location  ";
+    grid-template-columns: auto;
+    gap: calc(var(--spacing) * 0.5);
+    align-content: start;
+    position: sticky;
+    max-width: calc(30rem - var(--spacing));
+    top: var(--spacing);
+  }
+
+  .profile { grid-area: profile; }
+
+  .headline {
+    grid-area: headline;
+
+    @media (max-width: 767px) { display: none; }
+  }
+
+  .navigation { grid-area: navigation; }
+
+  .email {
+    grid-area: email;
+
+    @media (max-width: 767px) { display: none; }
+  }
+
+  .social {
+    grid-area: social;
+
+    @media (max-width: 767px) { display: none; }
+  }
+
+  .location {
+    grid-area: location;
+
+    @media (max-width: 1023px) { display: none; }
+  }
+}

@@ -1,0 +1,39 @@
+<div class="modal animates js-modal" data-modal="appearance" data-keys="A">
+  <div class="modal-window">
+    <%= content_tag :button, type: "button", class: "close-modal js-close-modal" do %>
+      <i class="far icon-times"></i>
+    <% end %>
+    <article class="modal-body">
+      <form>
+        <header class="modal-header">
+          <h1 class="heading text-xl">Manage Appearance</h1>
+          <p>If you are so inclined, feel free to customize the visual appearance of this site.</p>
+        </header>
+        <section class="modal-section setting">
+          <h2 class="setting-name heading">Color Scheme</h2>
+          <label class="setting-control toggle text-xl js-toggle-scheme" data-left="Light" data-right="Dark">
+            <input type="checkbox">
+            <span class="control"></span>
+          </label>
+          <div class="setting-description">
+            <p>By default, the color scheme is set to the value sent by your operating system to the <code><%= link "prefers-color-scheme", to: "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme", target: "_blank", rel: "noreferrer" %></code> CSS media feature.</p>
+          </div>
+        </section>
+        <section class="modal-section setting">
+          <h2 class="setting-name heading">Accent Color</h2>
+          <%= tag :input, type: "range", class: "setting-control js-toggle-accent", min: 0, max: 360, step: 1 %>
+          <div class="setting-description">
+            <p>Toggles the preferred accent color for the site.</p>
+          </div>
+        </section>
+        <section class="modal-section setting">
+          <h2 class="setting-name heading">Reset Appearance</h2>
+          <%= content_tag :button, "Reset", type: "button", class: "setting-control button-small js-reset-appearance" %>
+          <div class="setting-description">
+            <p>Resets the theme to the preference sent by your operating system and the accent color to my personal hue preference of <code>18</code>.</p>
+          </div>
+        </section>
+      </form>
+    </article>
+  </div>
+</div>

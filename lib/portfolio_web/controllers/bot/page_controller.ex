@@ -6,7 +6,7 @@ defmodule PortfolioWeb.Bot.PageController do
   end
 
   def pgp_key(conn, _params) do
-    render(conn, "pgp-key.txt")
+    render(conn, "pgp-key.asc")
   end
 
   def robots(conn, _params) do

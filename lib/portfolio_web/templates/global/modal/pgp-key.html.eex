@@ -1,0 +1,34 @@
+<div class="modal animates js-modal" data-modal="public-key" data-keys="K">
+  <div class="modal-window">
+    <%= content_tag :button, type: "button", class: "close-modal js-close-modal" do %>
+      <i class="far icon-times"></i>
+    <% end %>
+    <article class="modal-body">
+      <header class="modal-header">
+        <h1 class="heading text-xl">PGP Key</h1>
+        <p>If you'd like to communicate with me securely, my PGP key is available below.</p>
+      </header>
+      <section class="modal-section">
+        <table class="compact no-border">
+          <tbody>
+            <tr>
+              <td class="text-nowrap"><strong>Fingerprint</strong></td>
+              <td class="text-right"><code>EDBA92E48A91799F10CCA514BB514B1C02D93513</code></td>
+            </tr>
+            <tr>
+              <td class="text-nowrap"><strong>64-Bit</strong></td>
+              <td class="text-right"><code>BB514B1C02D93513</code></td>
+            </tr>
+            <tr>
+              <td class="text-nowrap"><strong>cURL</strong></td>
+              <td class="text-right"><code>curl <%= link Routes.bot_page_url(@conn, :pgp_key), to: Routes.bot_page_url(@conn, :pgp_key) %> | gpg --import</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="modal-section">
+        <%= textarea nil, :pgp_key, class: "input input-textarea text-small monospace autoselect", value: pgp_key_block() |> String.trim_trailing(), rows: "17", readonly: true %>
+      </section>
+    </article>
+  </div>
+</div>

@@ -1,50 +1,50 @@
 <article class="article uses">
   <header role="banner">
-    <h1 class="heading text-xxxxl">Tools of the Trade</h1>
-    <p>If you're curious, below is the software, hardware and miscellaneous gear I use daily. It's by no means a comprehensive list, but these are some of my favorites. Each item is linked (non-affiliate) to the relevant product page. If you see something you like, gear up!</p>
+    <h1 class="heading text-xxxxl">Tools of the trade</h1>
+    <p>If you're curious, below is the software, hardware and miscellaneous gear I use daily. It's by no means a comprehensive list, but these are my favorites. Each item is linked (non-affiliate) to the relevant product page. If you see something you like, gear up!</p>
   </header>
   <section>
-    <h2 class="heading text-xl color-primary">Every Day Carry</h2>
+    <h2 class="heading text-large color-primary">Every Day Carry</h2>
     <table>
       <tbody>
         <tr>
-          <td><strong>Phone</strong></td>
+          <td style="width: 18rem;"><strong>Phone</strong></td>
           <td>
             <%= link "Apple iPhone XS", to: "https://www.apple.com/iphone/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Watch</strong></td>
+          <td style="width: 18rem;"><strong>Watch</strong></td>
           <td>
             <%= link "Apple Watch Series 5", to: "https://www.apple.com/apple-watch-series-5/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Wallet</strong></td>
+          <td style="width: 18rem;"><strong>Wallet</strong></td>
           <td>
             <%= link "Bellroy Hide & Seek", to: "https://bellroy.com/products/hide-and-seek-wallet/leather_rfid_lo/java", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Headphones</strong></td>
+          <td style="width: 18rem;"><strong>Headphones</strong></td>
           <td>
             <%= link "Apple AirPods Pro", to: "https://www.apple.com/airpods-pro/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Travel Bag</strong></td>
+          <td style="width: 18rem;"><strong>Travel Bag</strong></td>
           <td>
             <%= link "Peak Design Travel Backpack 45L", to: "https://www.peakdesign.com/products/travel-backpack", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Portable Charger</strong></td>
+          <td style="width: 18rem;"><strong>Portable Charger</strong></td>
           <td>
             <%= link "Anker PowerCore+ 20100 USB-C", to: "https://www.anker.com/products/variant/PowerCore%2B-20100mAh-USB-C/A1371012", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Water Bottle</strong></td>
+          <td style="width: 18rem;"><strong>Water Bottle</strong></td>
           <td>
             <%= link "Nalgene 32oz Wide Mouth", to: "https://www.nalgene.com/product/2178-2024/", rel: "nofollow noreferrer" %>
           </td>
@@ -53,53 +53,53 @@
     </table>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Office Setup</h2>
+    <h2 class="heading text-large color-primary">Office Setup</h2>
     <table>
       <tbody>
         <tr>
-          <td><strong>Desk</strong></td>
+          <td style="width: 18rem;"><strong>Desk</strong></td>
           <td>
             <%= link "Strut Bourbon Glass Top Table 70\"", to: "https://www.crateandbarrel.com/strut-bourbon-glass-top-table-70/s531264", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Chair</strong></td>
+          <td style="width: 18rem;"><strong>Chair</strong></td>
           <td>
             <%= link "Herman Miller Embody", to: "https://www.hermanmiller.com/products/seating/office-chairs/embody-chairs/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Computer</strong></td>
+          <td style="width: 18rem;"><strong>Computer</strong></td>
           <td>
             <%= link "15\" Apple MacBook Pro", to: "https://www.apple.com/macbook-pro/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Monitor</strong></td>
+          <td style="width: 18rem;"><strong>Monitor</strong></td>
           <td>
             <%= link "Dell 24\" 4K P2715Q", to: "https://www.dell.com/en-us/work/shop/dell-24-ultra-hd-4k-monitor-p2415q/apd/210-agnk/monitors-monitor-accessories", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Tablet</strong></td>
+          <td style="width: 18rem;"><strong>Tablet</strong></td>
           <td>
             <%= link "Wacom Intuos Pro M", to: "https://www.wacom.com/en-us/products/pen-tablets/wacom-intuos-pro", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Speakers</strong></td>
+          <td style="width: 18rem;"><strong>Speakers</strong></td>
           <td>
             <%= link "Bose Companion 5", to: "https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000IE8Z4Q", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Laptop Stand</strong></td>
+          <td style="width: 18rem;"><strong>Laptop Stand</strong></td>
           <td>
             <%= link "Rain Design mStand", to: "https://www.raindesigninc.com/mstand.html", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Power Strip</strong></td>
+          <td style="width: 18rem;"><strong>Power Strip</strong></td>
           <td>
             <%= link "Anker PowerPort Strip PD 6", to: "https://www.anker.com/products/variant/powerport-strip-pd-6/A9162121", rel: "nofollow noreferrer" %>
           </td>
@@ -108,11 +108,11 @@
     </table>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Development Stack</h2>
+    <h2 class="heading text-large color-primary">Development Stack</h2>
     <table>
       <tbody>
         <tr>
-          <td><strong>Languages</strong></td>
+          <td style="width: 18rem;"><strong>Languages</strong></td>
           <td>
             <%= link "Elixir", to: "https://elixir-lang.org/", rel: "nofollow noreferrer" %>,
             <%= link "Ruby", to: "https://www.ruby-lang.org/", rel: "nofollow noreferrer" %>,
@@ -123,7 +123,7 @@
           </td>
         </tr>
         <tr>
-          <td><strong>Frameworks</strong></td>
+          <td style="width: 18rem;"><strong>Frameworks</strong></td>
           <td>
             <%= link "Phoenix", to: "https://phoenixframework.org/", rel: "nofollow noreferrer" %>,
             <%= link "Rails", to: "https://rubyonrails.org/", rel: "nofollow noreferrer" %>,
@@ -132,7 +132,7 @@
           </td>
         </tr>
         <tr>
-          <td><strong>Databases</strong></td>
+          <td style="width: 18rem;"><strong>Databases</strong></td>
           <td>
             <%= link "PostgreSQL", to: "https://www.postgresql.org/", rel: "nofollow noreferrer" %>,
             <%= link "MySQL", to: "https://www.mysql.com/", rel: "nofollow noreferrer" %>
@@ -142,62 +142,62 @@
     </table>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Development Tools</h2>
+    <h2 class="heading text-large color-primary">Development Tools</h2>
     <table>
       <tbody>
         <tr>
-          <td><strong>Browser</strong></td>
+          <td style="width: 18rem;"><strong>Browser</strong></td>
           <td>
             <%= link "Firefox Developer Edition", to: "https://www.mozilla.org/firefox/developer/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Editor</strong></td>
+          <td style="width: 18rem;"><strong>Editor</strong></td>
           <td>
             <%= link "Visual Studio Code", to: "https://code.visualstudio.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Terminal</strong></td>
+          <td style="width: 18rem;"><strong>Terminal</strong></td>
           <td>
             <%= link "iTerm", to: "https://iterm2.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Color Scheme</strong></td>
+          <td style="width: 18rem;"><strong>Color Scheme</strong></td>
           <td>
             <%= link "One Dark Pro", to: "https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Font</strong></td>
+          <td style="width: 18rem;"><strong>Font</strong></td>
           <td>
             <%= link "JetBrains Mono", to: "https://www.jetbrains.com/lp/mono/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Collaboration</strong></td>
+          <td style="width: 18rem;"><strong>Collaboration</strong></td>
           <td>
             <%= link "GitHub", to: "https://github.com/", rel: "nofollow noreferrer" %>,
             <%= link "GitLab", to: "https://gitlab.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Deployment</strong></td>
+          <td style="width: 18rem;"><strong>Deployment</strong></td>
           <td>
             <%= link "Docker", to: "https://www.docker.com/", rel: "nofollow noreferrer" %>,
             <%= link "Render", to: "https://render.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Cloud</strong></td>
+          <td style="width: 18rem;"><strong>Cloud</strong></td>
           <td>
             <%= link "AWS", to: "https://aws.amazon.com/", rel: "nofollow noreferrer" %>,
             <%= link "DigitalOcean", to: "https://www.digitalocean.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Miscellaneous</strong></td>
+          <td style="width: 18rem;"><strong>Miscellaneous</strong></td>
           <td>
             <%= link "Postico", to: "https://eggerapps.at/postico/", rel: "nofollow noreferrer" %>,
             <%= link "Postman", to: "https://www.postman.com/", rel: "nofollow noreferrer" %>,
@@ -208,44 +208,44 @@
     </table>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Every Day Software</h2>
+    <h2 class="heading text-large color-primary">Every Day Software</h2>
     <table>
       <tbody>
         <tr>
-          <td><strong>Browser</strong></td>
+          <td style="width: 18rem;"><strong>Browser</strong></td>
           <td>
             <%= link "Firefox", to: "https://www.mozilla.org/firefox/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Communication</strong></td>
+          <td style="width: 18rem;"><strong>Communication</strong></td>
           <td>
             <%= link "Slack", to: "https://slack.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Design</strong></td>
+          <td style="width: 18rem;"><strong>Design</strong></td>
           <td>
             <%= link "Adobe CC", to: "https://www.adobe.com/creativecloud.html", rel: "nofollow noreferrer" %>,
             <%= link "Figma", to: "https://www.figma.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Media</strong></td>
+          <td style="width: 18rem;"><strong>Media</strong></td>
           <td>
             <%= link "Spotify", to: "https://www.spotify.com/", rel: "nofollow noreferrer" %>,
             <%= link "VLC", to: "https://www.videolan.org/vlc/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Organization</strong></td>
+          <td style="width: 18rem;"><strong>Organization</strong></td>
           <td>
             <%= link "Basecamp", to: "https://basecamp.com/", rel: "nofollow noreferrer" %>,
             <%= link "Trello", to: "https://trello.com/", rel: "nofollow noreferrer" %>
           </td>
         </tr>
         <tr>
-          <td><strong>Security</strong></td>
+          <td style="width: 18rem;"><strong>Security</strong></td>
           <td>
             <%= link "1Password", to: "https://1password.com/", rel: "nofollow noreferrer" %>,
             <%= link "IVPN", to: "https://www.ivpn.net/", rel: "nofollow noreferrer" %>

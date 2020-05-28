@@ -4,8 +4,22 @@
 ==========================================================================================
 */
 
-import { events } from "../global/browser.js";
-import Selectors from "../global/selectors.js";
+import b from "../global/browser.js";
+import c from "../global/constants.js";
+import s from "../global/selectors.js";
+
+/*
+==========================================================================================
+  Constants
+==========================================================================================
+*/
+
+const TABS_SELECTOR = ".js-tabs";
+const TAB_SELECTOR = "[data-tab]";
+const TABS_MENU_SELECTOR = ".js-tabs-menu";
+const TABS_CONTENT_SELECTOR = ".js-tabs-content";
+const DISABLED_ATTRIBUTE = "disabled";
+const ACTIVE_CLASS = "active";
 
 /*
 ==========================================================================================
@@ -13,7 +27,7 @@ import Selectors from "../global/selectors.js";
 ==========================================================================================
 */
 
-Selectors.tabs = Selectors.global.body.querySelectorAll(".js-tabs");
+s.tabs = s.body.querySelectorAll(TABS_SELECTOR);
 
 /*
 ==========================================================================================
@@ -39,9 +53,9 @@ const Tabs = {
 
 const initializeTabs = () => {
 
-  Selectors.tabs.forEach((component) => {
+  s.tabs.forEach((component) => {
 
-    const menu = component.querySelector(".js-tabs-menu");
+    const menu = component.querySelector(TABS_MENU_SELECTOR);
 
     bindTabsMenu(menu);
 
@@ -51,37 +65,34 @@ const initializeTabs = () => {
 
 const bindTabsMenu = (menu) => {
 
-  const menuItems = menu.querySelectorAll("[data-tab]");
+  const menuItems = menu.querySelectorAll(TAB_SELECTOR);
+  const handler = [b.event.click, (event) => switchTab(event)];
 
-  menuItems.forEach((menuItem) => {
-
-    menuItem.addEventListener(events.click, (event) => switchTab(event));
-
-  });
+  menuItems.forEach((menuItem) => menuItem.addEventListener(...handler));
 
 };
 
 const switchTab = (event) => {
 
-  const element = event.target;
+  const element = event.currentTarget;
   const tabID = element.dataset.tab;
-  const component = element.closest(".js-tabs");
-  const menu = component.querySelector(".js-tabs-menu");
-  const content = component.querySelector(".js-tabs-content");
+  const component = element.closest(TABS_SELECTOR);
+  const menu = component.querySelector(TABS_MENU_SELECTOR);
+  const content = component.querySelector(TABS_CONTENT_SELECTOR);
 
   event.preventDefault();
   resetTabs(menu, content);
 
   // activate requested tab
-  element.setAttribute("disabled", true);
-  content.querySelector(`[data-tab=${tabID}]`).classList.add("active");
+  element.setAttribute(DISABLED_ATTRIBUTE, true);
+  content.querySelector(`[data-tab=${tabID}]`).classList.add(ACTIVE_CLASS);
 
 };
 
 const resetTabs = (menu, content) => {
 
-  menu.querySelectorAll("[data-tab]").forEach((menuItem) => menuItem.removeAttribute("disabled"));
-  content.querySelectorAll("[data-tab]").forEach((contentItem) => contentItem.classList.remove("active"));
+  menu.querySelectorAll(TAB_SELECTOR).forEach((menuItem) => menuItem.removeAttribute(DISABLED_ATTRIBUTE));
+  content.querySelectorAll(TAB_SELECTOR).forEach((contentItem) => contentItem.classList.remove(ACTIVE_CLASS));
 
 };
 

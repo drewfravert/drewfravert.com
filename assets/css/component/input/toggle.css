@@ -1,0 +1,78 @@
+/*
+==========================================================================================
+  Toggle Input
+==========================================================================================
+*/
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+
+  &[data-left],
+  &[data-right] {
+    &::before,
+    &::after {
+      font-size: var(--font-size-small);
+      line-height: 1;
+    }
+  }
+
+  &[data-left] {
+    &::before { content: attr(data-left); }
+  }
+
+  &[data-right] {
+    &::after { content: attr(data-right); }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked {
+      & + .control {
+        background-color: var(--color-primary);
+
+        &::after { left: calc(100% - 1em + var(--border-width-base)); }
+      }
+    }
+
+    &:disabled {
+      & + .control {
+        background-color: var(--color-gray);
+        cursor: default;
+      }
+    }
+  }
+
+  .control {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--color-highlight);
+    box-shadow: var(--box-shadow-border-dark);
+    border-radius: var(--border-radius-round);
+    line-height: 1;
+    transition: background-color 100ms ease;
+    width: 1.66667em;
+    height: 1em;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: var(--color-background);
+      box-shadow: 0 0 0 var(--border-width-base) var(--border-color-dark);
+      border-radius: var(--border-radius-round);
+      transition: left 100ms ease;
+      position: absolute;
+      height: calc(1em - (var(--border-width-base) * 2));
+      width: calc(1em - (var(--border-width-base) * 2));
+      top: var(--border-width-base);
+      left: var(--border-width-base);
+      z-index: 1;
+    }
+  }
+}

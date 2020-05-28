@@ -4,18 +4,13 @@
 ==========================================================================================
 */
 
-import Selectors from "../global/selectors.js"
+import b from "../global/browser.js"
+import c from "../global/constants.js"
+import s from "../global/selectors.js"
+
 import { Socket } from "phoenix";
 import { LiveSocket } from "phoenix_live_view";
 import NProgress from "nprogress";
-
-/*
-==========================================================================================
-  Selectors
-==========================================================================================
-*/
-
-Selectors.csrfToken = Selectors.global.head.querySelector("meta[name='csrf-token']");
 
 /*
 ==========================================================================================
@@ -23,9 +18,9 @@ Selectors.csrfToken = Selectors.global.head.querySelector("meta[name='csrf-token
 ==========================================================================================
 */
 
-const CSRF_TOKEN = Selectors.csrfToken.getAttribute("content");
-const LIVE_VIEW_ENDPOINT = "/live";
-const LIVE_VIEW_SOCKET = new LiveSocket(LIVE_VIEW_ENDPOINT, Socket, { params: { _csrf_token: CSRF_TOKEN } });
+c.csrfToken = s.csrfToken.getAttribute("content");
+c.liveViewEndpoint = "/live";
+c.liveViewSocket = new LiveSocket(c.liveViewEndpoint, Socket, { params: { _csrf_token: c.csrfToken } });
 
 /*
 ==========================================================================================
@@ -40,12 +35,12 @@ const LiveView = {
     bindNProgress();
 
     // connect if there are any LiveViews on the page
-    LIVE_VIEW_SOCKET.connect();
+    c.liveViewSocket.connect();
 
-    // expose LIVE_VIEW_SOCKET on window for web console debug logs and latency simulation
+    // expose c.liveViewSocket on window for web console debug logs and latency simulation
     //   -> LiveView.enableDebug();
     //   -> LiveView.enableLatencySim(1000);
-    window.LiveView = LIVE_VIEW_SOCKET;
+    window.LiveView = c.liveViewSocket;
 
   }
 

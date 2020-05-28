@@ -4,8 +4,9 @@
 ==========================================================================================
 */
 
-import { events } from "../global/browser.js";
-import Selectors from "../global/selectors.js";
+import b from "../global/browser.js";
+import c from "../global/constants.js";
+import s from "../global/selectors.js";
 
 /*
 ==========================================================================================
@@ -13,7 +14,7 @@ import Selectors from "../global/selectors.js";
 ==========================================================================================
 */
 
-Selectors.cookiePreferenceListeners = Selectors.global.body.querySelectorAll(".js-cookie-preferences");
+
 
 /*
 ==========================================================================================
@@ -37,15 +38,7 @@ const Cookies = {
 ==========================================================================================
 */
 
-const bindListeners = () => {
-
-  Selectors.cookiePreferenceListeners.forEach((listener) => {
-
-    // listener.addEventListener(events.click, (event) => alert("Hello"));
-
-  });
-
-};
+const bindListeners = () => { };
 
 /*
 ==========================================================================================

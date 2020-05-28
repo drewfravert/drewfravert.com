@@ -18,17 +18,18 @@ html {
 body {
   display: grid;
   grid-template-areas:
-    "sidebar"
-    "main   "
-    "toolbar";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+    "header  header"
+    "main    main  "
+    "footer  footer"
+    "sidebar top   ";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
   gap: var(--spacing);
   align-content: start;
   margin: 0 auto;
   padding: var(--spacing);
   background-color: var(--color-background);
-  border-left: calc(var(--spacing) / 6) var(--border-style-base) var(--color-primary);
+  border-top: calc(var(--spacing) / 6) var(--border-style-base) var(--color-primary);
   font-family: var(--font-family-base), var(--font-family-fallback);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-base);
@@ -41,12 +42,17 @@ body {
 
   @media (min-width: 1024px) {
     grid-template-areas:
-      "sidebar main toolbar"
-      ".       main .      ";
+      "header main sidebar"
+      ".      main .      "
+      "footer main top    ";
     grid-template-columns: minmax(min-content, max-content) 1fr auto;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     gap: 0 calc(var(--spacing) * 2);
+    border-top: none;
+    border-left: calc(var(--spacing) / 6) var(--border-style-base) var(--color-primary);
   }
+
+  &.overlay { overflow: hidden; }
 }
 
 ::placeholder { color: var(--color-placeholder); }

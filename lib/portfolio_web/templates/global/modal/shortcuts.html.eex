@@ -1,0 +1,72 @@
+<div class="modal animates js-modal" data-modal="shortcuts" data-keys="?">
+  <div class="modal-window">
+    <%= content_tag :button, type: "button", class: "close-modal js-close-modal" do %>
+      <i class="far icon-times"></i>
+    <% end %>
+    <article class="modal-body">
+      <form>
+        <header class="modal-header">
+          <h1 class="heading text-xl">Keyboard Shortcuts</h1>
+          <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Duis mollis, est non commodo luctus.</p>
+        </header>
+        <section class="modal-section no-border">
+          <table class="cozy">
+            <thead>
+              <tr>
+                <th colspan="2">Appearance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Toggle color scheme</td>
+                <td class="text-right"><kbd>~</kbd> = <kbd>shift</kbd> + <kbd>`</kbd></td>
+              </tr>
+              <tr>
+                <td>Reset appearance</td>
+                <td class="text-right"><kbd>R</kbd> = <kbd>shift</kbd> + <kbd>r</kbd></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="cozy">
+            <thead>
+              <tr>
+                <th colspan="2">Modals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Toggle appearance settings</td>
+                <td class="text-right"><kbd>A</kbd> = <kbd>shift</kbd> + <kbd>a</kbd></td>
+              </tr>
+              <tr>
+                <td>Toggle keyboard shortcuts</td>
+                <td class="text-right"><kbd>?</kbd> = <kbd>shift</kbd> + <kbd>/</kbd></td>
+              </tr>
+              <!-- <tr>
+                <td>Toggle cookie preferences</td>
+                <td class="text-right"><kbd>C</kbd> = <kbd>shift</kbd> + <kbd>c</kbd></td>
+              </tr> -->
+              <tr>
+                <td>Toggle PGP key</td>
+                <td class="text-right"><kbd>K</kbd> = <kbd>shift</kbd> + <kbd>k</kbd></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="cozy">
+            <thead>
+              <tr>
+                <th colspan="2">Navigation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Scroll to top</td>
+                <td class="text-right"><kbd>T</kbd> = <kbd>shift</kbd> + <kbd>t</kbd></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </form>
+    </article>
+  </div>
+</div>

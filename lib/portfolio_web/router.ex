@@ -12,7 +12,7 @@ defmodule PortfolioWeb.Router do
   end
 
   pipeline :bot do
-    plug :accepts, ["xml", "txt"]
+    plug :accepts, ["xml", "txt", "asc"]
   end
 
   pipeline :browser do
@@ -58,7 +58,7 @@ defmodule PortfolioWeb.Router do
   # Targeted Routes
   # ======================================================================================
 
-  scope "/hello", PortfolioWeb.Public, as: :public do
+  scope "/hey", PortfolioWeb.Public, as: :public do
     pipe_through [:browser, :public]
 
     get "/airship", TargetController, :airship
@@ -105,7 +105,7 @@ defmodule PortfolioWeb.Router do
 
     get "/.well-known/keybase.txt", PageController, :keybase
     get "/.well-known/security.txt", PageController, :security
-    get "/pgp-key.txt", PageController, :pgp_key
+    get "/pgp-key.asc", PageController, :pgp_key
     get "/robots.txt", PageController, :robots
     get "/sitemap.xml", PageController, :sitemap
   end

@@ -22,14 +22,18 @@ const os = {
 };
 
 // events list
-const events = {
+const event = {
   click: "click",
   change: "change",
+  focus: "focus",
   focusin: "focusin",
   focusout: "focusout",
   input: "input",
   keydown: "keydown",
   keyup: "keyup",
+  mousedown: "mousedown",
+  mouseup: "mouseup",
+  scroll: "scroll",
   submit: "submit",
   wheel: "wheel"
 };
@@ -37,9 +41,7 @@ const events = {
 // event dispatchers
 const dispatch = {};
 
-Object.keys(events).forEach((event) => {
-  dispatch[event] = new Event(event, { bubbles: true, cancelable: true });
-});
+Object.keys(event).forEach((e) => dispatch[e] = new Event(e, { bubbles: true, cancelable: true }));
 
 // http methods
 const request = {
@@ -49,7 +51,7 @@ const request = {
   delete: "delete"
 };
 
-const Browser = { environment, os, events, dispatch, request };
+const Browser = { environment, os, event, dispatch, request };
 
 /*
 ==========================================================================================
@@ -57,6 +59,6 @@ const Browser = { environment, os, events, dispatch, request };
 ==========================================================================================
 */
 
-export { environment, os, events, dispatch, request };
+export { environment, os, event, dispatch, request };
 
 export default Browser;

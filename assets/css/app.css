@@ -10,6 +10,7 @@
 @import "global/typography.css";
 @import "global/iconography.css";
 @import "global/utilities.css";
+@import "global/animation.css";
 
 /*
 ==========================================================================================
@@ -17,9 +18,11 @@
 ==========================================================================================
 */
 
-@import "layout/sidebar.css";
+@import "layout/header.css";
 @import "layout/main.css";
-@import "layout/toolbar.css";
+@import "layout/sidebar.css";
+@import "layout/footer.css";
+@import "layout/top.css";
 
 /*
 ==========================================================================================
@@ -46,9 +49,11 @@
 @import "component/avatar.css";
 @import "component/social.css";
 @import "component/tabs.css";
+@import "component/setting.css";
 
 /* inputs */
 @import "component/input/range.css";
+@import "component/input/toggle.css";
 
 /*
 ==========================================================================================

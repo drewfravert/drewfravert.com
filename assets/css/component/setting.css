@@ -1,0 +1,25 @@
+/*
+==========================================================================================
+  Settings
+==========================================================================================
+*/
+
+.setting {
+  display: grid;
+  grid-template-areas:
+    "name        control"
+    "description description";
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.25em var(--spacing);
+  padding: calc(var(--spacing) * 0.5) 0;
+
+  .setting-name {
+    grid-area: name;
+    margin-bottom: 0;
+  }
+
+  .setting-description { grid-area: description; }
+
+  .setting-control { grid-area: control; }
+}

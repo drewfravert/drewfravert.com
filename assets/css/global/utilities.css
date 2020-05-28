@@ -12,6 +12,12 @@
 
 .invisible { visibility: hidden !important; }
 
+@media (max-width: 1023px) {
+
+  .mobile-hidden { display: none; }
+
+}
+
 /*
 ==========================================================================================
   Flexbox
@@ -602,6 +608,8 @@
 .text-right { text-align: right !important; }
 
 .text-justify { text-align: justify !important; }
+
+.text-nowrap { white-space: nowrap !important; }
 
 /*
 ==========================================================================================

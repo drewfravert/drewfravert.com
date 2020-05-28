@@ -7,6 +7,7 @@ defmodule PortfolioWeb.TemplateHelpers do
   # ======================================================================================
 
   @tz_utc "Etc/UTC"
+  @ga_tracking_id "UA-167625939-1"
 
   # ======================================================================================
   # Public Methods
@@ -38,6 +39,10 @@ defmodule PortfolioWeb.TemplateHelpers do
       hour >= 18 && hour < 24 -> "evening"
       true -> ""
     end
+  end
+
+  def ga_tracking_id() do
+    @ga_tracking_id
   end
 
   # ======================================================================================

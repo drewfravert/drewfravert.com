@@ -11,24 +11,26 @@ const circle = {
 };
 
 // keyboard keys
-const keys = {
-  delete: 8,
-  tab: 9,
-  return: 13,
-  shift: 16,
-  control: 17,
-  option: 18,
-  escape: 27,
-  space: 32,
-  left: 37,
-  up: 38,
-  right: 39,
-  down: 40,
-  command: 91
+const key = {
+  alt: "Alt",
+  backspace: "Backspace",
+  caps: "CapsLock",
+  command: "Meta",
+  control: "Control",
+  down: "ArrowDown",
+  enter: "Enter",
+  escape: "Escape",
+  left: "ArrowLeft",
+  meta: "Meta",
+  option: "Alt",
+  right: "ArrowRight",
+  shift: "Shift",
+  tab: "Tab",
+  up: "ArrowUp"
 };
 
 // useful numbers
-const numbers = {
+const number = {
   zero: 0,
   one: 1,
   two: 2,
@@ -39,7 +41,7 @@ const numbers = {
   thousand: 1000
 };
 
-const Constants = { circle, keys, numbers };
+const Constants = { circle, key, number };
 
 /*
 ==========================================================================================
@@ -47,6 +49,6 @@ const Constants = { circle, keys, numbers };
 ==========================================================================================
 */
 
-export { circle, keys, numbers };
+export { circle, key, number };
 
 export default Constants;

@@ -1,4 +1,4 @@
-<section data-area="profile">
+<section class="profile">
   <%= link to: Routes.public_page_path(@conn, :resume), class: "inline-flex justify-center align-center valign-top" do %>
     <%= img_tag Routes.static_path(@conn, "/images/drew-fravert.png"), class: "avatar", alt: "Drew Fravert" %>
   <% end %>

@@ -1,7 +1,12 @@
 /*
 ==========================================================================================
-  Iconography
+  Animations
 ==========================================================================================
 */
 
-.svg-icon { pointer-events: none; }
+.animates {
+  will-change: opacity, transform;
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}

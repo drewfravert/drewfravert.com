@@ -1,4 +1,4 @@
-<nav role="navigation" data-area="navigation">
+<nav class="navigation" role="navigation">
   <ul class="list list-inline">
     <!-- <li><%# link "About", to: Routes.public_page_path(@conn, :index) %></li> -->
     <!-- <li><%# link "Work", to: Routes.public_page_path(@conn, :work) %></li> -->

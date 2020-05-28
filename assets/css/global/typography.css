@@ -14,6 +14,8 @@
   &:not(:last-child) { margin-bottom: 0.5em; }
 }
 
+.monospace { font-family: var(--font-family-monospace); }
+
 a {
   color: inherit;
   text-decoration-line: underline;
@@ -76,16 +78,21 @@ samp {
 
 pre { white-space: pre-wrap; }
 
-code {
-  display: inline-block;
-  padding: 0 0.375em;
+code,
+kbd {
+  padding: 0.08334em 0.375em;
   background-color: var(--color-highlight);
   border-radius: var(--border-radius-base);
   vertical-align: top;
+
+  a { text-decoration-line: none; }
 }
+
+kbd { box-shadow: var(--box-shadow-border-base); }
 
 p,
 ul,
-ol {
-  margin-bottom: 1em;
+ol,
+table {
+  margin-bottom: 1.5em;
 }

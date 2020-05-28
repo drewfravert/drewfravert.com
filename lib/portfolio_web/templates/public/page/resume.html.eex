@@ -5,124 +5,180 @@
   </header>
   <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
   <section>
-    <h2 class="heading text-xl color-primary">Skills</h2>
+    <h2 class="heading text-large color-primary">Skills</h2>
     <table>
       <tbody>
         <tr>
           <td><strong>Personal</strong></td>
-          <td>Creative vision, self-direction, structured thinking, pattern recognition, focus on details & value creation</td>
+          <td>
+            Creative vision,
+            self-direction,
+            structured thinking,
+            pattern recognition,
+            focus on details & value creation
+          </td>
         </tr>
         <tr>
           <td><strong>Interpersonal</strong></td>
-          <td>Consensus builder, cross-functional communicator, collaborative, empathic, affable, accountable</td>
+          <td>
+            Consensus builder,
+            cross-functional communicator,
+            collaborative,
+            empathic,
+            affable,
+            accountable
+          </td>
         </tr>
         <tr>
           <td><strong>Languages</strong></td>
-          <td>Elixir, Ruby, PHP, JavaScript, CSS, Bash</td>
+          <td>
+            <%= link "Elixir", to: "https://elixir-lang.org/", rel: "nofollow noreferrer" %>,
+            <%= link "Ruby", to: "https://www.ruby-lang.org/", rel: "nofollow noreferrer" %>,
+            <%= link "PHP", to: "https://www.php.net/", rel: "nofollow noreferrer" %>,
+            <%= link "JavaScript", to: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", rel: "nofollow noreferrer" %>,
+            <%= link "CSS", to: "https://developer.mozilla.org/en-US/docs/Web/CSS", rel: "nofollow noreferrer" %>,
+            <%= link "Bash", to: "https://www.gnu.org/software/bash/", rel: "nofollow noreferrer" %>
+          </td>
         </tr>
         <tr>
           <td><strong>Frameworks</strong></td>
-          <td>Phoenix, Rails, Wordpress, Vue</td>
+          <td>
+            <%= link "Phoenix", to: "https://phoenixframework.org/", rel: "nofollow noreferrer" %>,
+            <%= link "Rails", to: "https://rubyonrails.org/", rel: "nofollow noreferrer" %>,
+            <%= link "WordPress", to: "https://wordpress.org/", rel: "nofollow noreferrer" %>,
+            <%= link "Vue", to: "https://vuejs.org/", rel: "nofollow noreferrer" %>
+          </td>
         </tr>
         <tr>
           <td><strong>Development</strong></td>
-          <td>AWS, Docker, Homebrew, asdf, Mix, Bundler, Yarn, Webpack, Git</td>
+          <td>
+            <%= link "AWS", to: "" %>,
+            <%= link "Docker", to: "" %>,
+            <%= link "Homebrew", to: "" %>,
+            <%= link "asdf", to: "" %>,
+            <%= link "Mix", to: "" %>,
+            <%= link "Bundler", to: "" %>,
+            <%= link "Yarn", to: "" %>,
+            <%= link "Webpack", to: "" %>,
+            <%= link "Git", to: "" %>
+          </td>
         </tr>
         <tr>
           <td><strong>Data Analysis</strong></td>
-          <td>SQL (Ecto, ActiveRecord), Spreadsheet (Sheets, Excel)</td>
+          <td>
+            SQL (Ecto, ActiveRecord),
+            Spreadsheet (Sheets, Excel)
+          </td>
         </tr>
         <tr>
           <td><strong>Software</strong></td>
-          <td>Figma, Adobe CC, GitHub, GitLab, Postman, Basecamp, Jira, Trello, Slack</td>
+          <td>
+            <%= link "Figma", to: "" %>,
+            <%= link "Adobe CC", to: "" %>,
+            <%= link "GitHub", to: "" %>,
+            <%= link "GitLab", to: "" %>,
+            <%= link "Postman", to: "" %>,
+            <%= link "Basecamp", to: "" %>,
+            <%= link "Jira", to: "" %>,
+            <%= link "Trello", to: "" %>,
+            <%= link "Slack", to: "" %>
+          </td>
         </tr>
       </tbody>
     </table>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Experience</h2>
+    <h2 class="heading text-large color-primary">Experience</h2>
     <ul class="list">
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/arityone/">Arity One</a></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">January 2009 - Present</time>
+        <h3><strong><%= link "Arity One", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - Present &nbsp;&bull;&nbsp; 9 months</time>
         <p>Digital consultancy helping guide small business clients through the considerations of modern technologies and workflows. Offering counsel in product development, digital strategy, design, engineering and content.</p>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/fravert/">Fravert</a></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019</time>
+        <h3><strong><%= link "Fravert", to: "https://www.linkedin.com/company/fravert/" %></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019 &nbsp;&bull;&nbsp; 4 years</time>
         <p>As technical director, I was responsible for the development of internal project management software to facilitate streamlined inter-departmental operations that featured project tracking, bid estimation, job costing, labor tracking and customer relations. As PM, I focused on jobs for our environmental / experiential design clients. Working with senior staff, I helped identify and pitch new business opportunities, guided clients through project vision, identified and communicated requirements to the industrial design team, reviewed and verified critical production design documents, and oversaw the production and installation of projects to ensure builds meet client specifications. As a shareholder, I was additionally responsible for regular review of monthly financials, setting organizational and departmental direction and hiring.</p>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/fiverr-com/">Fiverr</a></strong> &nbsp;&bull;&nbsp; Full Stack Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2015 - October 2015</time>
+        <h3><strong><%= link "Fiverr", to: "https://www.linkedin.com/company/fiverr-com/" %></strong> &nbsp;&bull;&nbsp; Full Stack Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2015 - October 2015 &nbsp;&bull;&nbsp; 8 months</time>
         <p>Full stack developer with the US division of the world’s largest digital marketplace for creative and professional services and a top 300 site internationally. Responsible for engineering software under the demand of 30 million active users per month. Coordinated remote development with team members in Tel Aviv, New York, San Francisco and Miami.</p>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/newman-realty/">Newman Realty</a></strong> &nbsp;&bull;&nbsp; Technologist &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2013 - March 2015</time>
+        <h3><strong><%= link "Newman Realty", to: "https://www.linkedin.com/company/newman-realty/" %></strong> &nbsp;&bull;&nbsp; Technologist &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2013 - March 2015 &nbsp;&bull;&nbsp; 2 years, 1 month</time>
         <p>Contracted to oversee digital operations and bring consistency to the agency’s external marketing strategy. Built complete front & backend systems and integrated with the MLS API. Designed a complete brand guide, complete with logo marks, typography, color palette, and digital / print marketing materials.</p>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/builtbyclique/">Clique Studios</a></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2011 - February 2013</time>
+        <h3><strong><%= link "Clique Studios", to: "https://www.linkedin.com/company/builtbyclique/" %></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2011 - February 2013 &nbsp;&bull;&nbsp; 1 year, 6 months</time>
         <p>Built responsive frontend interfaces integrated with various content management platforms, adapting compositions from the design team. Regularly worked and communicated directly with clients to see their vision through to completion. As an early employee, I was responsible for helping define and implement efficient workflows to facilitate robust development.</p>
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Education</h2>
+    <h2 class="heading text-large color-primary">Education</h2>
     <ul class="list">
       <li>
-        <h3><strong><a href="https://www.linkedin.com/school/depaul-university/">DePaul University</a></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2006 - June 2010</time>
+        <h3><strong><%= link "University of Alabama at Birmingham", to: "https://www.linkedin.com/school/uab/" %></strong> &nbsp;&bull;&nbsp; MBA Candidate &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2020 - Present &nbsp;&bull;&nbsp; 1 month</time>
+      </li>
+      <li>
+        <h3><strong><%= link "DePaul University", to: "https://www.linkedin.com/school/depaul-university/" %></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2006 - 2010 &nbsp;&bull;&nbsp; 4 years</time>
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Involvement</h2>
+    <h2 class="heading text-large color-primary">Involvement</h2>
     <ul class="list">
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/rotaractbhm/">Rotaract Club of Birmingham</a></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present</time>
+        <h3><strong><%= link "Rotaract Club of Birmingham", to: "https://www.linkedin.com/company/rotaractbhm/" %></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present &nbsp;&bull;&nbsp; 4 years, 4 months</time>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/public-affairs-research-council-of-alabama/">Public Affairs Research Council of Alabama</a></strong> &nbsp;&bull;&nbsp; Roundtable Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2018 - Present</time>
+        <h3><strong><%= link "Public Affairs Research Council of Alabama", to: "https://www.linkedin.com/company/public-affairs-research-council-of-alabama/" %></strong> &nbsp;&bull;&nbsp; Roundtable Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2018 - Present &nbsp;&bull;&nbsp; 2 years, 5 months</time>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/community-foundation-of-greater-birmingham/">Community Foundation of Greater Birmingham</a></strong> &nbsp;&bull;&nbsp; Board Fellow &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2019 - January 2020</time>
+        <h3><strong><%= link "Community Foundation of Greater Birmingham", to: "https://www.linkedin.com/company/community-foundation-of-greater-birmingham/" %></strong> &nbsp;&bull;&nbsp; Board Fellow &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2019 - January 2020 &nbsp;&bull;&nbsp; 1 year</time>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/company/libertyhouselofts/">Liberty House Lofts Association</a></strong> &nbsp;&bull;&nbsp; President &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">December 2017 - November 2019</time>
+        <h3><strong><%= link "Liberty House Lofts Association", to: "https://www.linkedin.com/company/libertyhouselofts/" %></strong> &nbsp;&bull;&nbsp; President &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">December 2017 - November 2019 &nbsp;&bull;&nbsp; 2 years</time>
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Recognition</h2>
+    <h2 class="heading text-large color-primary">Recognition</h2>
     <ul class="list">
       <li>
-        <h3><strong>Mahon-Peinhardt Director’s Award</strong> &nbsp;&bull;&nbsp; Rotaract Club of Birmingham</h3>
+        <h3><strong>Mahon-Peinhardt Director’s Award</strong> &nbsp;&bull;&nbsp; <%= link "Rotaract Club of Birmingham", to: "https://www.rotaractbhm.org/" %></h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">June 2019</time>
       </li>
       <li>
-        <h3><strong>Rising Star of Technology & Innovation</strong> &nbsp;&bull;&nbsp; Birmingham Business Journal</h3>
+        <h3><strong>Rising Star of Technology & Innovation</strong> &nbsp;&bull;&nbsp; <%= link "Birmingham Business Journal", to: "https://www.bizjournals.com/birmingham/news/2017/08/29/meet-birminghams-rising-stars-of-tech-and.html" %></h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">August 2017</time>
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-xl color-primary">Recommendations</h2>
+    <h2 class="heading text-large color-primary">Recommendations</h2>
     <ul class="list">
       <li>
-        <h3><strong><a href="https://www.linkedin.com/in/derekcnelson/">Derek Nelson</a></strong> &nbsp;&bull;&nbsp; Partner, Clique Studios</h3>
+        <h3><strong><%= link "Derek Nelson", to: "https://www.linkedin.com/in/derekcnelson/" %></strong> &nbsp;&bull;&nbsp; Partner, Clique Studios</h3>
         <blockquote class="mt-2 text-italic">"Drew was an integral part in our growth. His passion for the craft, entrepreneurial spirit, and eye for detail helped him create some really exceptional work. He’s got an eye for industry shifts, and is always devising new ways to solve old problems. Above all, he cares deeply about his work and those alongside him."</blockquote>
       </li>
       <li>
-        <h3><strong><a href="https://www.linkedin.com/in/cathy-heimberger-0b8a746/">Cathy Heimberger</a></strong> &nbsp;&bull;&nbsp; Marketing Director, St. Louis Public Library</h3>
+        <h3><strong><%= link "Cathy Heimberger", to: "https://www.linkedin.com/in/cathy-heimberger-0b8a746/" %></strong> &nbsp;&bull;&nbsp; Marketing Director, St. Louis Public Library</h3>
         <blockquote class="mt-2 text-italic">"I worked with Drew on the launch of our new site. Drew has an outstanding work ethic; he’s professional, on time, on budget and the most patient person I’ve ever worked with. Constant questions and changes were always met with a positive, can-do attitude. He has an extraordinary ability to take a client's cryptic vision and turn it into an awesome reality."</blockquote>
       </li>
     </ul>
+  </section>
+  <section>
+    <h2 class="heading text-large color-primary">References</h2>
+    <p>Available upon request.</p>
   </section>
 </article>

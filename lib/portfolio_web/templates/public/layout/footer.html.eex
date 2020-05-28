@@ -1,5 +1,5 @@
-<section data-area="legal">
-  <ul class="list list-inline text-smaller color-lightgray">
+<section class="footer text-smaller color-gray">
+  <ul class="list list-inline">
     <li><%= link "Privacy", to: Routes.public_page_path(@conn, :privacy) %></li>
     <!-- <li><%# link "Info", to: Routes.public_page_path(@conn, :colophon) %></li> -->
     <li><%= DateTime.utc_now.year %> &copy; Drew Fravert</li>

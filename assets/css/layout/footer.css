@@ -1,21 +1,15 @@
 /*
 ==========================================================================================
-  Sidebar
+  Footer
 ==========================================================================================
 */
 
-.sidebar {
-  display: grid;
-  grid-area: sidebar;
-  grid-auto-flow: column;
-  gap: calc(var(--spacing) * 0.5);
-  justify-content: start;
-  align-content: start;
+.footer {
+  grid-area: footer;
+  align-self: end;
 
   @media (min-width: 1024px) {
-    grid-auto-flow: row;
-    justify-items: center;
     position: sticky;
-    top: var(--spacing);
+    bottom: var(--spacing);
   }
 }

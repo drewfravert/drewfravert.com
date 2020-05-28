@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <%= render "metadata.html", conn: @conn %>
+    <%= render "csrf.html", conn: @conn %>
+    <%= render "preconnections.html", conn: @conn %>
+    <%= render "icons.html", conn: @conn %>
+    <%= render "opengraph.html", conn: @conn %>
+    <%= render "styles.html", conn: @conn %>
+    <%= render "fonts.html", conn: @conn %>
+  </head>
+  <body>
+    <%= render PortfolioWeb.Public.LayoutView, "header.html", conn: @conn %>
+    <%= @inner_content %>
+    <%= render PortfolioWeb.Public.LayoutView, "sidebar.html", conn: @conn %>
+    <%= render PortfolioWeb.Public.LayoutView, "footer.html", conn: @conn %>
+    <%= render PortfolioWeb.Public.LayoutView, "top.html", conn: @conn %>
+    <%= render PortfolioWeb.Global.ModalView, "appearance.html", conn: @conn %>
+    <%= render PortfolioWeb.Global.ModalView, "pgp-key.html", conn: @conn %>
+    <%= render PortfolioWeb.Global.ModalView, "shortcuts.html", conn: @conn %>
+    <%# render PortfolioWeb.Global.ModalView, "cookies.html", conn: @conn %>
+    <%= render "scripts.html", conn: @conn %>
+    <%= if Mix.env() === :prod, do: render "analytics.html", conn: @conn %>
+  </body>
+</html>

@@ -5,8 +5,10 @@
 */
 
 import { config, dom, library } from "@fortawesome/fontawesome-svg-core";
-import { faArrowUp, faMapMarkerAlt, faRandom, faSun, faUndoAlt } from "@fortawesome/pro-solid-svg-icons";
-import { faGithub, faKeybase, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { } from "@fortawesome/pro-light-svg-icons";
+import { faArrowUp, faCookie, faCopy, faKeyboard, faKeySkeleton, faPalette, faRandom, faTimes, faUndoAlt } from "@fortawesome/pro-regular-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/pro-solid-svg-icons";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 /*
 ==========================================================================================
@@ -21,6 +23,12 @@ const FontAwesome = {
     addIconsToLibrary();
     configureAPI();
 
+  },
+
+  updateIcon(selector, icon) {
+
+    selector.dataset.icon = icon;
+
   }
 
 };
@@ -33,7 +41,30 @@ const FontAwesome = {
 
 const addIconsToLibrary = () => {
 
-  library.add(faArrowUp, faMapMarkerAlt, faRandom, faSun, faUndoAlt, faGithub, faKeybase, faLinkedin);
+  library.add(
+    // light icons
+
+    // regular icons
+    faArrowUp,
+    faCookie,
+    faCopy,
+    faKeyboard,
+    faKeySkeleton,
+    faTimes,
+    faPalette,
+    faRandom,
+    faUndoAlt,
+
+    // solid icons
+    faMapMarkerAlt,
+
+    // duotone icons
+
+    // brand icons
+    faGithub,
+    faLinkedin,
+    faTwitter
+  );
 
 };
 
