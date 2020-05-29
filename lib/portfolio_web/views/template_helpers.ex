@@ -13,6 +13,10 @@ defmodule PortfolioWeb.TemplateHelpers do
   # Public Methods
   # ======================================================================================
 
+  def is_env(env) do
+    Application.get_env(:portfolio, :environment) === env
+  end
+
   def day_of_week(tz_database_name \\ @tz_utc) do
     {:ok, date_time} = DateTime.now(tz_database_name)
 

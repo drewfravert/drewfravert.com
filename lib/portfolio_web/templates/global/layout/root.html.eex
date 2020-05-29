@@ -20,6 +20,6 @@
     <%= render PortfolioWeb.Global.ModalView, "shortcuts.html", conn: @conn %>
     <%# render PortfolioWeb.Global.ModalView, "cookies.html", conn: @conn %>
     <%= render "scripts.html", conn: @conn %>
-    <%= if Mix.env() === :prod, do: render "analytics.html", conn: @conn %>
+    <%= if is_env(:prod), do: render "analytics.html", conn: @conn %>
   </body>
 </html>
