@@ -20,6 +20,5 @@ yarn --cwd ./assets install
 yarn --cwd ./assets run deploy
 mix phx.digest
 
-# build the release & migrate the database
+# build the release
 MIX_ENV=prod mix release --overwrite
-# MIX_ENV=prod mix ecto.migrate

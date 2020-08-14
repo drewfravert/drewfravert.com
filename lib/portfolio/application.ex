@@ -5,7 +5,6 @@ defmodule Portfolio.Application do
 
   def start(_type, _args) do
     children = [
-      Portfolio.Repo,
       PortfolioWeb.Telemetry,
       {Phoenix.PubSub, name: Portfolio.PubSub},
       PortfolioWeb.Endpoint
