@@ -1,13 +1,13 @@
 use Mix.Config
 
 # database configuration
-config :portfolio, Portfolio.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "portfolio_development",
-  hostname: "localhost",
-  show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+# config :portfolio, Portfolio.Repo,
+#   username: "postgres",
+#   password: "postgres",
+#   database: "portfolio_development",
+#   hostname: "localhost",
+#   show_sensitive_data_on_connection_error: true,
+#   pool_size: 10
 
 # endpoint configuration
 config :portfolio, PortfolioWeb.Endpoint,

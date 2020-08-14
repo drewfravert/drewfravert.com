@@ -8,8 +8,8 @@ use Mix.Config
 # Application
 # ========================================================================================
 
-config :portfolio,
-  ecto_repos: [Portfolio.Repo]
+# config :portfolio,
+#   ecto_repos: [Portfolio.Repo]
 
 # ========================================================================================
 # Endpoint

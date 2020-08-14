@@ -22,4 +22,4 @@ mix phx.digest
 
 # build the release & migrate the database
 MIX_ENV=prod mix release --overwrite
-MIX_ENV=prod mix ecto.migrate
+# MIX_ENV=prod mix ecto.migrate
