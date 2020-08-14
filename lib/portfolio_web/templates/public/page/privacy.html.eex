@@ -1,6 +1,6 @@
-<article class="article privacy">
-  <header role="banner">
-    <h1 class="heading text-xxxxl">Privacy policy</h1>
+<article class="article">
+  <header>
+    <h1 class="heading text-xxxxl">Privacy Policy</h1>
     <p>This page is meant to be a no-nonsense means of informing you of my policies regarding the collection, use, and disclosure of personal information on this site, <%= link Routes.url(@conn), to: Routes.url(@conn) %>.</p>
     <p>If you choose to use this site, you are agreeing to the collection and use of information in relation with this policy. The information that I collect is used for providing and improving this site. I will not use or share your information with anyone, ever.</p>
   </header>
@@ -14,7 +14,7 @@
   </section>
   <section>
     <h2 class="heading text-large">Cookies</h2>
-    <p>Cookies are files containing a small amount of data, commonly used as a unique identifier. These are sent to your browser from the website and are stored in your computer's memory. These cookies collect information that I use to improve the site experience. You have the option to either <%= content_tag :button, "accept or refuse these cookies", type: "button", class: "js-open-modal", data_modal: "cookies", disabled: true %> and know when a cookie is being sent to your computer. If you choose to refuse cookies, aspects of this site may no longer be usable.</p>
+    <p>Cookies are files containing a small amount of data, commonly used as a unique identifier. These are sent to your browser from the website and are stored in your computer's memory. These cookies collect information that I use to improve the site experience. You have the option to either <%= content_tag :button, "accept or refuse these cookies", type: "button", class: "js-open-modal", data_modal: "cookies" %> and know when a cookie is being sent to your computer. If you choose to refuse cookies, aspects of this site may no longer be usable.</p>
   </section>
   <section>
     <h2 class="heading text-large">Service Providers</h2>

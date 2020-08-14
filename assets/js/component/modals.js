@@ -18,7 +18,6 @@ import Helpers from "../global/helpers.js";
 c.modalSelector = ".js-modal";
 c.modalOpenSelector = ".js-open-modal";
 c.modalCloseSelector = ".js-close-modal";
-c.modalCloseKeys = [c.key.escape];
 c.overlayClass = "overlay";
 c.activeClass = "active";
 
@@ -41,8 +40,7 @@ const Modals = {
 
   initialize() {
 
-    bindModalOpenActions();
-    bindModalCloseActions();
+    bindModalActions();
 
   },
 
@@ -77,28 +75,21 @@ const Modals = {
 ==========================================================================================
 */
 
-const bindModalOpenActions = () => {
+const bindModalActions = () => {
 
-  bindModalOpenKeys();
-  bindModalOpenListeners();
-
-};
-
-const bindModalOpenKeys = () => {
+  bindOpenModalButtons();
 
   s.modals.forEach((modal) => {
 
-    const modalID = modal.dataset.modal;
-    const keys = modal.dataset.keys;
-    const handler = (event) => Modals.toggleModal(modalID);
-
-    Helpers.bindKeys(keys, handler);
+    bindToggleModalKeys(modal);
+    bindCloseModalKeys(modal);
+    bindCloseModalButtons(modal);
 
   });
 
 };
 
-const bindModalOpenListeners = () => {
+const bindOpenModalButtons = () => {
 
   const handler = [b.event.click, (event) => {
 
@@ -113,18 +104,7 @@ const bindModalOpenListeners = () => {
 
 };
 
-const bindModalCloseActions = () => {
-
-  s.modals.forEach((modal) => {
-
-    bindModalCloseButtons(modal);
-    bindModalCloseKeys(modal);
-
-  });
-
-};
-
-const bindModalCloseButtons = (modal) => {
+const bindCloseModalButtons = (modal) => {
 
   const handler = [b.event.click, (event) => {
 
@@ -139,39 +119,30 @@ const bindModalCloseButtons = (modal) => {
 
 };
 
-// TODO: REPLACE WITH HELPER
-const bindModalCloseKeys = (modal) => {
+const bindToggleModalKeys = (modal) => {
 
-  const handler = [b.event.keydown, (event) => {
+  const modalID = modal.dataset.modal;
+  const keys = modal.dataset.keys;
+  const handler = (event) => Modals.toggleModal(modalID);
 
-    const modalID = modal.dataset.modal;
-    const isCloseKey = c.modalCloseKeys.includes(event.key);
+  Helpers.bindKeys(keys, handler);
 
-    isCloseKey && Modals.closeModal(modalID);
+};
 
-  }];
+const bindCloseModalKeys = (modal) => {
 
-  window.addEventListener(...handler);
+  const modalID = modal.dataset.modal;
+  const keys = [c.key.escape];
+  const handler = (event) => Modals.closeModal(modalID);
+
+  Helpers.bindKeys(keys, handler);
 
 };
 
 const getRequestedModal = (modalID) => [...s.modals].find((modal) => modal.dataset.modal === modalID);
 
-const addModal = (modalID) => {
-
-  const modal = getRequestedModal(modalID);
-
-  modal.classList.add(c.activeClass);
-
-};
-
-const removeModal = (modalID) => {
-
-  const modal = getRequestedModal(modalID);
-
-  modal.classList.remove(c.activeClass);
-
-};
+const addModal = (modalID) => getRequestedModal(modalID).classList.add(c.activeClass);
+const removeModal = (modalID) => getRequestedModal(modalID).classList.remove(c.activeClass);
 
 const addOverlay = () => s.body.classList.add(c.overlayClass);
 const removeOverlay = () => s.body.classList.remove(c.overlayClass);

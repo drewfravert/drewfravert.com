@@ -1,9 +1,9 @@
 <article class="article resume">
-  <header role="banner">
+  <header>
     <h1 class="heading text-xxxxl mb-1">Drew Fravert</h1>
     <%= render PortfolioWeb.Global.PartialView, "_roles.html", conn: @conn %>
   </header>
-  <%= render PortfolioWeb.Global.PartialView, "_summary.html", conn: @conn %>
+  <%= render PortfolioWeb.Global.PartialView, "_overview.html", conn: @conn %>
   <section>
     <h2 class="heading text-large color-primary">Skills</h2>
     <table>
@@ -64,7 +64,7 @@
           </td>
         </tr>
         <tr>
-          <td><strong>Data Analysis</strong></td>
+          <td><strong>Data&nbsp;Analysis</strong></td>
           <td>
             SQL (Ecto, ActiveRecord),
             Spreadsheet (Sheets, Excel)
@@ -91,28 +91,28 @@
     <h2 class="heading text-large color-primary">Experience</h2>
     <ul class="list">
       <li>
-        <h3><strong><%= link "Arity One", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - Present &nbsp;&bull;&nbsp; 9 months</time>
+        <h3><strong><%= link "arity/1", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - Present</time>
         <p>Digital consultancy helping guide small business clients through the considerations of modern technologies and workflows. Offering counsel in product development, digital strategy, design, engineering and content.</p>
       </li>
       <li>
         <h3><strong><%= link "Fravert", to: "https://www.linkedin.com/company/fravert/" %></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019 &nbsp;&bull;&nbsp; 4 years</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019</time>
         <p>As technical director, I was responsible for the development of internal project management software to facilitate streamlined inter-departmental operations that featured project tracking, bid estimation, job costing, labor tracking and customer relations. As PM, I focused on jobs for our environmental / experiential design clients. Working with senior staff, I helped identify and pitch new business opportunities, guided clients through project vision, identified and communicated requirements to the industrial design team, reviewed and verified critical production design documents, and oversaw the production and installation of projects to ensure builds meet client specifications. As a shareholder, I was additionally responsible for regular review of monthly financials, setting organizational and departmental direction and hiring.</p>
       </li>
       <li>
         <h3><strong><%= link "Fiverr", to: "https://www.linkedin.com/company/fiverr-com/" %></strong> &nbsp;&bull;&nbsp; Full Stack Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2015 - October 2015 &nbsp;&bull;&nbsp; 8 months</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2015 - October 2015</time>
         <p>Full stack developer with the US division of the world’s largest digital marketplace for creative and professional services and a top 300 site internationally. Responsible for engineering software under the demand of 30 million active users per month. Coordinated remote development with team members in Tel Aviv, New York, San Francisco and Miami.</p>
       </li>
       <li>
         <h3><strong><%= link "Newman Realty", to: "https://www.linkedin.com/company/newman-realty/" %></strong> &nbsp;&bull;&nbsp; Technologist &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2013 - March 2015 &nbsp;&bull;&nbsp; 2 years, 1 month</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2013 - March 2015</time>
         <p>Contracted to oversee digital operations and bring consistency to the agency’s external marketing strategy. Built complete front & backend systems and integrated with the MLS API. Designed a complete brand guide, complete with logo marks, typography, color palette, and digital / print marketing materials.</p>
       </li>
       <li>
         <h3><strong><%= link "Clique Studios", to: "https://www.linkedin.com/company/builtbyclique/" %></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2011 - February 2013 &nbsp;&bull;&nbsp; 1 year, 6 months</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2011 - February 2013</time>
         <p>Built responsive frontend interfaces integrated with various content management platforms, adapting compositions from the design team. Regularly worked and communicated directly with clients to see their vision through to completion. As an early employee, I was responsible for helping define and implement efficient workflows to facilitate robust development.</p>
       </li>
     </ul>
@@ -122,11 +122,11 @@
     <ul class="list">
       <li>
         <h3><strong><%= link "University of Alabama at Birmingham", to: "https://www.linkedin.com/school/uab/" %></strong> &nbsp;&bull;&nbsp; MBA Candidate &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2020 - Present &nbsp;&bull;&nbsp; 1 month</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2020 - Present</time>
       </li>
       <li>
         <h3><strong><%= link "DePaul University", to: "https://www.linkedin.com/school/depaul-university/" %></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2006 - 2010 &nbsp;&bull;&nbsp; 4 years</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2006 - 2010</time>
       </li>
     </ul>
   </section>
@@ -135,19 +135,19 @@
     <ul class="list">
       <li>
         <h3><strong><%= link "Rotaract Club of Birmingham", to: "https://www.linkedin.com/company/rotaractbhm/" %></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present &nbsp;&bull;&nbsp; 4 years, 4 months</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present</time>
       </li>
       <li>
         <h3><strong><%= link "Public Affairs Research Council of Alabama", to: "https://www.linkedin.com/company/public-affairs-research-council-of-alabama/" %></strong> &nbsp;&bull;&nbsp; Roundtable Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2018 - Present &nbsp;&bull;&nbsp; 2 years, 5 months</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2018 - Present</time>
       </li>
       <li>
         <h3><strong><%= link "Community Foundation of Greater Birmingham", to: "https://www.linkedin.com/company/community-foundation-of-greater-birmingham/" %></strong> &nbsp;&bull;&nbsp; Board Fellow &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2019 - January 2020 &nbsp;&bull;&nbsp; 1 year</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2019 - January 2020</time>
       </li>
       <li>
         <h3><strong><%= link "Liberty House Lofts Association", to: "https://www.linkedin.com/company/libertyhouselofts/" %></strong> &nbsp;&bull;&nbsp; President &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">December 2017 - November 2019 &nbsp;&bull;&nbsp; 2 years</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">December 2017 - November 2019</time>
       </li>
     </ul>
   </section>

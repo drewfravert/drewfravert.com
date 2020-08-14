@@ -13,11 +13,11 @@
           <tbody>
             <tr>
               <td class="text-nowrap"><strong>Fingerprint</strong></td>
-              <td class="text-right"><code>EDBA92E48A91799F10CCA514BB514B1C02D93513</code></td>
+              <td class="text-right"><code><span>EDBA</span><span>92E4</span><span>8A91</span><span>799F</span><span>10CC</span><span>A514</span><span>BB51</span><span>4B1C</span><span>02D9</span><span>3513</span></code></td>
             </tr>
             <tr>
               <td class="text-nowrap"><strong>64-Bit</strong></td>
-              <td class="text-right"><code>BB514B1C02D93513</code></td>
+              <td class="text-right"><code><span>BB51</span><span>4B1C</span><span>02D9</span><span>3513</span></code></td>
             </tr>
             <tr>
               <td class="text-nowrap"><strong>cURL</strong></td>
@@ -27,7 +27,7 @@
         </table>
       </section>
       <section class="modal-section">
-        <%= textarea nil, :pgp_key, class: "input input-textarea text-small monospace autoselect", value: pgp_key_block() |> String.trim_trailing(), rows: "17", readonly: true %>
+        <%= textarea nil, :pgp_key, class: "input input-textarea monospace autoselect", value: pgp_key_block() |> String.trim_trailing(), rows: "17", readonly: true %>
       </section>
     </article>
   </div>

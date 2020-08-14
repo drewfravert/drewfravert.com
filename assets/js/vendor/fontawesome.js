@@ -6,7 +6,7 @@
 
 import { config, dom, library } from "@fortawesome/fontawesome-svg-core";
 import { } from "@fortawesome/pro-light-svg-icons";
-import { faArrowUp, faCookie, faCopy, faKeyboard, faKeySkeleton, faPalette, faRandom, faTimes, faUndoAlt } from "@fortawesome/pro-regular-svg-icons";
+import { faArrowUp, faCookie, faCopy, faKeyboard, faKeySkeleton, faPalette, faRandom, faSearch, faTimes, faUndoAlt } from "@fortawesome/pro-regular-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/pro-solid-svg-icons";
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -53,6 +53,7 @@ const addIconsToLibrary = () => {
     faTimes,
     faPalette,
     faRandom,
+    faSearch,
     faUndoAlt,
 
     // solid icons

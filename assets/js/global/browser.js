@@ -23,6 +23,7 @@ const os = {
 
 // events list
 const event = {
+  blur: "blur",
   click: "click",
   change: "change",
   focus: "focus",

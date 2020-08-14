@@ -44,6 +44,35 @@ const Utilities = {
     bindScrollTopButtons();
     bindScrollTopKeys();
 
+  },
+
+  scrollTop() {
+
+    const scrollTopProperties = { top: c.number.zero, behavior: "smooth" };
+
+    window.scroll(scrollTopProperties);
+
+  },
+
+  stopKeydownPropagationWhenInput() {
+
+    const handler = [b.event.keydown, (event) => {
+
+      const key = event.key;
+      const keyIsEscape = key === c.key.escape;
+      const escapeKeyHandler = () => document.activeElement.blur();
+
+      const element = document.activeElement.tagName.toLowerCase();
+      const inputElements = ["input", "textarea", "select"];
+      const elementIsInput = inputElements.includes(element);
+      const inputElementHandler = () => event.stopPropagation();
+
+      keyIsEscape && escapeKeyHandler() || elementIsInput && inputElementHandler();
+
+    }];
+
+    document.addEventListener(...handler);
+
   }
 
 };
@@ -61,7 +90,7 @@ const bindScrollTopButtons = () => {
     const scrollTopSelector = ".js-scroll-top";
     const isScrollTopButton = event.target.matches(scrollTopSelector);
 
-    isScrollTopButton && scrollTop();
+    isScrollTopButton && Utilities.scrollTop();
 
   }];
 
@@ -72,17 +101,9 @@ const bindScrollTopButtons = () => {
 const bindScrollTopKeys = () => {
 
   const keys = ["T"];
-  const handler = (event) => scrollTop();
+  const handler = (event) => Utilities.scrollTop();
 
   Helpers.bindKeys(keys, handler);
-
-};
-
-const scrollTop = () => {
-
-  const scrollTopProperties = { top: c.number.zero, behavior: "smooth" };
-
-  window.scroll(scrollTopProperties);
 
 };
 
