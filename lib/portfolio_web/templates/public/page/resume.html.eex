@@ -1,6 +1,6 @@
 <article class="article resume">
   <header>
-    <h1 class="heading text-xxxxl mb-1">Drew Fravert</h1>
+    <h1 class="heading text-xxxxl text-bold mb-1">Drew Fravert</h1>
     <%= render PortfolioWeb.Global.PartialView, "_roles.html", conn: @conn %>
   </header>
   <%= render PortfolioWeb.Global.PartialView, "_overview.html", conn: @conn %>
@@ -10,79 +10,31 @@
       <tbody>
         <tr>
           <td><strong>Personal</strong></td>
-          <td>
-            Creative vision,
-            self-direction,
-            structured thinking,
-            pattern recognition,
-            focus on details & value creation
-          </td>
+          <td>Creative vision, self-direction, structured thinking, focus on details & value creation</td>
         </tr>
         <tr>
           <td><strong>Interpersonal</strong></td>
-          <td>
-            Consensus builder,
-            cross-functional communicator,
-            collaborative,
-            empathic,
-            affable,
-            accountable
-          </td>
+          <td>Consensus builder, cross-functional communicator, collaborative, empathic, affable, accountable</td>
         </tr>
         <tr>
           <td><strong>Languages</strong></td>
-          <td>
-            <%= link "Elixir", to: "https://elixir-lang.org/", rel: "nofollow noreferrer" %>,
-            <%= link "Ruby", to: "https://www.ruby-lang.org/", rel: "nofollow noreferrer" %>,
-            <%= link "PHP", to: "https://www.php.net/", rel: "nofollow noreferrer" %>,
-            <%= link "JavaScript", to: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", rel: "nofollow noreferrer" %>,
-            <%= link "CSS", to: "https://developer.mozilla.org/en-US/docs/Web/CSS", rel: "nofollow noreferrer" %>,
-            <%= link "Bash", to: "https://www.gnu.org/software/bash/", rel: "nofollow noreferrer" %>
-          </td>
+          <td>Elixir, Ruby, PHP, JavaScript, CSS, Bash</td>
         </tr>
         <tr>
           <td><strong>Frameworks</strong></td>
-          <td>
-            <%= link "Phoenix", to: "https://phoenixframework.org/", rel: "nofollow noreferrer" %>,
-            <%= link "Rails", to: "https://rubyonrails.org/", rel: "nofollow noreferrer" %>,
-            <%= link "WordPress", to: "https://wordpress.org/", rel: "nofollow noreferrer" %>,
-            <%= link "Vue", to: "https://vuejs.org/", rel: "nofollow noreferrer" %>
-          </td>
+          <td>Phoenix, Rails, WordPress, Vue</td>
         </tr>
         <tr>
           <td><strong>Development</strong></td>
-          <td>
-            <%= link "AWS", to: "" %>,
-            <%= link "Docker", to: "" %>,
-            <%= link "Homebrew", to: "" %>,
-            <%= link "asdf", to: "" %>,
-            <%= link "Mix", to: "" %>,
-            <%= link "Bundler", to: "" %>,
-            <%= link "Yarn", to: "" %>,
-            <%= link "Webpack", to: "" %>,
-            <%= link "Git", to: "" %>
-          </td>
+          <td>AWS, Docker, Kubernetes, CI/CD, Homebrew, asdf, Mix, Bundler, Yarn, Webpack, Git</td>
         </tr>
         <tr>
           <td><strong>Data&nbsp;Analysis</strong></td>
-          <td>
-            SQL (Ecto, ActiveRecord),
-            Spreadsheet (Sheets, Excel)
-          </td>
+          <td>SQL (PostgreSQL), GraphQL, Redis, Spreadsheets (Sheets, Excel)</td>
         </tr>
         <tr>
           <td><strong>Software</strong></td>
-          <td>
-            <%= link "Figma", to: "" %>,
-            <%= link "Adobe CC", to: "" %>,
-            <%= link "GitHub", to: "" %>,
-            <%= link "GitLab", to: "" %>,
-            <%= link "Postman", to: "" %>,
-            <%= link "Basecamp", to: "" %>,
-            <%= link "Jira", to: "" %>,
-            <%= link "Trello", to: "" %>,
-            <%= link "Slack", to: "" %>
-          </td>
+          <td>Figma, Adobe CC, GitHub, Postman, Postico, Basecamp, Jira, Trello, Slack</td>
         </tr>
       </tbody>
     </table>
@@ -121,8 +73,8 @@
     <h2 class="heading text-large color-primary">Education</h2>
     <ul class="list">
       <li>
-        <h3><strong><%= link "University of Alabama at Birmingham", to: "https://www.linkedin.com/school/uab/" %></strong> &nbsp;&bull;&nbsp; MBA Candidate &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2020 - Present</time>
+        <h3><strong><%= link "UAB, Collat School of Business", to: "https://www.linkedin.com/school/university-of-alabama-at-birmingham---collat-school-of-business/" %></strong> &nbsp;&bull;&nbsp; MBA Candidate &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2020 - 2022</time>
       </li>
       <li>
         <h3><strong><%= link "DePaul University", to: "https://www.linkedin.com/school/depaul-university/" %></strong> &nbsp;&bull;&nbsp; BA, Digital Communication & Media Arts &nbsp;&bull;&nbsp; Chicago, IL</h3>

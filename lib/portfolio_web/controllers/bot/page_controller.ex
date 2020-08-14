@@ -1,10 +1,6 @@
 defmodule PortfolioWeb.Bot.PageController do
   use PortfolioWeb, :controller
 
-  def keybase(conn, _params) do
-    render(conn, "keybase.txt")
-  end
-
   def pgp_key(conn, _params) do
     render(conn, "pgp-key.asc")
   end
