@@ -1,14 +1,14 @@
 <aside class="sidebar">
-  <%= content_tag :button, type: "button", class: "text-xl js-open-modal", data_tooltip: "Appearance", data_modal: "appearance" do %>
+  <%= content_tag :button, type: "button", class: "text-large js-open-modal", data_tooltip: "Appearance", data_modal: "appearance" do %>
     <i class="far icon-palette"></i>
   <% end %>
-  <%= content_tag :button, type: "button", class: "text-xl mobile-hidden js-open-modal", data_tooltip: "PGP Key", data_modal: "public-key" do %>
+  <%= content_tag :button, type: "button", class: "text-large js-open-modal", data_tooltip: "PGP Key", data_modal: "public-key" do %>
     <i class="far icon-key-skeleton"></i>
   <% end %>
-  <%= content_tag :button, type: "button", class: "text-xl mobile-hidden js-open-modal", data_tooltip: "Shortcuts", data_modal: "shortcuts" do %>
+  <%= content_tag :button, type: "button", class: "text-large mobile-hidden js-open-modal", data_tooltip: "Shortcuts", data_modal: "shortcuts" do %>
     <i class="far icon-keyboard"></i>
   <% end %>
-  <!-- <%= content_tag :button, type: "button", class: "text-xl js-open-modal", data_tooltip: "Cookies", data_modal: "cookies" do %>
+  <!-- <%= content_tag :button, type: "button", class: "text-large js-open-modal", data_tooltip: "Cookies", data_modal: "cookies" do %>
     <i class="far icon-cookie"></i>
   <% end %> -->
 </aside>

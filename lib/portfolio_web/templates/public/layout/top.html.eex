@@ -1,3 +1,3 @@
-<%= content_tag :button, type: "button", class: "top text-xl animates js-scroll-top", data_tooltip: "Back to top" do %>
+<%= content_tag :button, type: "button", class: "top text-large animates js-scroll-top" do %>
   <i class="far icon-arrow-up"></i>
 <% end %>

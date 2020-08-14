@@ -28,7 +28,7 @@ import FontAwesome from "./vendor/fontawesome.js";
 
 /*
 ==========================================================================================
-  Initializers
+  Application
 ==========================================================================================
 */
 
@@ -36,14 +36,15 @@ const App = {
 
   initialize() {
 
+    Utilities.initializeJS();
+    Utilities.bindAutoSelect();
+    Utilities.bindScrollTop();
+    Utilities.stopKeydownPropagationWhenInput();
+
     FontAwesome.initialize();
     Appearance.initialize();
     Modals.initialize();
     Cookies.initialize();
-
-    Utilities.initializeJS();
-    Utilities.bindAutoSelect();
-    Utilities.bindScrollTop();
 
   }
 

@@ -16,7 +16,7 @@ import s from "./selectors.js";
 
 const Helpers = {
 
-  bindKeys(keys, callback) {
+  bindKeys(keys, callback, target = window) {
 
     const handler = [b.event.keydown, (event) => {
 
@@ -27,9 +27,17 @@ const Helpers = {
 
     }];
 
-    window.addEventListener(...handler);
+    target.addEventListener(...handler);
 
-  }
+  },
+
+  copyToClipboard(text, successHandler = Helpers.noop, errorHandler = Helpers.noop) {
+
+    navigator.clipboard.writeText(text).then(successHandler, errorHandler);
+
+  },
+
+  noop() { }
 
 };
 

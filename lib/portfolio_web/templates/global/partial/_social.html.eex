@@ -9,9 +9,4 @@
       <i class="fab icon-github"></i>
     <% end %>
   </li>
-  <li class="platform">
-    <%= link to: "https://twitter.com/drewfravert" do %>
-      <i class="fab icon-twitter"></i>
-    <% end %>
-  </li>
 </ul>
