@@ -41,32 +41,28 @@
       ".    x"
       "body .";
     grid-template-columns: 1fr auto;
-    gap: calc(var(--spacing) * 0.25);
-    margin: calc(var(--spacing) * 0.5);
-    padding-top: calc(var(--spacing) * 0.25);
-    padding-left: var(--spacing);
-    padding-right: calc(var(--spacing) * 0.25);
+    margin: var(--spacing);
+    padding-left: calc(var(--spacing) * 0.83334);
     background-color: var(--color-background);
     border-radius: var(--border-radius-base);
-    box-shadow:
-      var(--box-shadow-border-light),
-      var(--box-shadow-window);
+    box-shadow: var(--box-shadow-border-light);
     position: relative;
     z-index: 2;
     overflow: scroll;
 
     .close-modal {
       grid-area: x;
+      padding: calc(var(--spacing) * 0.16667);
       font-size: calc(var(--spacing) * 0.5);
       position: sticky;
-      min-width: 1em;
+      min-width: calc(var(--spacing) * 0.83334);
       top: 0;
     }
 
     .modal-body {
       display: grid;
       grid-area: body;
-      padding-bottom: var(--spacing); /* overflow padding bottom fix */
+      padding-bottom: calc(var(--spacing) * 0.83334); /* overflow padding bottom fix */
       font-size: var(--font-size-small);
       line-height: var(--line-height-small);
 

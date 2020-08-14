@@ -10,7 +10,7 @@
   grid-template-areas:
     "profile  navigation";
   grid-template-columns: max-content 1fr;
-  gap: calc(var(--spacing) * 0.25) var(--spacing);
+  gap: calc(var(--spacing) * 0.5) var(--spacing);
   align-items: center;
 
   @media (min-width: 768px) {

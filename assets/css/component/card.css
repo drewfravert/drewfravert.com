@@ -1,0 +1,23 @@
+/*
+==========================================================================================
+  Cards
+==========================================================================================
+*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  gap: calc(var(--spacing) * 0.5);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 1em 1.5em;
+  background-color: var(--color-background);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-border-base);
+  min-height: 10em;
+}

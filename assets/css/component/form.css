@@ -45,12 +45,12 @@
   appearance: none;
   grid-area: input;
   background-color: var(--color-highlight);
-  border: var(--border-base);
+  border: var(--border-light);
   border-radius: var(--border-radius-relative);
-  font-size: var(--font-size-base);
+  font-size: inherit;
   color: var(--color-base);
-  line-height: var(--line-height-base);
-  letter-spacing: var(--letter-spacing-base);
+  line-height: inherit;
+  letter-spacing: inherit;
 
   &:focus {}
 

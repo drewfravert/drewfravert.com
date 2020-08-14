@@ -30,10 +30,7 @@
 ==========================================================================================
 */
 
-@import "module/about.css";
 @import "module/resume.css";
-@import "module/uses.css";
-@import "module/privacy.css";
 
 /*
 ==========================================================================================
@@ -41,15 +38,17 @@
 ==========================================================================================
 */
 
+@import "component/avatar.css";
 @import "component/button.css";
-@import "component/modal.css";
+@import "component/card.css";
 @import "component/form.css";
 @import "component/list.css";
-@import "component/table.css";
-@import "component/avatar.css";
-@import "component/social.css";
-@import "component/tabs.css";
+@import "component/modal.css";
 @import "component/setting.css";
+@import "component/social.css";
+@import "component/table.css";
+@import "component/tabs.css";
+@import "component/tag.css";
 
 /* inputs */
 @import "component/input/range.css";

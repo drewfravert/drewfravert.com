@@ -9,13 +9,19 @@ table {
   width: 100%;
 
   &.compact {
-    th, td { padding-bottom: 0.25em; }
+    th, td {
+      padding-bottom: 0.25em;
+      padding-right: 0.5em;
+    }
 
     td { padding-top: 0.25em; }
   }
 
   &.cozy {
-    th, td { padding-bottom: 0.5em; }
+    th, td {
+      padding-bottom: 0.5em;
+      padding-right: 1em;
+    }
 
     td { padding-top: 0.5em; }
   }

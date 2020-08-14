@@ -6,9 +6,7 @@
 
 .heading {
   margin-left: -0.05em;
-  font-size: var(--font-size-base);
   font-weight: var(--font-weight-heading);
-  line-height: var(--line-height-base);
   letter-spacing: var(--letter-spacing-heading);
 
   &:not(:last-child) { margin-bottom: 0.5em; }
@@ -86,6 +84,14 @@ kbd {
   vertical-align: top;
 
   a { text-decoration-line: none; }
+}
+
+code {
+  span {
+    &:not(:last-child) {
+      &::after { content: " "; }
+    }
+  }
 }
 
 kbd { box-shadow: var(--box-shadow-border-base); }

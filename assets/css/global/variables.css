@@ -19,7 +19,7 @@
   ========================================================================================
   */
 
-  --spacing: 3.0rem;
+  --spacing: 2.4rem;
 
   /*
   ========================================================================================
@@ -102,7 +102,8 @@
   --box-shadow-border-base: inset 0 0 0 var(--border-width-base) var(--border-color-base);
   --box-shadow-border-dark: inset 0 0 0 var(--border-width-base) var(--border-color-dark);
 
-  --box-shadow-window: 0 1.2rem 3.6rem 2.4rem hsla(0, 0%, 0%, 25%);
+  --box-shadow-base: 0 0.1em 0.1rem -0.1rem var(--border-color-light);
+  --box-shadow-window: 0 1.2rem 3.6rem 2.4rem var(--border-color-light);
 
   /*
   ========================================================================================
@@ -156,7 +157,7 @@
   ========================================================================================
   */
 
-  --letter-spacing-base: -0.036em;
+  --letter-spacing-base: -0.024em;
   --letter-spacing-heading: calc(var(--letter-spacing-base) * 1.5);
 
   /*
@@ -175,9 +176,6 @@
   */
 
   &.dark {
-    /* rotate primary hue 180 degrees */
-    --hue-primary: calc(var(--hue-base) + 180);
-
     /* alter lightnesses */
     --lightness-primary: 52.5%;
     --lightness-secondary: 97.5%;

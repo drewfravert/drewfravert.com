@@ -17,6 +17,6 @@
     display: grid;
     grid-column: span 6;
     gap: var(--spacing);
-    max-width: 50em;
+    max-width: 76.8rem;
   }
 }

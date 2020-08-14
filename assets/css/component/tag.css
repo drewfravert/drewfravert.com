@@ -1,0 +1,53 @@
+/*
+==========================================================================================
+  Tags
+==========================================================================================
+*/
+
+.tags {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    margin-right: 0.25em;
+    background-color: currentColor;
+    border-radius: var(--border-radius-round);
+    position: relative;
+    width: 0.75em;
+    height: 0.75em;
+    top: 0.04167em;
+  }
+
+  &[data-language="shell"] {
+    &::before { background-color: #a42e2b; }
+  }
+
+  &[data-language="css"] {
+    &::before { background-color: #4caf50; }
+  }
+
+  &[data-language="elixir"] {
+    &::before { background-color: #4e2a8e; }
+  }
+
+  &[data-language="html"] {
+    &::before { background-color: #e24d2c; }
+  }
+
+  &[data-language="ruby"] {
+    &::before { background-color: #cc342d; }
+  }
+
+  &[data-language="javascript"],
+  &[data-language="typescript"] {
+    &::before { background-color: #294e80; }
+  }
+}

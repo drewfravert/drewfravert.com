@@ -100,16 +100,16 @@ button,
       &::before {
         padding: 0.5em 1em;
         background-color: var(--color-background);
-        box-shadow: var(--box-shadow-border-base),
-                    0 0.1em 0.2rem -0.1rem var(--border-color-light);
+        box-shadow: var(--box-shadow-border-base);
         border-radius: var(--border-radius-base);
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-smaller);
         font-weight: var(--font-weight-medium);
         color: var(--color-base);
-        line-height: var(--line-height-small);
+        line-height: var(--line-height-smaller);
+        text-transform: uppercase;
         white-space: nowrap;
         position: absolute;
-        top: calc(50% + 0.25em - (var(--font-size-small) * var(--line-height-small)));
+        top: calc(50% + 0.25em - (var(--font-size-smaller) * var(--line-height-smaller)));
         right: calc(100% + 1em);
       }
     }
