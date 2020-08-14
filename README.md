@@ -11,10 +11,7 @@ Personal portfolio site to host my biography, work, thoughts, resume, relevant s
 To run this project locally:
 
   * Clone this repo with `git clone git@github.com:drewfravert/drewfravert.com.git`
-  * Install [mix](https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html) dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install [node.js](https://nodejs.dev/) dependencies with `yarn install`
-  * Generate a self-signed certificate with `mix phx.gen.cert`
+  * Install dependencies dependencies with `mix setup`
   * Add `drewfravert.local` as an alias to `localhost` in your `/etc/hosts` file
   * Start [phoenix](https://hexdocs.pm/phoenix/overview.html) endpoint with `mix phx.server`
 
