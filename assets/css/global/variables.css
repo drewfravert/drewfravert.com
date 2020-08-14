@@ -111,9 +111,9 @@
   ========================================================================================
   */
 
-  --font-family-base: "Decimal A", "Decimal B", "Decimal";
+  --font-family-base: "Inter";
   --font-family-monospace: "SF Mono", monospace;
-  --font-family-fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  --font-family-fallback: ui-sans-serif, system-ui, -apple-system, sans-serif;
 
   /* font sizes */
   --font-size-xxxxl: 3.6rem;
@@ -131,6 +131,7 @@
   --font-weight-book: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
   --font-weight-base: var(--font-weight-book);
   --font-weight-heading: var(--font-weight-semibold);
@@ -157,7 +158,7 @@
   ========================================================================================
   */
 
-  --letter-spacing-base: -0.024em;
+  --letter-spacing-base: -0.012em;
   --letter-spacing-heading: calc(var(--letter-spacing-base) * 1.5);
 
   /*
@@ -197,6 +198,24 @@
 
     /* modify highlight to correct for shifted background color */
     --color-highlight: var(--color-lightergray);
+  }
+}
+
+/*
+========================================================================================
+  Variable Fonts
+========================================================================================
+*/
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --font-family-base: "Inter var";
+
+    --font-weight-light: 300;
+    --font-weight-book: 420;
+    --font-weight-medium: 540;
+    --font-weight-semibold: 660;
+    --font-weight-bold: 780;
   }
 }
 

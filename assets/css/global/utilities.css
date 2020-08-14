@@ -674,6 +674,8 @@
 
 .text-semibold { font-weight: var(--font-weight-semibold) !important; }
 
+.text-bold { font-weight: var(--font-weight-bold) !important; }
+
 .text-uppercase { text-transform: uppercase !important; }
 
 .text-capitalize { text-transform: capitalize !important; }
