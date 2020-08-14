@@ -10,7 +10,7 @@
     ". .      ."
     ". window ."
     ". .      .";
-  grid-template-columns: 1fr minmax(min-content, 60rem) 1fr;
+  grid-template-columns: 1fr minmax(min-content, 64rem) 1fr;
   grid-template-rows: 1fr auto 2fr;
   position: fixed;
   width: 100vw;

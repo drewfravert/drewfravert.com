@@ -45,7 +45,6 @@
   appearance: none;
   grid-area: input;
   background-color: var(--color-highlight);
-  border: var(--border-light);
   border-radius: var(--border-radius-relative);
   font-size: inherit;
   color: var(--color-base);
