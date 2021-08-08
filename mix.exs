@@ -42,7 +42,7 @@ defmodule Portfolio.MixProject do
       {:phoenix, "~> 1.5.10"},
       {:phoenix_html, "~> 2.14.3"},
       {:phoenix_live_view, "~> 0.15.7"},
-      {:phoenix_live_reload, "~> 1.3.3"},
+      {:phoenix_live_reload, "~> 1.3.3", only: :dev},
       {:phoenix_live_dashboard, "~> 0.4.0"},
       {:plug_cowboy, "~> 2.5.1"},
       {:sobelow, "~> 0.11.1", only: :dev},

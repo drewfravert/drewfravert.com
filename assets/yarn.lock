@@ -4241,6 +4241,7 @@ __metadata:
     phoenix: "file:../deps/phoenix"
     phoenix_html: "file:../deps/phoenix_html"
     phoenix_live_view: "file:../deps/phoenix_live_view"
+    postcss: ^8.3.6
     postcss-loader: 6.1.1
     postcss-nested: 5.0.6
     prettier: 2.3.2
@@ -4749,7 +4750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.3.5":
+"postcss@npm:^8.2.15, postcss@npm:^8.3.5, postcss@npm:^8.3.6":
   version: 8.3.6
   resolution: "postcss@npm:8.3.6"
   dependencies:
