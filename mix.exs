@@ -35,21 +35,20 @@ defmodule Portfolio.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
-      # {:earmark, "~> 1.3"},
-      {:floki, ">= 0.0.0", only: :test},
-      {:gettext, "~> 0.11"},
-      {:jason, "~> 1.0"},
-      {:phoenix, "~> 1.5.1"},
-      {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_view, "~> 0.12.0"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_dashboard, "~> 0.2.0"},
-      {:plug_cowboy, "~> 2.0"},
-      {:sobelow, "~> 0.10.0", only: :dev},
-      {:telemetry_metrics, "~> 0.4"},
-      {:telemetry_poller, "~> 0.4"},
-      {:tzdata, "~> 1.0.3"}
+      {:credo, "~> 1.5.6", only: [:dev, :test], runtime: false},
+      {:floki, ">= 0.31.0", only: :test},
+      {:gettext, "~> 0.18.2"},
+      {:jason, "~> 1.2"},
+      {:phoenix, "~> 1.5.10"},
+      {:phoenix_html, "~> 2.14.3"},
+      {:phoenix_live_view, "~> 0.15.7"},
+      {:phoenix_live_reload, "~> 1.3.3"},
+      {:phoenix_live_dashboard, "~> 0.4.0"},
+      {:plug_cowboy, "~> 2.5.1"},
+      {:sobelow, "~> 0.11.1", only: :dev},
+      {:telemetry_metrics, "~> 0.6.1"},
+      {:telemetry_poller, "~> 0.5.1"},
+      {:tzdata, "~> 1.1.0"}
     ]
   end
 
