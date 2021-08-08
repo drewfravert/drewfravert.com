@@ -42,10 +42,10 @@
                 <td>Toggle keyboard shortcuts</td>
                 <td class="text-right"><kbd>?</kbd> = <kbd>shift</kbd> + <kbd>/</kbd></td>
               </tr>
-              <!-- <tr>
+              <tr>
                 <td>Toggle cookie preferences</td>
                 <td class="text-right"><kbd>C</kbd> = <kbd>shift</kbd> + <kbd>c</kbd></td>
-              </tr> -->
+              </tr>
               <tr>
                 <td>Toggle PGP key</td>
                 <td class="text-right"><kbd>K</kbd> = <kbd>shift</kbd> + <kbd>k</kbd></td>

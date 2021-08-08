@@ -1,6 +1,6 @@
 <ul class="social <%= @modifier %>">
   <li class="platform">
-    <%= link to: "https://linkedin.com/in/drewfravert" do %>
+    <%= link to: "https://linkedin.com/in/drewfravert/" do %>
       <i class="fab icon-linkedin"></i>
     <% end %>
   </li>

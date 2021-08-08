@@ -48,7 +48,7 @@
 
   .control {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--color-highlight);
     box-shadow: var(--box-shadow-border-dark);

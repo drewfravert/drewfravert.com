@@ -1,0 +1,26 @@
+<section>
+  <div class="cards">
+    <div class="card">
+      <h3 class="heading"><%= link "drewfravert.com", to: "https://github.com/drewfravert/drewfravert.com" %></h3>
+      <p>An over-engineered portfolio site</p>
+      <div class="tags">
+        <span class="tag" data-language="elixir">Elixir</span>
+        <span class="tag" data-language="typescript">TypeScript</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="heading"><%= link "2048", to: "https://github.com/drewfravert/2048" %></h3>
+      <p>Recreating the popular tile game in Elixir/OTP</p>
+      <div class="tags">
+        <span class="tag" data-language="elixir">Elixir</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="heading"><%= link "dotfiles", to: "https://github.com/drewfravert/dotfiles" %></h3>
+      <p>macOS development setup</p>
+      <div class="tags">
+        <span class="tag" data-language="shell">Shell</span>
+      </div>
+    </div>
+  </div>
+</section>

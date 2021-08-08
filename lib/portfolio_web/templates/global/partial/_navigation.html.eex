@@ -1,10 +1,6 @@
-<nav class="navigation" role="navigation">
+<nav class="hidden navigation" role="navigation">
   <ul class="list list-inline">
-    <!-- <li><%# link "About", to: Routes.public_page_path(@conn, :index) %></li> -->
-    <!-- <li><%# link "Work", to: Routes.public_page_path(@conn, :work) %></li> -->
-    <!-- <li><%# link "Writing", to: Routes.public_page_path(@conn, :writing) %></li> -->
     <li><%= link "Resume", to: Routes.public_page_path(@conn, :resume) %></li>
-    <!-- <li><%# link "Resources", to: Routes.public_page_path(@conn, :resources) %></li> -->
     <li><%= link "Uses", to: Routes.public_page_path(@conn, :uses) %></li>
   </ul>
 </nav>

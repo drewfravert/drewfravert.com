@@ -42,17 +42,9 @@ defmodule PortfolioWeb.Router do
     pipe_through [:browser, :public]
 
     # public page routes
-    # get "/", PageController, :index
     get "/", PageController, :resume
-    # get "/work", PageController, :work
-    # get "/colophon", PageController, :colophon
-    # get "/influences", PageController, :influences
     get "/privacy", PageController, :privacy
-    # get "/resources", PageController, :resources
-    # get "/resume", PageController, :resume
-    # get "/security", PageController, :security
     get "/uses", PageController, :uses
-    # get "/writing", PageController, :writing
   end
 
   # ======================================================================================

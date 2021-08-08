@@ -8,9 +8,9 @@
         <header class="modal-header">
           <h1 class="heading text-xl">Manage Your Cookie Preferences</h1>
           <p>When visiting this site, I may attempt to store or retrieve information on your browser. This information may be about you, your preferences or your device and is generally used to make the site work as expected. This information does not directly identify you, but is instead meant to deliver a better experience. That said, I respect your privacy and you are in control of what cookies are allowed. Should you choose to block certain cookies, aspects of this site may no longer be usable.</p>
-          <%= content_tag :button, "Accept all", type: "button", class: "button-base button-small" %>
+          <%# content_tag :button, "Accept all", type: "button", class: "button-base button-small" %>
         </header>
-        <section class="modal-section setting">
+        <section class="modal-section setting hidden">
           <h2 class="setting-name heading">Performance & Analysis</h2>
           <label class="setting-control toggle text-xl">
             <input type="checkbox" checked>

@@ -4,4 +4,8 @@
 ==========================================================================================
 */
 
-.svg-icon { pointer-events: none; }
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  pointer-events: none;
+}

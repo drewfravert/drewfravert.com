@@ -40,11 +40,13 @@ module.exports = {
           {
             loader: "postcss-loader",
             options: {
-              ident: "postcss",
-              plugins: () => [
-                require("autoprefixer"),
-                require("postcss-nested")
-              ]
+              postcssOptions: {
+                ident: "postcss",
+                plugins: [
+                  "autoprefixer",
+                  "postcss-nested"
+                ]
+              }
             }
           }
         ]

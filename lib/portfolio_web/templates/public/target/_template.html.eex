@@ -1,0 +1,22 @@
+<article class="article">
+  <header>
+    <h1 class="heading text-xxxxl">Hey, Company!</h1>
+  </header>
+  <section>
+    <p>I hope you’re having a fine <%= day_of_week(@time_zone) %> <%= time_of_day(@time_zone) %>. My name is Drew Fravert – I'm a technologist currently consulting small business clients with matters of product design and development at arity/1. I recently came across your website, and after some digging, I became very interested in potentially joining the Company team. Seeing the work your organization is doing, your commitment to building a remote-first team and providing tangible value to customers through novel solutions, I was motivated to submit an application. Combined with what I could comb through on your social channels, your stated mission and the markets you're serving make Company seem like a great place to work.</p>
+    <p>A little about me, I am a technologist with 10+ years experience in a variety of industries and roles in Chicago and Birmingham with an emphasis on developing effective information systems and tools that engage people through cohesive branding and intuitive, accessible interfaces. A passionate generalist and creative problem solver with a background in film production, UI / IX design, full stack software development, digital strategy, product management, data analysis, sales and organizational leadership. A self-directed, engaged team member and leader, motivated to be among communities of individuals who support and challenge personal growth and do right by them.</p>
+  </section>
+  <%= render PortfolioWeb.Global.PartialView, "_highlights.html" %>
+  <section>
+    <p>Thank you for your consideration. If I have piqued your interest, I can be reached by email at <a href="mailto:drew@fravert.org">drew@fravert.org</a>. If you need any additional information, please let me know. I look forward to hearing from you.</p>
+    <p>– Drew</p>
+    <ul>
+      <li>Who - Who you are. Easy enough.</li>
+      <li>Where - Where you're coming from.</li>
+      <li>Why - Why you're interested in this company, and show that you researched them.</li>
+      <li>What - What you can bring to the table.</li>
+      <li>When - When you're available to start, and when they can contact you.</li>
+      <li>How - How they can reach you.</li>
+    </ul>
+  </section>
+</article>

@@ -1,3 +1,3 @@
 <section class="email">
-  <%= link "drew@fravert.dev", to: "mailto:drew@fravert.dev?subject=Hey, Drew!" %>
+  <%= link "drew@fravert.org", to: "mailto:drew@fravert.org?subject=Hey Drew" %>
 </section>

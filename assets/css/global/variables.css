@@ -134,7 +134,7 @@
   --font-weight-bold: 700;
 
   --font-weight-base: var(--font-weight-book);
-  --font-weight-heading: var(--font-weight-semibold);
+  --font-weight-heading: var(--font-weight-medium);
 
   /*
   ========================================================================================
@@ -159,7 +159,7 @@
   */
 
   --letter-spacing-base: -0.012em;
-  --letter-spacing-heading: calc(var(--letter-spacing-base) * 1.5);
+  --letter-spacing-heading: calc(var(--letter-spacing-base) * 1);
 
   /*
   ========================================================================================
@@ -197,7 +197,7 @@
     --color-background: var(--color-lightestgray);
 
     /* modify highlight to correct for shifted background color */
-    --color-highlight: var(--color-lightergray);
+    --color-highlight: var(--color-lightestgray);
   }
 }
 

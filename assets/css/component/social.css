@@ -12,12 +12,20 @@
   list-style-type: none;
 
   .platform {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 
     &:hover {
       a { color: var(--color-primary); }
     }
 
-    a { color: var(--color-link); }
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--color-link);
+    }
   }
 }

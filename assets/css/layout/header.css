@@ -8,17 +8,17 @@
   display: grid;
   grid-area: header;
   grid-template-areas:
-    "profile  navigation";
-  grid-template-columns: max-content 1fr;
+    "profile email social";
+  grid-template-columns: max-content 1fr auto;
   gap: calc(var(--spacing) * 0.5) var(--spacing);
   align-items: center;
 
   @media (min-width: 768px) {
     grid-template-areas:
-      "profile headline   headline headline headline"
-      "profile navigation email    .        social  "
-      "profile .          .        .        .       ";
-    grid-template-columns: max-content auto auto 1fr auto;
+      "profile headline headline headline headline"
+      "profile email    location social   .       "
+      "profile .        .        .        .       ";
+    grid-template-columns: max-content auto auto auto 1fr;
     align-items: start;
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
@@ -28,7 +28,6 @@
     grid-template-areas:
       "profile   "
       "headline  "
-      "navigation"
       "email     "
       "social    "
       "location  ";
@@ -48,23 +47,19 @@
     @media (max-width: 767px) { display: none; }
   }
 
-  .navigation { grid-area: navigation; }
-
-  .email {
-    grid-area: email;
+  .navigation {
+    grid-area: navigation;
 
     @media (max-width: 767px) { display: none; }
   }
 
-  .social {
-    grid-area: social;
+  .email { grid-area: email; }
 
-    @media (max-width: 767px) { display: none; }
-  }
+  .social { grid-area: social; }
 
   .location {
     grid-area: location;
 
-    @media (max-width: 1023px) { display: none; }
+    @media (max-width: 767px) { display: none; }
   }
 }

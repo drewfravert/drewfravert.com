@@ -676,6 +676,8 @@
 
 .text-bold { font-weight: var(--font-weight-bold) !important; }
 
+.text-italic { font-style: italic !important; }
+
 .text-uppercase { text-transform: uppercase !important; }
 
 .text-capitalize { text-transform: capitalize !important; }

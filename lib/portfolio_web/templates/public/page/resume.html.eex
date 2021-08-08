@@ -5,75 +5,72 @@
   </header>
   <%= render PortfolioWeb.Global.PartialView, "_overview.html", conn: @conn %>
   <section>
-    <h2 class="heading text-large color-primary">Skills</h2>
+    <h2 class="heading text-uppercase color-primary">Skills</h2>
     <table>
       <tbody>
         <tr>
           <td><strong>Personal</strong></td>
-          <td>Creative vision, self-direction, structured thinking, focus on details & value creation</td>
+          <td>Creative vision, self-direction, structured thinking, pragmatic, focused on details &amp; value creation</td>
         </tr>
         <tr>
           <td><strong>Interpersonal</strong></td>
-          <td>Consensus builder, cross-functional communicator, collaborative, empathic, affable, accountable</td>
+          <td>Consensus builder, cross functional communicator, collaborative, empathic, affable, accountable</td>
         </tr>
         <tr>
-          <td><strong>Languages</strong></td>
+          <td><strong>Engineering</strong></td>
           <td>Elixir, Ruby, PHP, JavaScript, CSS, Bash</td>
         </tr>
         <tr>
-          <td><strong>Frameworks</strong></td>
-          <td>Phoenix, Rails, WordPress, Vue</td>
+          <td><strong>Analysis</strong></td>
+          <td>SQL, Tableau, Amplitude, Sheets / Excel</td>
         </tr>
         <tr>
-          <td><strong>Development</strong></td>
-          <td>AWS, Docker, Kubernetes, CI/CD, Homebrew, asdf, Mix, Bundler, Yarn, Webpack, Git</td>
-        </tr>
-        <tr>
-          <td><strong>Data&nbsp;Analysis</strong></td>
-          <td>SQL (PostgreSQL), GraphQL, Redis, Spreadsheets (Sheets, Excel)</td>
-        </tr>
-        <tr>
-          <td><strong>Software</strong></td>
-          <td>Figma, Adobe CC, GitHub, Postman, Postico, Basecamp, Jira, Trello, Slack</td>
+          <td><strong>Tools</strong></td>
+          <td>Figma, Adobe CC, Postman, Notion, Confluence, Jira, Whimsical, Miro</td>
         </tr>
       </tbody>
     </table>
   </section>
   <section>
-    <h2 class="heading text-large color-primary">Experience</h2>
+    <h2 class="heading text-uppercase color-primary">Experience</h2>
     <ul class="list">
+      <li>
+        <h3><strong><%= link "BlockFi", to: "https://www.linkedin.com/company/blockfi/" %></strong> &nbsp;&bull;&nbsp; Product Manager &nbsp;&bull;&nbsp; New York, NY (Remote)</h3>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2020 - Present</time>
+        <p>Product manager for flagship retail product, bitcoin rewards credit card, at the #1 fastest growing fintech startup. Coordinating an international, remote team of 18 engineers and over 40 stakeholders, successfully released a new product line in under a year to over 400,000 waitlisted individuals. Focusing on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and enabling sustainable development velocity.</p>
+      </li>
       <li>
         <h3><strong><%= link "arity/1", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - Present</time>
-        <p>Digital consultancy helping guide small business clients through the considerations of modern technologies and workflows. Offering counsel in product development, digital strategy, design, engineering and content.</p>
+        <p>Consultancy guiding clients through the considerations of modern technologies and workflows. Offering counsel in product strategy, design, development and content.</p>
       </li>
       <li>
         <h3><strong><%= link "Fravert", to: "https://www.linkedin.com/company/fravert/" %></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019</time>
-        <p>As technical director, I was responsible for the development of internal project management software to facilitate streamlined inter-departmental operations that featured project tracking, bid estimation, job costing, labor tracking and customer relations. As PM, I focused on jobs for our environmental / experiential design clients. Working with senior staff, I helped identify and pitch new business opportunities, guided clients through project vision, identified and communicated requirements to the industrial design team, reviewed and verified critical production design documents, and oversaw the production and installation of projects to ensure builds meet client specifications. As a shareholder, I was additionally responsible for regular review of monthly financials, setting organizational and departmental direction and hiring.</p>
+        <p>Designed and developed internal project management software to facilitate streamlined inter-departmental operations that featured project tracking, bid estimation, job costing, labor tracking and customer relations. Focused on jobs for our environmental / experiential design clientele. Working with senior leadership, helped identify and pitch new business opportunities, guide clients through project vision, identify and communicate requirements to the industrial design team, review and verify critical production design documents, and oversee the production and installation of projects to ensure builds meet client specifications. Additionally responsible for regular review of monthly financials, setting organizational and departmental direction and hiring.</p>
       </li>
       <li>
-        <h3><strong><%= link "Fiverr", to: "https://www.linkedin.com/company/fiverr-com/" %></strong> &nbsp;&bull;&nbsp; Full Stack Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <h3><strong><%= link "Fiverr", to: "https://www.linkedin.com/company/fiverr-com/" %></strong> &nbsp;&bull;&nbsp; Full Stack Engineer &nbsp;&bull;&nbsp; Chicago, IL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2015 - October 2015</time>
-        <p>Full stack developer with the US division of the world’s largest digital marketplace for creative and professional services and a top 300 site internationally. Responsible for engineering software under the demand of 30 million active users per month. Coordinated remote development with team members in Tel Aviv, New York, San Francisco and Miami.</p>
+        <p>Full stack engineer with the US division of the world’s largest digital marketplace for creative and professional services and a top 300 site internationally. Responsible for the architecture and development of software under the demand of 40M active users per month. Coordinated development with remote team members in Tel Aviv, New York, San Francisco and Miami.</p>
       </li>
       <li>
         <h3><strong><%= link "Newman Realty", to: "https://www.linkedin.com/company/newman-realty/" %></strong> &nbsp;&bull;&nbsp; Technologist &nbsp;&bull;&nbsp; Chicago, IL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">March 2013 - March 2015</time>
-        <p>Contracted to oversee digital operations and bring consistency to the agency’s external marketing strategy. Built complete front & backend systems and integrated with the MLS API. Designed a complete brand guide, complete with logo marks, typography, color palette, and digital / print marketing materials.</p>
+        <p>Contracted to oversee digital operations and bring consistency to the agency’s external marketing strategy. Built complete front & backend systems and integrated with the MLS API. Designed a comprehensive brand guide, complete with logo marks, typography, color palette, and digital / print marketing materials.</p>
       </li>
       <li>
-        <h3><strong><%= link "Clique Studios", to: "https://www.linkedin.com/company/builtbyclique/" %></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Developer &nbsp;&bull;&nbsp; Chicago, IL</h3>
+        <h3><strong><%= link "Clique Studios", to: "https://www.linkedin.com/company/builtbyclique/" %></strong> &nbsp;&bull;&nbsp; UI / UX Designer, Frontend Engineer &nbsp;&bull;&nbsp; Chicago, IL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2011 - February 2013</time>
-        <p>Built responsive frontend interfaces integrated with various content management platforms, adapting compositions from the design team. Regularly worked and communicated directly with clients to see their vision through to completion. As an early employee, I was responsible for helping define and implement efficient workflows to facilitate robust development.</p>
+        <p>Built responsive frontend interfaces integrated with various content management platforms, adapting compositions from the design team. Regularly working and communicating directly with clients to see their vision through to completion. As an early employee, responsible for defining and implementing robust workflows to facilitate efficient development.</p>
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-large color-primary">Education</h2>
+    <h2 class="heading text-uppercase color-primary">Education</h2>
     <ul class="list">
       <li>
-        <h3><strong><%= link "UAB, Collat School of Business", to: "https://www.linkedin.com/school/university-of-alabama-at-birmingham---collat-school-of-business/" %></strong> &nbsp;&bull;&nbsp; MBA Candidate &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <h3><strong><%= link "UAB, Collat School of Business", to: "https://www.linkedin.com/school/university-of-alabama-at-birmingham---collat-school-of-business/" %></strong> &nbsp;&bull;&nbsp; MBA, Entrepreneurship &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">2020 - 2022</time>
       </li>
       <li>
@@ -83,7 +80,7 @@
     </ul>
   </section>
   <section>
-    <h2 class="heading text-large color-primary">Involvement</h2>
+    <h2 class="heading text-uppercase color-primary">Involvement</h2>
     <ul class="list">
       <li>
         <h3><strong><%= link "Rotaract Club of Birmingham", to: "https://www.linkedin.com/company/rotaractbhm/" %></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
@@ -97,40 +94,23 @@
         <h3><strong><%= link "Community Foundation of Greater Birmingham", to: "https://www.linkedin.com/company/community-foundation-of-greater-birmingham/" %></strong> &nbsp;&bull;&nbsp; Board Fellow &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2019 - January 2020</time>
       </li>
-      <li>
-        <h3><strong><%= link "Liberty House Lofts Association", to: "https://www.linkedin.com/company/libertyhouselofts/" %></strong> &nbsp;&bull;&nbsp; President &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">December 2017 - November 2019</time>
-      </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-large color-primary">Recognition</h2>
+    <h2 class="heading text-uppercase color-primary">Recommendations</h2>
     <ul class="list">
       <li>
-        <h3><strong>Mahon-Peinhardt Director’s Award</strong> &nbsp;&bull;&nbsp; <%= link "Rotaract Club of Birmingham", to: "https://www.rotaractbhm.org/" %></h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">June 2019</time>
+        <h3><strong><%= link "Gaurav Gollerkeri", to: "https://www.linkedin.com/in/gauravgollerkeri/" %></strong> &nbsp;&bull;&nbsp; General Manager, Payments &nbsp;&bull;&nbsp; BlockFi</h3>
+        <blockquote class="mt-2 text-italic">"I am so thankful that Drew is the PM on the BlockFi credit card. He is organized, methodical, solution-oriented and always focused on removing whatever blockers are in the team's way. He blends client-centric thinking with strong commercial instincts. He ensures that he's bringing the right stakeholders along with him. And he does all this with a positive mindset, not letting any setbacks or challenges detract from his own or the team's focus. When we do encounter challenges, he's usually thought of a few options for how to move forward."</blockquote>
       </li>
       <li>
-        <h3><strong>Rising Star of Technology & Innovation</strong> &nbsp;&bull;&nbsp; <%= link "Birmingham Business Journal", to: "https://www.bizjournals.com/birmingham/news/2017/08/29/meet-birminghams-rising-stars-of-tech-and.html" %></h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">August 2017</time>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="heading text-large color-primary">Recommendations</h2>
-    <ul class="list">
-      <li>
-        <h3><strong><%= link "Derek Nelson", to: "https://www.linkedin.com/in/derekcnelson/" %></strong> &nbsp;&bull;&nbsp; Partner, Clique Studios</h3>
+        <h3><strong><%= link "Derek Nelson", to: "https://www.linkedin.com/in/derekcnelson/" %></strong> &nbsp;&bull;&nbsp; Partner &nbsp;&bull;&nbsp; Clique Studios</h3>
         <blockquote class="mt-2 text-italic">"Drew was an integral part in our growth. His passion for the craft, entrepreneurial spirit, and eye for detail helped him create some really exceptional work. He’s got an eye for industry shifts, and is always devising new ways to solve old problems. Above all, he cares deeply about his work and those alongside him."</blockquote>
       </li>
-      <li>
-        <h3><strong><%= link "Cathy Heimberger", to: "https://www.linkedin.com/in/cathy-heimberger-0b8a746/" %></strong> &nbsp;&bull;&nbsp; Marketing Director, St. Louis Public Library</h3>
-        <blockquote class="mt-2 text-italic">"I worked with Drew on the launch of our new site. Drew has an outstanding work ethic; he’s professional, on time, on budget and the most patient person I’ve ever worked with. Constant questions and changes were always met with a positive, can-do attitude. He has an extraordinary ability to take a client's cryptic vision and turn it into an awesome reality."</blockquote>
-      </li>
     </ul>
   </section>
   <section>
-    <h2 class="heading text-large color-primary">References</h2>
+    <h2 class="heading text-uppercase color-primary">References</h2>
     <p>Available upon request.</p>
   </section>
 </article>

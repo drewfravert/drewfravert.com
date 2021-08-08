@@ -2,8 +2,3 @@ Sitemap: <%= Routes.bot_page_url(@conn, :sitemap) %>
 
 User-agent: *
 Disallow: <%= Routes.public_page_path(@conn, :resume) %> <%# <- delete when ready for public crawling %>
-Disallow: <%= Routes.bot_page_path(@conn, :pgp_key) %>
-Disallow: <%= Routes.public_page_path(@conn, :security) %>
-
-Disallow: /.well-known/
-Disallow: /hello/

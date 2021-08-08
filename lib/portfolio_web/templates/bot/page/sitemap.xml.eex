@@ -2,8 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc><%= Routes.url(@conn) %></loc>
-		<lastmod>2020-05-20</lastmod>
+		<lastmod>2020-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
 	</url>
 </urlset>
+
+<%# https://www.sitemaps.org/protocol.html %>

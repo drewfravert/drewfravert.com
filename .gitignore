@@ -26,6 +26,7 @@ portfolio-*.tar
 *.log
 
 # The directory NPM downloads your dependencies sources to.
+/assets/.yarn/
 /assets/node_modules/
 
 # Since we are building assets from assets/,

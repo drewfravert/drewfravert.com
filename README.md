@@ -6,7 +6,6 @@
 
 Personal portfolio site to host my biography, work, thoughts, resume, relevant social channels, etc. while simultaneously demonstrating various design and development knowledge.
 
-
 ## Quick Start
 To run this project locally:
 
@@ -17,14 +16,11 @@ To run this project locally:
 
 You can now visit [`https://drewfravert.local:4001`](https://drewfravert.local:4001) from your browser.
 
-
 ## Questions
-Questions? You can reach me at [drew@fravert.dev](mailto:drew@fravert.dev).
-
+Questions? You can reach me at [drew@fravert.org](mailto:drew@fravert.org).
 
 ## Changelog
 Detailed changes for each release are documented in the [release notes](https://github.com/drewfravert/drewfravert.com/releases).
 
-
 ## License
-2020 &copy; [Drew Fravert](https://github.com/drewfravert/)
+2021 &copy; [Drew Fravert](https://github.com/drewfravert/)

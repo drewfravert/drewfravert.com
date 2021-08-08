@@ -17,7 +17,7 @@ config :portfolio, PortfolioWeb.Endpoint,
       "node_modules/webpack/bin/webpack.js",
       "--config",
       "webpack.development.js",
-      "--watch-stdin",
+      "--watch",
       "--color",
       cd: Path.expand("../assets", __DIR__)
     ]
