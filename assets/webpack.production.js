@@ -27,8 +27,12 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
-      new TerserWebpackPlugin({}),
-      new CssMinimizerPlugin({})
+      new TerserWebpackPlugin({
+        include: path.resolve(__dirname, "./js/")
+      }),
+      new CssMinimizerPlugin({
+        include: path.resolve(__dirname, "./css/")
+      })
     ]
   },
   plugins: [

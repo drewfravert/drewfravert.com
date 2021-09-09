@@ -21,16 +21,17 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        include: [
+          path.resolve(__dirname, "./js/")
+        ],
         use: {
           loader: "babel-loader"
         }
       },
       {
         test: /\.css$/,
-        exclude: [
-          "/node_modules/",
-          "/static/fonts/"
+        include: [
+          path.resolve(__dirname, "./css/")
         ],
         use: [
           MiniCssExtractPlugin.loader,
