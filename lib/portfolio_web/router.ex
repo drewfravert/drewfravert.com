@@ -53,8 +53,6 @@ defmodule PortfolioWeb.Router do
 
   scope "/hey", PortfolioWeb.Public, as: :public do
     pipe_through [:browser, :public]
-
-    get "/remote", TargetController, :remote
   end
 
   # ======================================================================================
