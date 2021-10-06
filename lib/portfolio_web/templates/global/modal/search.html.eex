@@ -7,7 +7,6 @@
       <form method="get" action="https://duckduckgo.com/" role="search">
         <header class="modal-header">
           <h1 class="heading text-xl">Search with DuckDuckGo</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </header>
         <section class="modal-section">
           <input type="text" class="input input-text text-base" name="q">
