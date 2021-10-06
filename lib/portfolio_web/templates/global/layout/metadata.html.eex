@@ -1,5 +1,5 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title><%= assigns[:page_title] || "Drew Fravert | Product Manager, Software Developer, UI + IX Designer" %></title>
-<meta name="description" content="An over-engineered portfolio site.">
+<title><%= assigns[:page_title] || "Drew Fravert | Product Management • Software Engineering • UI / UX Design" %></title>
+<meta name="description" content="Generalist, enthusiast. Creative problem solver, engaged team member and leader. Currently Product Manager at BlockFi.">
 <meta name="author" content="Drew Fravert">
