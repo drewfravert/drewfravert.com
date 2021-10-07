@@ -45,7 +45,7 @@
         <p>Consultancy guiding clients through the considerations of modern technologies and workflows. Offering counsel in product strategy, design, development and content.</p>
       </li>
       <li>
-        <h3><strong><%= link "Fravert", to: "https://www.linkedin.com/company/fravert/" %></strong> &nbsp;&bull;&nbsp; Technical Director, PM &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <h3><strong><%= link "Fravert", to: "https://www.linkedin.com/company/fravert/" %></strong> &nbsp;&bull;&nbsp; Technical Director, Project Manager &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">October 2015 - September 2019</time>
         <p>Designed and developed internal project management software to facilitate streamlined inter-departmental operations that featured project tracking, bid estimation, job costing, labor tracking and customer relations. Focused on jobs for our environmental / experiential design clientele. Working with senior leadership, helped identify and pitch new business opportunities, guide clients through project vision, identify and communicate requirements to the industrial design team, review and verify critical production design documents, and oversee the production and installation of projects to ensure builds meet client specifications. Additionally responsible for regular review of monthly financials, setting organizational and departmental direction and hiring.</p>
       </li>
