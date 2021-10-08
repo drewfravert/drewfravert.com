@@ -40,7 +40,7 @@
         <p>Product manager for flagship retail product, bitcoin rewards credit card, at the #1 fastest growing fintech startup. Coordinating an international, remote team of 18 engineers and over 40 stakeholders, successfully released a new product line in under a year to over 400,000 waitlisted individuals. Focusing on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and enabling sustainable development velocity.</p>
       </li>
       <li>
-        <h3><strong><%= link "arity/1", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <h3><strong><%= link "Arity One", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - Present</time>
         <p>Consultancy guiding clients through the considerations of modern technologies and workflows. Offering counsel in product strategy, design, development and content.</p>
       </li>
