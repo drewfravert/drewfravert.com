@@ -1,3 +1,3 @@
 <section class="headline">
-  <p class="text-contain">Generalist, enthusiast. Creative problem solver, engaged team member and leader. Currently <strong>Product Manager</strong> at <%= link "BlockFi", to: "https://linkedin.com/company/blockfi/" %>.</p>
+  <p class="text-contain">Generalist, enthusiast. Creative problem solver, engaged team member and leader. Currently <strong>Senior Product Manager</strong> at <%= link "BlockFi", to: "https://linkedin.com/company/blockfi/" %>.</p>
 </section>

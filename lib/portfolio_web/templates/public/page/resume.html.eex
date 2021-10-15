@@ -35,7 +35,7 @@
     <h2 class="heading text-uppercase color-primary">Experience</h2>
     <ul class="list">
       <li>
-        <h3><strong><%= link "BlockFi", to: "https://www.linkedin.com/company/blockfi/" %></strong> &nbsp;&bull;&nbsp; Product Manager &nbsp;&bull;&nbsp; New York, NY (Remote)</h3>
+        <h3><strong><%= link "BlockFi", to: "https://www.linkedin.com/company/blockfi/" %></strong> &nbsp;&bull;&nbsp; Senior Product Manager &nbsp;&bull;&nbsp; New York, NY (Remote)</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2020 - Present</time>
         <p>Product manager for flagship retail product, bitcoin rewards credit card, at the #1 fastest growing fintech startup. Coordinating an international, remote team of 18 engineers and over 40 stakeholders, successfully released a new product line in under a year to over 400,000 waitlisted individuals. Focusing on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and enabling sustainable development velocity.</p>
       </li>
