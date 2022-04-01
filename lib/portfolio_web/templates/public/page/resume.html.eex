@@ -18,15 +18,11 @@
         </tr>
         <tr>
           <td><strong>Engineering</strong></td>
-          <td>Elixir, Ruby, PHP, JavaScript, CSS, Bash</td>
+          <td>Elixir, Ruby, PHP, JavaScript, CSS, Bash / Z Shell</td>
         </tr>
         <tr>
-          <td><strong>Analysis</strong></td>
-          <td>SQL, Tableau, Amplitude, Sheets / Excel</td>
-        </tr>
-        <tr>
-          <td><strong>Tools</strong></td>
-          <td>Figma, Adobe CC, Postman, Notion, Confluence, Jira, Whimsical, Miro</td>
+          <td><strong>Tools & Analysis</strong></td>
+          <td>Figma, Confluence, Jira, SQL, Tableau, Amplitude, Sheets / Excel</td>
         </tr>
       </tbody>
     </table>
@@ -37,7 +33,7 @@
       <li>
         <h3><strong><%= link "BlockFi", to: "https://www.linkedin.com/company/blockfi/" %></strong> &nbsp;&bull;&nbsp; Senior Product Manager &nbsp;&bull;&nbsp; New York, NY (Remote)</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2020 - Present</time>
-        <p>Product manager for flagship retail product, bitcoin rewards credit card, at the #1 fastest growing fintech startup. Coordinating an international, remote team of 18 engineers and over 40 stakeholders, successfully released a new product line in under a year to over 400,000 waitlisted individuals. Focusing on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and enabling sustainable development velocity.</p>
+        <p>Senior product manager for flagship retail product, crypto rewards credit card, at one of the fastest growing fintech startups. Coordinating an international, remote team, successfully released a new product line in under a year to over 400,000 waitlisted individuals. Focusing on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and enabling sustainable development velocity.</p>
       </li>
       <li>
         <h3><strong><%= link "Arity One", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
@@ -100,7 +96,7 @@
     <h2 class="heading text-uppercase color-primary">Recommendations</h2>
     <ul class="list">
       <li>
-        <h3><strong><%= link "Gaurav Gollerkeri", to: "https://www.linkedin.com/in/gauravgollerkeri/" %></strong> &nbsp;&bull;&nbsp; General Manager, Payments &nbsp;&bull;&nbsp; BlockFi</h3>
+        <h3><strong><%= link "Gaurav Gollerkeri", to: "https://www.linkedin.com/in/gauravgollerkeri/" %></strong> &nbsp;&bull;&nbsp; GM, Payments &nbsp;&bull;&nbsp; BlockFi</h3>
         <blockquote class="mt-2 text-italic">"I am so thankful that Drew is the PM on the BlockFi credit card. He is organized, methodical, solution-oriented and always focused on removing whatever blockers are in the team's way. He blends client-centric thinking with strong commercial instincts. He ensures that he's bringing the right stakeholders along with him. And he does all this with a positive mindset, not letting any setbacks or challenges detract from his own or the team's focus. When we do encounter challenges, he's usually thought of a few options for how to move forward."</blockquote>
       </li>
       <li>
