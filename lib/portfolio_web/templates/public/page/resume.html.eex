@@ -21,8 +21,8 @@
           <td>Elixir, Ruby, PHP, JavaScript, CSS, Bash / Z Shell</td>
         </tr>
         <tr>
-          <td><strong>Tools & Analysis</strong></td>
-          <td>Figma, Confluence, Jira, SQL, Tableau, Amplitude, Sheets / Excel</td>
+          <td><strong>Tools</strong></td>
+          <td>Figma, Miro, Confluence, Notion, Jira, Monday, SQL, Tableau, Amplitude, Sheets / Excel</td>
         </tr>
       </tbody>
     </table>
@@ -33,11 +33,11 @@
       <li>
         <h3><strong><%= link "BlockFi", to: "https://www.linkedin.com/company/blockfi/" %></strong> &nbsp;&bull;&nbsp; Senior Product Manager &nbsp;&bull;&nbsp; New York, NY (Remote)</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2020 - Present</time>
-        <p>Senior product manager for flagship retail product, crypto rewards credit card, at one of the fastest growing fintech startups. Coordinating an international, remote team, successfully released a new product line in under a year to over 400,000 waitlisted individuals. Focusing on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and enabling sustainable development velocity.</p>
+        <p>Senior product manager for flagship retail product, crypto rewards credit card, at one of the fastest growing fintech startups. Coordinating an international, remote team, successfully released a new product line in under a year and servicing over 80,000 cardholders with over $2B+ in annual run rate payment volume. Focused on delivering consumer and organizational value by prioritizing key deliverables, building strong foundations and ensuring a sustainable development velocity.</p>
       </li>
       <li>
         <h3><strong><%= link "Arity One", to: "https://www.linkedin.com/company/arityone/" %></strong> &nbsp;&bull;&nbsp; Consultant &nbsp;&bull;&nbsp; Birmingham, AL</h3>
-        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - Present</time>
+        <time class="block my-2 text-smaller text-medium text-uppercase color-gray">September 2019 - August 2020</time>
         <p>Consultancy guiding clients through the considerations of modern technologies and workflows. Offering counsel in product strategy, design, development and content.</p>
       </li>
       <li>
@@ -79,7 +79,7 @@
     <h2 class="heading text-uppercase color-primary">Involvement</h2>
     <ul class="list">
       <li>
-        <h3><strong><%= link "Rotaract Club of Birmingham", to: "https://www.linkedin.com/company/rotaractbhm/" %></strong> &nbsp;&bull;&nbsp; Communications Director, Technology Chair, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
+        <h3><strong><%= link "Rotaract Club of Birmingham", to: "https://www.linkedin.com/company/rotaractbhm/" %></strong> &nbsp;&bull;&nbsp; VP Communications, Technology Chair, Strategic Planning Committee, Member &nbsp;&bull;&nbsp; Birmingham, AL</h3>
         <time class="block my-2 text-smaller text-medium text-uppercase color-gray">February 2016 - Present</time>
       </li>
       <li>

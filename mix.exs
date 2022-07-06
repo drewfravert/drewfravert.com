@@ -6,8 +6,8 @@ defmodule Portfolio.MixProject do
   def project do
     [
       app: :portfolio,
-      version: "0.2.0",
-      elixir: "~> 1.12.2",
+      version: "0.2.1",
+      elixir: "~> 1.13.1",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -46,6 +46,7 @@ defmodule Portfolio.MixProject do
       {:phoenix_live_dashboard, "~> 0.4.0"},
       {:plug_cowboy, "~> 2.5.1"},
       {:sobelow, "~> 0.11.1", only: :dev},
+      {:swoosh, "~> 1.6"},
       {:telemetry_metrics, "~> 0.6.1"},
       {:telemetry_poller, "~> 0.5.1"},
       {:tzdata, "~> 1.1.0"}
