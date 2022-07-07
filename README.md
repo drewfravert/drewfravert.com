@@ -1,9 +1,4 @@
 # Portfolio
-[![Release Version](https://img.shields.io/github/v/release/drewfravert/drewfravert.com)](https://github.com/drewfravert/drewfravert.com/releases)
-![dependency Status](https://img.shields.io/david/drewfravert/drewfravert.com?path=assets)
-![devDependency Status](https://img.shields.io/david/dev/drewfravert/drewfravert.com?path=assets)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/drewfravert/drewfravert.com)
-
 Personal portfolio site to host my biography, work, thoughts, resume, relevant social channels, etc. while simultaneously demonstrating various design and development knowledge.
 
 ## Quick Start
@@ -23,4 +18,4 @@ Questions? You can reach me at [drew@fravert.org](mailto:drew@fravert.org).
 Detailed changes for each release are documented in the [release notes](https://github.com/drewfravert/drewfravert.com/releases).
 
 ## License
-2021 &copy; [Drew Fravert](https://github.com/drewfravert/)
+2022 &copy; [Drew Fravert](https://github.com/drewfravert/)
